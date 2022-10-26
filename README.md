@@ -1,2 +1,2 @@
-# mash-docs
-Mash documentation website
+# Qadr Docs
+Qadr documentation website
