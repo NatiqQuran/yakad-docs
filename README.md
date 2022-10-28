@@ -1,2 +1,2 @@
 # Yakad Docs
-Qadr documentation website
+Yakad documentation website
