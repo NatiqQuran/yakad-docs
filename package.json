@@ -1,5 +1,5 @@
 {
-  "name": "yakad-docs",
+  "name": "natiq",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,18 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.5.7",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
-    "@yakad/ui": "1.2.92-beta",
-    "autoprefixer": "10.4.15",
-    "eslint": "8.48.0",
-    "eslint-config-next": "13.4.19",
-    "next": "13.4.19",
-    "postcss": "8.4.28",
+    "@yakad/ui": "1.2.91-beta",
+    "@yakad/x": "1.0.32-beta",
+    "next": "13.5.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.8.9",
+    "@types/react": "18.0.24",
+    "@types/react-dom": "18.2.14",
+    "autoprefixer": "10.4.16",
+    "eslint": "8.52.0",
+    "eslint-config-next": "13.5.4",
+    "postcss": "8.4.31",
+    "tailwindcss": "3.3.5",
     "typescript": "5.2.2"
   }
 }
