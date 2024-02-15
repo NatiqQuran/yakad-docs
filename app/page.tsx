@@ -4,36 +4,53 @@ import {
   Container,
   Footer,
   Main,
-  Page,
+  Page as Pg,
   Row,
   Spacer,
   Stack,
+  SvgIcon,
+  Theme,
 } from "@yakad/ui";
 import Link from "next/link";
+import { Xbackground, XgetStart } from "@yakad/x";
+import LogoIcon from "./logoicon";
 
 export default function Home() {
   return (
-    <Page>
-      <AppBar>
+    <Pg>
+      <AppBar style={{ padding: "3rem" }}>
+        <SvgIcon size={5}>
+          <LogoIcon />
+        </SvgIcon>
         <h1>Yakad</h1>
+        <Link href="./docs">
+          <Button variant="text">documents</Button>
+        </Link>
+        <a href="https://github.com/NatiqQuran/yakad">
+          <Button variant="text">github</Button>
+        </a>
         <Spacer />
-        <Button variant="link">Help</Button>
-        <Button variant="link">About us</Button>
       </AppBar>
       <Main>
-        <Container maxWidth="lg">
-          <Row>
+        <Xbackground variant="dotted">
+          <XgetStart logo={<LogoIcon />}>
+            <h1 style={{ fontSize: "7rem" }}>Yakad</h1>
+            <p style={{ fontSize: "2rem" }}>
+              <i>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis,
+                fuga minima cum voluptates culpa id nisi ratione dolorem vitae
+                nesciunt reiciendis ex, qui ullam voluptatibus? Blanditiis enim
+                exercitationem ducimus nemo.
+              </i>
+            </p>
             <Link href="./docs">
-              <Button variant="filled">documents</Button>
+              <Button variant="filled">Documents</Button>
             </Link>
-          </Row>
-        </Container>
+            <h2>or</h2>
+            <Button variant="link">Learn More!</Button>
+          </XgetStart>
+        </Xbackground>
       </Main>
-      <Footer>
-        <a href="https://github.com/NatiqQuran/yakad">
-          <Button variant="link">github</Button>
-        </a>
-      </Footer>
-    </Page>
+    </Pg>
   );
 }
