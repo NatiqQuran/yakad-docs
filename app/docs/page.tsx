@@ -19,7 +19,9 @@ export default function Docs() {
           <Button variant="filled">Appbar</Button>
         </Link>
         <Link href="./docs/button">
-          <Button variant="filled">Button</Button>
+          <Button variant="filled" size="medium">
+            Button
+          </Button>
         </Link>
       </Row>
     </Container>
