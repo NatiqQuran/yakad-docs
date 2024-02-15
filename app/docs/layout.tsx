@@ -7,17 +7,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     },
 
     {
-      name: "Yakad X",
-      childs: [
-        { name: "XbackButton" },
-        { name: "Xbackground" },
-        { name: "XforwardButton" },
-        { name: "Xgetstart" },
-        { name: "Xpanel" },
-        { name: "Xtable" },
-      ],
-    },
-    {
       name: "Yakad UI",
       childs: [
         { name: "AppBar" },
@@ -44,6 +33,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         { name: "SvgIcon" },
         { name: "Table" },
         { name: "Theme" },
+      ],
+    },
+
+    {
+      name: "Yakad X",
+      childs: [
+        { name: "XbackButton" },
+        { name: "Xbackground" },
+        { name: "XforwardButton" },
+        { name: "Xgetstart" },
+        { name: "Xpanel" },
+        { name: "Xtable" },
       ],
     },
     {
