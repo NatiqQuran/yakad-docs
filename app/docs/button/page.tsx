@@ -46,7 +46,7 @@ export default function DocsButton() {
                   LARGE
                 </Button>
               </Row>
-              <Hr variant="dashed" />
+              <Hr />
               <h2>All kinds of buttons with different sizes</h2>
               <h2>Code type : TS</h2>
             </Card>
@@ -75,7 +75,7 @@ export default function DocsButton() {
                 <Button variant="text">TEXT</Button>
                 <Button variant="tonal">TONAL</Button>
               </Row>
-              <Hr variant="dashed" />
+              <Hr />
               <h2>A variety of buttons with different shapes to use</h2>
               <h2>Code type : TS</h2>
             </Card>
@@ -103,7 +103,7 @@ export default function DocsButton() {
                     squircle
                   </Button>
                 </Row>
-                <Hr variant="dashed" />
+                <Hr />
                 <h2>A variety of buttons with different shapes to use </h2>
                 <h2>Code type : TS</h2>
               </Card>
@@ -132,7 +132,7 @@ export default function DocsButton() {
                   icon={<Symbol icon="search" />}
                 ></Button>
               </Row>
-              <Hr variant="dashed" />
+              <Hr />
               <h2>All kinds of buttons with different sizes</h2>
               <h2>Code type : TS</h2>
             </Card>
@@ -235,7 +235,7 @@ function ButtonLoading() {
             disabled
           ></Button>
         </Row>
-        <Hr variant="dashed" />
+        <Hr />
         <h2>All kinds of buttons with different sizes</h2>
         <h2>Code type : TS</h2>
       </Card>
@@ -271,7 +271,7 @@ function ButtonLoading() {
             Loading
           </Button>
         </Row>
-        <Hr variant="dashed" />
+        <Hr />
         <h2>All kinds of buttons with different sizes</h2>
         <h2>Code type : TS</h2>
       </Card>
