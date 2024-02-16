@@ -16,7 +16,7 @@ import { Xbackground, XgetStart } from "@yakad/x";
 import LogoIcon from "./logoicon";
 
 export default function Home() {
-  return (  
+  return (
     <Pg>
       <AppBar style={{ padding: "3rem" }}>
         <SvgIcon size={5}>
