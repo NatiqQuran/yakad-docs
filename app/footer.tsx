@@ -1,4 +1,13 @@
-import { Container, Footer, GridContainer, GridItem, Stack } from "@yakad/ui";
+import {
+  Container,
+  Footer,
+  GridContainer,
+  GridItem,
+  Row,
+  Stack,
+  SvgIcon,
+} from "@yakad/ui";
+import NatiqLogo from "./NatiqLogo";
 
 interface ListLink {
   name: string;
@@ -63,6 +72,26 @@ export default function IntroFooter() {
           </GridItem>
           <GridItem xl={3}>
             <FooterList name="Social" list={social} />
+          </GridItem>
+          <GridItem xl={3}>
+            <Stack style={{ alignItems: "center" }}>
+              <SvgIcon size={25}>
+                <NatiqLogo />
+              </SvgIcon>
+              <Row>
+                <h1 style={{ fontSize: "30px", margin: "0" }}>Made by</h1>
+                <a
+                  href="https://natiq.net"
+                  style={{
+                    fontSize: "30px",
+                    color: "white",
+                    margin: "0",
+                  }}
+                >
+                  <b>Natiq</b>
+                </a>
+              </Row>
+            </Stack>
           </GridItem>
         </GridContainer>
       </Container>
