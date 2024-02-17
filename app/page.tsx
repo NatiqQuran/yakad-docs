@@ -51,21 +51,21 @@ function IntroHeader() {
 }
 
 function IntroFooter() {
-  const Links = [
+  const links = [
     { name: "Natiq", href: "https://natiq.net" },
     { name: "Control Panel", href: "https://natiq.net" },
     { name: "Blog", href: "https://blog.natiq.net/" },
     { name: "Qamar", href: "https://qamar.natiq.net/" },
   ];
 
-  const Pages = [
+  const pages = [
     { name: "About", href: "https://natiq.net" },
     { name: "Sponsor", href: "https://natiq.net" },
     { name: "Team", href: "https://blog.natiq.net/" },
     { name: "vision", href: "https://qamar.natiq.net/" },
   ];
 
-  const Social = [
+  const social = [
     { name: "Github", href: "https://natiq.net" },
     { name: "twitter", href: "https://natiq.net" },
     { name: "Telegram", href: "https://blog.natiq.net/" },
@@ -78,8 +78,9 @@ function IntroFooter() {
           <GridItem xl={3}>
             <Stack style={{ gap: "3rem" }}>
               <h1 style={{ fontSize: "35px" }}>Links</h1>
-              {Links.map((item, index) => (
+              {links.map((item, index) => (
                 <a
+                  key={index}
                   href={item.href}
                   style={{
                     fontSize: "2rem",
@@ -94,8 +95,9 @@ function IntroFooter() {
           <GridItem xl={3}>
             <Stack style={{ gap: "3rem" }}>
               <h1 style={{ fontSize: "35px" }}>Pages</h1>
-              {Pages.map((item, index) => (
+              {pages.map((item, index) => (
                 <a
+                  key={index}
                   href={item.href}
                   style={{
                     fontSize: "2rem",
@@ -110,8 +112,9 @@ function IntroFooter() {
           <GridItem xl={3}>
             <Stack>
               <h1 style={{ fontSize: "35px" }}>Social</h1>
-              {Social.map((item, index) => (
+              {social.map((item, index) => (
                 <a
+                  key={index}
                   href={item.href}
                   style={{
                     fontSize: "2rem",
