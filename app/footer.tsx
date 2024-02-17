@@ -21,7 +21,7 @@ interface FooterListProps {
 
 function FooterList(props: FooterListProps) {
   return (
-    <Stack style={{ gap: "3rem" }}>
+    <Stack>
       <h1 style={{ fontSize: "35px" }}>{props.name}</h1>
       {props.list.map((item, index) => (
         <a
