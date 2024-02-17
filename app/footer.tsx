@@ -1,54 +1,4 @@
-import {
-  AppBar,
-  Button,
-  Card,
-  Container,
-  Footer,
-  GridContainer,
-  GridItem,
-  Hr,
-  Main,
-  Page as Pg,
-  Row,
-  Spacer,
-  Stack,
-  SvgIcon,
-} from "@yakad/ui";
-import Link from "next/link";
-import LogoIcon from "./logoicon";
-import Natiq from "./NatiqLogo";
-import { Getstart, Cards } from "./content";
-
-export default function Home() {
-  return (
-    <Pg>
-      <IntroHeader />
-      <Main>
-        <Getstart />
-        <Cards />
-        <IntroFooter />
-      </Main>
-    </Pg>
-  );
-}
-
-function IntroHeader() {
-  return (
-    <AppBar style={{ padding: "3rem" }}>
-      <SvgIcon size={5}>
-        <LogoIcon />
-      </SvgIcon>
-      <h1>Yakad</h1>
-      <Spacer />
-      <Link href="./docs">
-        <Button variant="text">documents</Button>
-      </Link>
-      <a href="https://github.com/NatiqQuran/yakad">
-        <Button variant="text">github</Button>
-      </a>
-    </AppBar>
-  );
-}
+import { Container, Footer, GridContainer, GridItem, Stack } from "@yakad/ui";
 
 interface ListLink {
   name: string;
@@ -80,7 +30,7 @@ function FooterList(props: FooterListProps) {
   );
 }
 
-function IntroFooter() {
+export default function IntroFooter() {
   const links = [
     { name: "Natiq", href: "https://natiq.net" },
     { name: "Control Panel", href: "https://natiq.net" },
