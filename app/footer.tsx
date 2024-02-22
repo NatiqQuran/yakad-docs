@@ -42,22 +42,22 @@ function FooterList(props: FooterListProps) {
 export default function IntroFooter() {
   const links = [
     { name: "Natiq", href: "https://natiq.net" },
-    { name: "Control Panel", href: "https://natiq.net" },
+    { name: "Control Panel", href: "https://panel.natiq.net/" },
     { name: "Blog", href: "https://blog.natiq.net/" },
     { name: "Qamar", href: "https://qamar.natiq.net/" },
   ];
 
   const pages = [
-    { name: "About", href: "https://natiq.net" },
-    { name: "Sponsor", href: "https://natiq.net" },
-    { name: "Team", href: "https://blog.natiq.net/" },
-    { name: "vision", href: "https://qamar.natiq.net/" },
+    { name: "About", href: "https://blog.natiq.net/about/" },
+    { name: "Sponsor", href: "https://blog.natiq.net/sponsor/" },
+    { name: "Team", href: "https://blog.natiq.net/team/" },
+    { name: "vision", href: "https://blog.natiq.net/vision/" },
   ];
 
   const social = [
-    { name: "Github", href: "https://natiq.net" },
-    { name: "twitter", href: "https://natiq.net" },
-    { name: "Telegram", href: "https://blog.natiq.net/" },
+    { name: "Github", href: "https://github.com/NatiqQuran/yakad" },
+    { name: "twitter", href: "https://twitter.com/NatiqQuran" },
+    { name: "Telegram", href: "https://t.me/NatiqQuran" },
   ];
 
   return (
