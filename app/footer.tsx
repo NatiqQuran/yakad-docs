@@ -40,21 +40,21 @@ function FooterList(props: FooterListProps) {
 }
 
 export default function IntroFooter() {
-  const links = [
+  const links: ListLink[] = [
     { name: "Natiq", href: "https://natiq.net" },
     { name: "Control Panel", href: "https://panel.natiq.net/" },
     { name: "Blog", href: "https://blog.natiq.net/" },
     { name: "Qamar", href: "https://qamar.natiq.net/" },
   ];
 
-  const pages = [
+  const pages: ListLink[] = [
     { name: "About", href: "https://blog.natiq.net/about/" },
     { name: "Sponsor", href: "https://blog.natiq.net/sponsor/" },
     { name: "Team", href: "https://blog.natiq.net/team/" },
     { name: "vision", href: "https://blog.natiq.net/vision/" },
   ];
 
-  const social = [
+  const social: ListLink[] = [
     { name: "Github", href: "https://github.com/NatiqQuran/yakad" },
     { name: "twitter", href: "https://twitter.com/NatiqQuran" },
     { name: "Telegram", href: "https://t.me/NatiqQuran" },
