@@ -22,14 +22,14 @@ interface FooterListProps {
 function FooterList(props: FooterListProps) {
   return (
     <Stack>
-      <h1 style={{ fontSize: "35px" }}>{props.name}</h1>
+      <h1 style={{ fontSize: "22px" }}>{props.name}</h1>
       {props.list.map((item, index) => (
         <a
           key={index}
           href={item.href}
           style={{
             fontSize: "2rem",
-            color: "#fff",
+            color: "#808080",
           }}
         >
           {item.name}
@@ -61,40 +61,49 @@ export default function IntroFooter() {
   ];
 
   return (
-    <Footer>
-      <Container maxWidth="lg">
-        <GridContainer>
-          <GridItem xl={3}>
-            <FooterList name="Links" list={links} />
-          </GridItem>
-          <GridItem xl={3}>
-            <FooterList name="Pages" list={pages} />
-          </GridItem>
-          <GridItem xl={3}>
-            <FooterList name="Social" list={social} />
-          </GridItem>
-          <GridItem xl={3}>
-            <Stack style={{ alignItems: "center" }}>
-              <SvgIcon size={25}>
-                <NatiqLogo />
-              </SvgIcon>
-              <Row>
-                <h1 style={{ fontSize: "30px", margin: "0" }}>Made by</h1>
+    <Stack style={{ gap: "0" }}>
+      <Footer style={{ padding: "8rem 0 5rem " }}>
+        <Container maxWidth="lg">
+          <GridContainer>
+            <GridItem xl={6}>
+              <Stack>
+                <SvgIcon size={5}>
+                  <NatiqLogo />
+                </SvgIcon>
                 <a
                   href="https://natiq.net"
                   style={{
-                    fontSize: "30px",
+                    fontSize: "22px",
                     color: "white",
                     margin: "0",
                   }}
                 >
-                  <b>Natiq</b>
+                  Natiq
                 </a>
-              </Row>
-            </Stack>
-          </GridItem>
-        </GridContainer>
-      </Container>
-    </Footer>
+                <p style={{ fontSize: "22px", margin: "0", color: "#808080" }}>
+                  Natiq Quran dev team
+                </p>
+              </Stack>
+            </GridItem>
+            <GridItem xl={2}>
+              <FooterList name="Links" list={links} />
+            </GridItem>
+            <GridItem xl={2}>
+              <FooterList name="Pages" list={pages} />
+            </GridItem>
+            <GridItem xl={2}>
+              <FooterList name="Social" list={social} />
+            </GridItem>
+          </GridContainer>
+        </Container>
+      </Footer>
+      <Footer>
+        <Container maxWidth="lg">
+          <p style={{ fontSize: "22px", color: "#808080" }}>
+            Designed by Yakad
+          </p>
+        </Container>
+      </Footer>
+    </Stack>
   );
 }
