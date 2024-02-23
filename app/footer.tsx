@@ -22,14 +22,14 @@ interface FooterListProps {
 function FooterList(props: FooterListProps) {
   return (
     <Stack>
-      <h1 style={{ fontSize: "35px" }}>{props.name}</h1>
+      <h1 style={{ fontSize: "22px" }}>{props.name}</h1>
       {props.list.map((item, index) => (
         <a
           key={index}
           href={item.href}
           style={{
             fontSize: "2rem",
-            color: "#fff",
+            color: "#808080",
           }}
         >
           {item.name}
@@ -40,61 +40,70 @@ function FooterList(props: FooterListProps) {
 }
 
 export default function IntroFooter() {
-  const links = [
+  const links: ListLink[] = [
     { name: "Natiq", href: "https://natiq.net" },
-    { name: "Control Panel", href: "https://natiq.net" },
+    { name: "Control Panel", href: "https://panel.natiq.net/" },
     { name: "Blog", href: "https://blog.natiq.net/" },
     { name: "Qamar", href: "https://qamar.natiq.net/" },
   ];
 
-  const pages = [
-    { name: "About", href: "https://natiq.net" },
-    { name: "Sponsor", href: "https://natiq.net" },
-    { name: "Team", href: "https://blog.natiq.net/" },
-    { name: "vision", href: "https://qamar.natiq.net/" },
+  const pages: ListLink[] = [
+    { name: "About", href: "https://blog.natiq.net/about/" },
+    { name: "Sponsor", href: "https://blog.natiq.net/sponsor/" },
+    { name: "Team", href: "https://blog.natiq.net/team/" },
+    { name: "vision", href: "https://blog.natiq.net/vision/" },
   ];
 
-  const social = [
-    { name: "Github", href: "https://natiq.net" },
-    { name: "twitter", href: "https://natiq.net" },
-    { name: "Telegram", href: "https://blog.natiq.net/" },
+  const social: ListLink[] = [
+    { name: "Github", href: "https://github.com/NatiqQuran/yakad" },
+    { name: "twitter", href: "https://twitter.com/NatiqQuran" },
+    { name: "Telegram", href: "https://t.me/NatiqQuran" },
   ];
 
   return (
-    <Footer>
-      <Container maxWidth="lg">
-        <GridContainer>
-          <GridItem xl={3}>
-            <FooterList name="Links" list={links} />
-          </GridItem>
-          <GridItem xl={3}>
-            <FooterList name="Pages" list={pages} />
-          </GridItem>
-          <GridItem xl={3}>
-            <FooterList name="Social" list={social} />
-          </GridItem>
-          <GridItem xl={3}>
-            <Stack style={{ alignItems: "center" }}>
-              <SvgIcon size={25}>
-                <NatiqLogo />
-              </SvgIcon>
-              <Row>
-                <h1 style={{ fontSize: "30px", margin: "0" }}>Made by</h1>
+    <Stack style={{ gap: "0" }}>
+      <Footer style={{ padding: "8rem 0 5rem " }}>
+        <Container maxWidth="lg">
+          <GridContainer>
+            <GridItem xl={6}>
+              <Stack>
+                <SvgIcon size={5}>
+                  <NatiqLogo />
+                </SvgIcon>
                 <a
                   href="https://natiq.net"
                   style={{
-                    fontSize: "30px",
+                    fontSize: "22px",
                     color: "white",
                     margin: "0",
                   }}
                 >
-                  <b>Natiq</b>
+                  Natiq
                 </a>
-              </Row>
-            </Stack>
-          </GridItem>
-        </GridContainer>
-      </Container>
-    </Footer>
+                <p style={{ fontSize: "22px", margin: "0", color: "#808080" }}>
+                  Natiq Quran dev team
+                </p>
+              </Stack>
+            </GridItem>
+            <GridItem xl={2}>
+              <FooterList name="Links" list={links} />
+            </GridItem>
+            <GridItem xl={2}>
+              <FooterList name="Pages" list={pages} />
+            </GridItem>
+            <GridItem xl={2}>
+              <FooterList name="Social" list={social} />
+            </GridItem>
+          </GridContainer>
+        </Container>
+      </Footer>
+      <Footer>
+        <Container maxWidth="lg">
+          <p style={{ fontSize: "22px", color: "#808080" }}>
+            Designed by Yakad
+          </p>
+        </Container>
+      </Footer>
+    </Stack>
   );
 }

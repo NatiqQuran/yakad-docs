@@ -21,7 +21,9 @@ export function Getstart() {
           <Button variant="filled">Documents</Button>
         </Link>
         <h2>or</h2>
-        <Button variant="link">Learn More!</Button>
+        <Link href={"#learnmore"}>
+          <Button variant="link">Learn More!</Button>
+        </Link>
       </XgetStart>
     </Xbackground>
   );
@@ -29,7 +31,7 @@ export function Getstart() {
 
 export function Cards() {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" id="learnmore">
       <Row>
         <Card>
           <h1>Yakad UI</h1>
