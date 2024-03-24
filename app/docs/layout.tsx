@@ -7,6 +7,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     },
 
     {
+      name: "Guide",
+      childs: [
+        { name: "installation" },
+        { name: "AppBar" },
+        { name: "AppBar" },
+      ],
+    },
+
+    {
       name: "Yakad UI",
       childs: [
         { name: "AppBar" },

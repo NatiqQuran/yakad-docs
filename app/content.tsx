@@ -6,24 +6,27 @@ import LogoIcon from "./logoicon";
 export function Getstart() {
   return (
     <Xbackground variant="dotted">
-      <XgetStart logo={<LogoIcon />}>
-        <h1 style={{ fontSize: "7rem" }}>Yakad</h1>
-        <p style={{ fontSize: "2rem" }}>
-          <i>
-            Yakad provides you with practical services so that you can design
-            your website more quickly and easily.We make everything easier for
-            you to make your site the best without any problems and with the
-            least amount of time.Only with Yakad.We have provided you with a
-            list of free components for you to use if necessary.
-          </i>
+      {/* <h1 style={{ fontSize: "12rem", textAlign: "center" }}>
+        A <span style={{ color: "#3064f4" }}> fully featured </span> React{" "}
+        <br />
+        components library
+      </h1> */}
+      <XgetStart style={{ fill: "#3064f4" }} logo={<LogoIcon />}>
+        <h1 style={{ fontSize: "8rem", color: "#3064f4" }}>Yakad</h1>
+        <p style={{ fontSize: "2.7rem", textAlign: "justify" }}>
+          <b>Yakad</b> provides you with practical services so that you can
+          design your website more quickly and easily.We make everything easier
+          for you to make your site the best without any problems and with the
+          least amount of time.Only with Yakad.We have provided you with a list
+          of free components for you to use if necessary.
         </p>
         <Link href="./docs">
-          <Button variant="filled">Documents</Button>
+          <Button variant="filled" size="large">
+            Get started
+          </Button>
         </Link>
         <h2>or</h2>
-        <Link href={"#learnmore"}>
-          <Button variant="link">Learn More!</Button>
-        </Link>
+        <Button variant="link">Learn More!</Button>
       </XgetStart>
     </Xbackground>
   );
