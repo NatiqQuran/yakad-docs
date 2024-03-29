@@ -42,22 +42,24 @@ function FooterList(props: FooterListProps) {
 export default function IntroFooter() {
   const links: ListLink[] = [
     { name: "Natiq", href: "https://natiq.net" },
-    { name: "Control Panel", href: "https://panel.natiq.net/" },
-    { name: "Blog", href: "https://blog.natiq.net/" },
+    { name: "Yakad", href: "https://yakad.natiq.net/" },
     { name: "Qamar", href: "https://qamar.natiq.net/" },
+    { name: "Blog", href: "https://blog.natiq.net/" },
+    { name: "Developers", href: "https://developer.natiq.net/" },
+    { name: "Control Panel", href: "https://control.natiq.net/" },
   ];
 
   const pages: ListLink[] = [
     { name: "About", href: "https://blog.natiq.net/about/" },
-    { name: "Sponsor", href: "https://blog.natiq.net/sponsor/" },
-    { name: "Team", href: "https://blog.natiq.net/team/" },
     { name: "vision", href: "https://blog.natiq.net/vision/" },
+    { name: "Team", href: "https://blog.natiq.net/team/" },
+    { name: "Sponsor", href: "https://blog.natiq.net/sponsor/" },
   ];
 
   const social: ListLink[] = [
-    { name: "Github", href: "https://github.com/NatiqQuran/yakad" },
-    { name: "twitter", href: "https://twitter.com/NatiqQuran" },
     { name: "Telegram", href: "https://t.me/NatiqQuran" },
+    { name: "X/twitter", href: "https://twitter.com/NatiqQuran" },
+    { name: "Github", href: "https://github.com/NatiqQuran/yakad" },
   ];
 
   return (
@@ -70,8 +72,7 @@ export default function IntroFooter() {
                 <SvgIcon size={5}>
                   <NatiqLogo />
                 </SvgIcon>
-                <a
-                  href="https://natiq.net"
+                <h2
                   style={{
                     fontSize: "22px",
                     color: "white",
@@ -79,9 +80,9 @@ export default function IntroFooter() {
                   }}
                 >
                   Natiq
-                </a>
+                </h2>
                 <p style={{ fontSize: "22px", margin: "0", color: "#808080" }}>
-                  Natiq Quran dev team
+                  Natiq Developer Team
                 </p>
               </Stack>
             </GridItem>
@@ -100,7 +101,7 @@ export default function IntroFooter() {
       <Footer>
         <Container maxWidth="lg">
           <p style={{ fontSize: "22px", color: "#808080" }}>
-            Designed by Yakad
+            Designed by <a href="https://yakad.natiq.net"> Yakad</a>
           </p>
         </Container>
       </Footer>
