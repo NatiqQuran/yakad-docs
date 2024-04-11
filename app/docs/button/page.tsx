@@ -64,6 +64,9 @@ export default function DocsButton() {
                 <Button variant="filled">FILLED</Button>
                 <Button variant="filledtonal">FILLEDTONAL</Button>
               </Row>
+
+
+              
               <Row
                 style={{
                   justifyContent: "center",
@@ -77,6 +80,47 @@ export default function DocsButton() {
               <Hr />
               <h2>A variety of buttons with different shapes to use</h2>
             </Card>
+
+<h1>FAB size:</h1>
+            <Card
+              style={{
+                maxWidth: "90rem",
+                margin: "auto",
+              }}
+            >
+              <Stack>
+              <Row
+                style={{
+                  justifyContent: "center",
+                }}
+              >
+                <Button variant="fab" size="small">
+                  SMALL
+                </Button>
+                <Button variant="fab" size="medium">
+                  MEDIUM
+                </Button>
+                <Button variant="fab" size="large">
+                  LARGE
+                </Button>
+              </Row>
+              <Row 
+                style={{
+                  justifyContent: "center",
+                }}>
+                <Button variant="fab" size="small" icon={<Symbol icon="add" />}>
+                </Button>
+                <Button variant="fab" size="medium" icon={<Symbol icon="add" />}>
+                </Button>
+                <Button variant="fab" size="large" icon={<Symbol icon="add" />}>
+                </Button>
+
+              </Row>
+              </Stack>
+              <Hr />
+              <h2>All kinds of FAB buttons with different sizes</h2>
+            </Card>
+            
             <h1>Borderstyle:</h1>
 
             <div style={{ borderStyle: "2rem" }}>
