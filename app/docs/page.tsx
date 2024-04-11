@@ -70,6 +70,11 @@ export default function Docs() {
               Button
             </Button>
           </Link>
+          <Link href="./docs/card">
+            <Button variant="filled" size="medium">
+              Card
+            </Button>
+          </Link>
         </Row>
       </Container>
     </div>
