@@ -75,13 +75,12 @@ export default function IntroFooter() {
                 <h2
                   style={{
                     fontSize: "22px",
-                    color: "white",
                     margin: "0",
                   }}
                 >
                   Natiq
                 </h2>
-                <p style={{ fontSize: "22px", margin: "0", color: "#808080" }}>
+                <p style={{ fontSize: "22px", margin: "0", color: "#7d7d7d" }}>
                   Natiq Developer Team
                 </p>
               </Stack>

@@ -48,7 +48,6 @@ export default function DocsButton() {
               </Row>
               <Hr />
               <h2>All kinds of buttons with different sizes</h2>
-              <h2>Code type : TS</h2>
             </Card>
             <h1>Variant:</h1>
             <Card
@@ -77,7 +76,6 @@ export default function DocsButton() {
               </Row>
               <Hr />
               <h2>A variety of buttons with different shapes to use</h2>
-              <h2>Code type : TS</h2>
             </Card>
             <h1>Borderstyle:</h1>
 
@@ -105,7 +103,6 @@ export default function DocsButton() {
                 </Row>
                 <Hr />
                 <h2>A variety of buttons with different shapes to use </h2>
-                <h2>Code type : TS</h2>
               </Card>
             </div>
             <h1>icon:</h1>
@@ -134,7 +131,6 @@ export default function DocsButton() {
               </Row>
               <Hr />
               <h2>All kinds of buttons with different sizes</h2>
-              <h2>Code type : TS</h2>
             </Card>
             <ButtonLoading />
           </Stack>
@@ -237,7 +233,6 @@ function ButtonLoading() {
         </Row>
         <Hr />
         <h2>All kinds of buttons with different sizes</h2>
-        <h2>Code type : TS</h2>
       </Card>
       <h1>Loading Variant:</h1>
 
@@ -273,7 +268,6 @@ function ButtonLoading() {
         </Row>
         <Hr />
         <h2>All kinds of buttons with different sizes</h2>
-        <h2>Code type : TS</h2>
       </Card>
     </div>
   );
