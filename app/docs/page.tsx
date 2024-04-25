@@ -9,6 +9,7 @@ import {
   Row,
   Spacer,
   Stack,
+  Hr,
 } from "@yakad/ui";
 import Link from "next/link";
 
@@ -24,6 +25,7 @@ export default function Docs() {
               Byt with the MIT licens, we also provided the open source
               community.
             </p>
+            <Hr />
             <h1>Yakad UI</h1>
             <h2>Description...</h2>
             <Card
@@ -31,7 +33,7 @@ export default function Docs() {
             >
               <Row>
                 〉 npm i @yakad/ui <Spacer />
-                <h5>copy</h5>
+                <Button>copy</Button>
               </Row>
             </Card>
             <h1>Yakad X</h1>
@@ -42,7 +44,7 @@ export default function Docs() {
             >
               <Row>
                 〉 npm i @yakad/x <Spacer />
-                <h5>copy</h5>
+                <Button>copy</Button>
               </Row>
             </Card>
 
@@ -54,7 +56,7 @@ export default function Docs() {
             >
               <Row>
                 〉 npm i @yakad/symbols <Spacer />
-                <h5>copy</h5>
+                <Button>copy</Button>
               </Row>
             </Card>
           </Stack>

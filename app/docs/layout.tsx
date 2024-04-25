@@ -1,24 +1,20 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import { Xpanel } from "@yakad/x";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
+  const router = useRouter();
+
   const menuItems = [
     {
       name: "Overview",
+      onclick: () => router.push("/docs"),
     },
-
-    {
-      name: "Guide",
-      childs: [
-        { name: "installation" },
-        { name: "AppBar" },
-        { name: "AppBar" },
-      ],
-    },
-
     {
       name: "Yakad UI",
       childs: [
-        { name: "AppBar" },
+        { name: "AppBar", onclick: () => router.push("/docs/appbar") },
         { name: "Button" },
         { name: "Card" },
         { name: "ClickAwayListener" },
