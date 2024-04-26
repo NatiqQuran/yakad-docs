@@ -65,8 +65,6 @@ export default function DocsButton() {
                 <Button variant="filledtonal">FILLEDTONAL</Button>
               </Row>
 
-
-              
               <Row
                 style={{
                   justifyContent: "center",
@@ -81,7 +79,7 @@ export default function DocsButton() {
               <h2>A variety of buttons with different shapes to use</h2>
             </Card>
 
-<h1>FAB size:</h1>
+            <h1>FAB size:</h1>
             <Card
               style={{
                 maxWidth: "90rem",
@@ -89,38 +87,35 @@ export default function DocsButton() {
               }}
             >
               <Stack>
-              <Row
-                style={{
-                  justifyContent: "center",
-                }}
-              >
-                <Button variant="fab" size="small">
-                  SMALL
-                </Button>
-                <Button variant="fab" size="medium">
-                  MEDIUM
-                </Button>
-                <Button variant="fab" size="large">
-                  LARGE
-                </Button>
-              </Row>
-              <Row 
-                style={{
-                  justifyContent: "center",
-                }}>
-                <Button variant="fab" size="small" icon={<Symbol icon="add" />}>
-                </Button>
-                <Button variant="fab" size="medium" icon={<Symbol icon="add" />}>
-                </Button>
-                <Button variant="fab" size="large" icon={<Symbol icon="add" />}>
-                </Button>
-
-              </Row>
+                <Row
+                  style={{
+                    justifyContent: "center",
+                  }}
+                >
+                  <Button variant="fab" size="small">
+                    SMALL
+                  </Button>
+                  <Button variant="fab" size="medium">
+                    MEDIUM
+                  </Button>
+                  <Button variant="fab" size="large">
+                    LARGE
+                  </Button>
+                </Row>
+                <Row
+                  style={{
+                    justifyContent: "center",
+                  }}
+                >
+                  <Button variant="fab" size="small" icon="add"></Button>
+                  <Button variant="fab" size="medium" icon="add"></Button>
+                  <Button variant="fab" size="large" icon="add"></Button>
+                </Row>
               </Stack>
               <Hr />
               <h2>All kinds of FAB buttons with different sizes</h2>
             </Card>
-            
+
             <h1>Borderstyle:</h1>
 
             <div style={{ borderStyle: "2rem" }}>
@@ -158,20 +153,13 @@ export default function DocsButton() {
                   justifyContent: "center",
                 }}
               >
-                <Button variant="outlined" icon={<Symbol icon="search" />}>
+                <Button variant="outlined" icon="search">
                   Search
                 </Button>
-                <Button
-                  iconPosition="end"
-                  variant="outlined"
-                  icon={<Symbol icon="search" />}
-                >
+                <Button iconPosition="end" variant="outlined" icon="search">
                   Search
                 </Button>
-                <Button
-                  variant="outlined"
-                  icon={<Symbol icon="search" />}
-                ></Button>
+                <Button variant="outlined" icon="search"></Button>
               </Row>
               <Hr />
               <h2>All kinds of buttons with different sizes</h2>
@@ -192,7 +180,7 @@ function ButtonLoading() {
         <Row style={{ justifyContent: "center" }}>
           <Button
             variant="outlined"
-            icon={<Symbol icon="search" />}
+            icon="search"
             loadingPosition="auto"
             loadingVariant="dots"
             disabled
@@ -201,7 +189,7 @@ function ButtonLoading() {
           </Button>
           <Button
             variant="outlined"
-            icon={<Symbol icon="search" />}
+            icon="search"
             loadingPosition="auto"
             loadingVariant="dots"
             iconPosition="end"
@@ -211,7 +199,7 @@ function ButtonLoading() {
           </Button>
           <Button
             variant="outlined"
-            icon={<Symbol icon="search" />}
+            icon="search"
             loadingPosition="auto"
             loadingVariant="dots"
             iconPosition="end"
@@ -221,7 +209,7 @@ function ButtonLoading() {
         <Row style={{ justifyContent: "center", padding: "20px" }}>
           <Button
             variant="outlined"
-            icon={<Symbol icon="search" />}
+            icon="search"
             loadingPosition="auto"
             loadingVariant="scaleOut"
             disabled
@@ -230,7 +218,7 @@ function ButtonLoading() {
           </Button>
           <Button
             variant="outlined"
-            icon={<Symbol icon="search" />}
+            icon="search"
             loadingPosition="auto"
             loadingVariant="scaleOut"
             iconPosition="end"
@@ -240,7 +228,7 @@ function ButtonLoading() {
           </Button>
           <Button
             variant="outlined"
-            icon={<Symbol icon="search" />}
+            icon="search"
             loadingPosition="auto"
             loadingVariant="scaleOut"
             disabled
@@ -250,7 +238,7 @@ function ButtonLoading() {
         <Row style={{ justifyContent: "center" }}>
           <Button
             variant="outlined"
-            icon={<Symbol icon="search" />}
+            icon="search"
             loadingPosition="auto"
             loadingVariant="spinner"
             disabled
@@ -259,7 +247,7 @@ function ButtonLoading() {
           </Button>{" "}
           <Button
             variant="outlined"
-            icon={<Symbol icon="search" />}
+            icon="search"
             loadingPosition="auto"
             loadingVariant="spinner"
             iconPosition="end"
@@ -269,7 +257,7 @@ function ButtonLoading() {
           </Button>{" "}
           <Button
             variant="outlined"
-            icon={<Symbol icon="search" />}
+            icon="search"
             loadingPosition="auto"
             loadingVariant="spinner"
             disabled
@@ -284,7 +272,7 @@ function ButtonLoading() {
         <Row style={{ justifyContent: "center" }}>
           <Button
             variant="outlined"
-            icon={<Symbol icon="search" />}
+            icon="search"
             loadingVariant="dots"
             loadingPosition="center"
             disabled
@@ -293,7 +281,7 @@ function ButtonLoading() {
           </Button>
           <Button
             variant="outlined"
-            icon={<Symbol icon="search" />}
+            icon="search"
             loadingVariant="scaleOut"
             loadingPosition="center"
             disabled
@@ -302,7 +290,7 @@ function ButtonLoading() {
           </Button>
           <Button
             variant="outlined"
-            icon={<Symbol icon="search" />}
+            icon="search"
             loadingVariant="spinner"
             loadingPosition="center"
             disabled
