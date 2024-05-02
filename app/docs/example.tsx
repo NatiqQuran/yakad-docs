@@ -33,8 +33,8 @@ export default function ExampleProjects() {
         doloribus dolorum ea suscipit doloremque!
       </p>
       <GridContainer columnGap={3} rowGap={3}>
-        {examples.map((item, _index) => (
-          <GridItem xl={6}>
+        {examples.map((item, index) => (
+          <GridItem xl={6} key={index}>
             <Card style={{ padding: 0 }}>
               <Image
                 alt="Example 1"
