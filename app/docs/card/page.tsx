@@ -1,19 +1,7 @@
-import {
-  AppBar,
-  Button,
-  Card,
-  Container,
-  Footer,
-  Hr,
-  Main,
-  Page,
-  Row,
-  Spacer,
-  Stack,
-} from "@yakad/ui";
+import { Card, Container, Row, Stack } from "@yakad/ui";
 import Image from "next/image";
-import imagepctm from "./jpg/pctm.jpg";
-import imagepctm2 from "./jpg/pct2.jpg";
+import imagepctm1 from "./jpg/pctm1.jpg";
+import imagepctm2 from "./jpg/pctm2.jpg";
 
 export default function DocsCard() {
   return (
@@ -45,7 +33,7 @@ export default function DocsCard() {
         <Card style={{ padding: "2rem", width: "50rem" }}>
           <Row>
             <Image
-              src={imagepctm}
+              src={imagepctm1}
               alt="pic"
               width="45"
               height="45"
@@ -84,7 +72,7 @@ export default function DocsCard() {
         <Card style={{ padding: "2rem", width: "50rem" }}>
           <Row>
             <Image
-              src={imagepctm}
+              src={imagepctm1}
               alt="pic"
               width="45"
               height="45"
