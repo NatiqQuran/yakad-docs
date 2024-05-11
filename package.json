@@ -12,8 +12,8 @@
     "next": "14.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "@yakad/ui": "1.2.104-beta",
-    "@yakad/x": "1.0.46-beta"
+    "@yakad/ui": "1.2.118-beta",
+    "@yakad/x": "1.0.56-beta"
   },
   "devDependencies": {
     "@types/node": "20.8.9",

@@ -30,7 +30,7 @@ export default function ExampleProjects() {
     <Container maxWidth="md">
       <h1 style={{ fontSize: "3rem" }}>Example Projects</h1>
       <p style={{ fontSize: "20px" }}>
-        doloribus dolorum ea suscipit doloremque!
+        Dignissimos impedit excepturi adipisci eaque.
       </p>
       <GridContainer columnGap={3} rowGap={3}>
         {examples.map((item, index) => (
