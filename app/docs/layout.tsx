@@ -18,6 +18,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         { name: "Button", onclick: () => router.push("/docs/button") },
         { name: "Card", onclick: () => router.push("/docs/card") },
         { name: "Form", onclick: () => router.push("/docs/form") },
+        { name: "Codefield", onclick: () => router.push("/docs/codefield") },
         { name: "inputfield", onclick: () => router.push("/docs/inputfield") },
         { name: "Container", onclick: () => router.push("/docs/container") },
         { name: "Footer" },

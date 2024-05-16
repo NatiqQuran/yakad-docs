@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Theme>{children}</Theme>
+        <Theme mode="system">{children}</Theme>
       </body>
     </html>
   );

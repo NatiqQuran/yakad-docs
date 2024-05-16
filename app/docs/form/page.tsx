@@ -23,84 +23,77 @@ export default function DocsForm() {
     <Container maxWidth="md">
       <h1 style={{ fontSize: "3rem" }}>Form</h1>
       <Stack>
-        <h1>Login form</h1>
-        <Card style={{ maxWidth: "50rem", alignItems: "center" }}>
+        <h1>Example 1 : Login form</h1>
+        <Card style={{ maxWidth: "45rem" }}>
           <Row style={{ justifyContent: "center" }}>
             <Button icon="login" />
             <h1>Log In</h1>
           </Row>
           <Hr />
           <Form style={{ maxWidth: "30rem", margin: "auto" }}>
-            <InputField placeholder="Email" type="Email" />
+            <InputField placeholder="Username" type="Name" />
             <InputField placeholder="Password" type="Password" />
-            <Row style={{ justifyContent: "center" }}>
-              <Button variant="filled">Log in</Button>
-            </Row>
-            <Hr variant="shortLine" />
-            <Row style={{ justifyContent: "center" }}>
-              <Button variant="text">cancel</Button>
-            </Row>
+            <Chekbox label="Remember Me" />
+            <Button variant="filled">Submit</Button>
           </Form>
+          <Hr variant="shortLine" />
+          <Button variant="outlined">Register</Button>
+          <Button variant="text">cancel</Button>
         </Card>
-        <h1>Verify</h1>
+        <h1>Example 2 : Verify</h1>
         <Card
           style={{
-            maxWidth: "30rem",
+            maxWidth: "40rem",
             margin: "auto",
           }}
         >
+          <Row style={{ justifyContent: "center" }}>
+            <Button icon="verified_user" />
+            <h1>Verify</h1>
+          </Row>
+          <Hr />
           <Form
             style={{
               maxWidth: "30rem",
               margin: "auto",
               justifyContent: "center",
+              textAlign: "center",
             }}
           >
+            <h1>Enter Your Verify Code</h1>
             <CodeField length={6} />
           </Form>
+          <Button variant="filled">Submit</Button>
+          <Hr />
+          <Button>Cancel</Button>
           <br />
-          <Button variant="filled">SUBMIT</Button>
         </Card>
-        <h1>User Info</h1>
-        <Card style={{ maxWidth: "50rem", alignItems: "center" }}>
+        <h1>Example 3 : Register</h1>
+        <Card style={{ maxWidth: "45rem", alignItems: "center" }}>
           <Row style={{ justifyContent: "center" }}>
             <Button icon="account_circle" />
-            <h1>User Info</h1>
+            <h1>Register</h1>
           </Row>
           <Hr />
           <Form style={{ maxWidth: "30rem", margin: "auto" }}>
-            <InputField variant="outlined" placeholder="Name" />
+            <InputField variant="filled" placeholder="Name" />
+            <InputField variant="filled" placeholder="Username" />
             <InputField
               variant="filled"
-              placeholder="Password"
+              placeholder="password"
               type="password"
             />
-          </Form>
-          <br />
-          <Row>
-            <Button>Cancel</Button>
-            <Button variant="filled">Edit</Button>
-          </Row>
-        </Card>
-        <h1>HeckBox</h1>
-        <Card style={{ maxWidth: "50rem" }}>
-          <h1>i'm not roobot</h1>
-          <Form>
-            <Chekbox label="test" />
-          </Form>
-        </Card>
-        <h1>InputFields</h1>
-        <Card style={{ maxWidth: "90rem", alignItems: "center" }}>
-          <Row style={{ justifyContent: "center" }}></Row>
-          <Form>
-            <h2>Type Email</h2>
-            <InputField placeholder="email@example.com" type="Email" />
-            <h2>Type Password</h2>
-            <InputField placeholder="••••••••" type="password" />
-            <h2>Varient Filled</h2>
-            <InputField variant="filled" placeholder="InputField filled" />
-            <h2>Varient Outlined</h2>
-            <InputField variant="outlined" placeholder="InputField Outlined" />
+            <InputField
+              variant="filled"
+              placeholder="verify password"
+              type="password"
+            />
+            <br />
+            <Row style={{ width: "100%" }}>
+              <Spacer />
+              <Button>Cancel</Button>
+              <Button variant="filled">Submit</Button>
+            </Row>
           </Form>
         </Card>
       </Stack>
