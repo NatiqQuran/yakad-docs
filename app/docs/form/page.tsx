@@ -70,7 +70,11 @@ export default function DocsForm() {
           <Hr />
           <Form style={{ maxWidth: "30rem", margin: "auto" }}>
             <InputField variant="outlined" placeholder="Name" />
-            <InputField variant="filled" placeholder="Password" />
+            <InputField
+              variant="filled"
+              placeholder="Password"
+              type="password"
+            />
           </Form>
           <br />
           <Row>
