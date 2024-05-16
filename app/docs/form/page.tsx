@@ -88,17 +88,12 @@ export default function DocsForm() {
               placeholder="verify password"
               type="password"
             />
-          </Form>
-          <br />
-          <Row style={{ justifyContent: "center" }}>
-            <Button>Cancel</Button>
-            <Button variant="filled">Submit</Button>
-          </Row>
-        </Card>
-        <h1>Example 4 : CheckBox</h1>
-        <Card style={{ maxWidth: "30rem" }}>
-          <Form>
-            <Chekbox label="i'm not robot" />
+            <br />
+            <Row style={{ width: "100%" }}>
+              <Spacer />
+              <Button>Cancel</Button>
+              <Button variant="filled">Submit</Button>
+            </Row>
           </Form>
         </Card>
       </Stack>
