@@ -17,7 +17,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         { name: "AppBar", onclick: () => router.push("/docs/appbar") },
         { name: "Button", onclick: () => router.push("/docs/button") },
         { name: "Card", onclick: () => router.push("/docs/card") },
-        { name: "Form", onclick: () => router.push("/docs/form") },
         { name: "Codefield", onclick: () => router.push("/docs/codefield") },
         { name: "Inputfield", onclick: () => router.push("/docs/inputfield") },
         { name: "Container", onclick: () => router.push("/docs/container") },
