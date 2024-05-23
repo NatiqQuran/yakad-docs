@@ -63,37 +63,37 @@ export default function IntroFooter() {
   ];
 
   return (
-    <Stack style={{ gap: "0" }}>
-      <Footer style={{ padding: "8rem 0 5rem " }}>
-        <Container maxWidth="lg">
-          <GridContainer>
-            <GridItem xl={6}>
-              <Stack>
-                <SvgIcon size={5}>
-                  <NatiqLogo />
-                </SvgIcon>
-               <p style={{fontSize:"20px",color:"#7d7d7d"}}>Natiq is a system with components, parts, features, and... ! we recommend people who want to quickly and beautifully design their site and create a very organized site to use our site.</p>
-              </Stack>
-            </GridItem>
-            <GridItem xl={2}>
-              <FooterList name="Links" list={links} />
-            </GridItem>
-            <GridItem xl={2}>
-              <FooterList name="Pages" list={pages} />
-            </GridItem>
-            <GridItem xl={2}>
-              <FooterList name="Social" list={social} />
-            </GridItem>
-          </GridContainer>
-        </Container>
-      </Footer>
-      <Footer>
-        <Container maxWidth="lg">
-          <p style={{ fontSize: "22px", color: "#808080" }}>
-            Designed by <a href="https://yakad.natiq.net"> Yakad</a>
-          </p>
-        </Container>
-      </Footer>
-    </Stack>
+    <Footer style={{ flexDirection: "column" }}>
+      <Container maxWidth="lg" style={{ padding: "8rem 0 5rem " }}>
+        <GridContainer>
+          <GridItem xl={6}>
+            <Stack>
+              <SvgIcon size={5}>
+                <NatiqLogo />
+              </SvgIcon>
+              <p style={{ fontSize: "20px", color: "#7d7d7d" }}>
+                Natiq is a system with components, parts, features, and... ! we
+                recommend people who want to quickly and beautifully design
+                their site and create a very organized site to use our site.
+              </p>
+            </Stack>
+          </GridItem>
+          <GridItem xl={2}>
+            <FooterList name="Links" list={links} />
+          </GridItem>
+          <GridItem xl={2}>
+            <FooterList name="Pages" list={pages} />
+          </GridItem>
+          <GridItem xl={2}>
+            <FooterList name="Social" list={social} />
+          </GridItem>
+        </GridContainer>
+      </Container>
+      <Container maxWidth="lg">
+        <p style={{ fontSize: "22px", color: "#808080" }}>
+          Designed by <a href="https://yakad.natiq.net"> Yakad</a>
+        </p>
+      </Container>
+    </Footer>
   );
 }

@@ -8,7 +8,7 @@ export default function Installation() {
         • You can install Yakad packages using NPM
       </p>
       <h1>Yakad UI</h1>{" "}
-      <Card style={{ fontSize: "20px", maxWidth: "50rem", padding: "15px" }}>
+      <Card style={{ fontSize: "20px", maxWidth: "40rem", padding: "15px" }}>
         <Row>
           〉 npm i @yakad/ui <Spacer />
           <Button>copy</Button>
@@ -16,7 +16,7 @@ export default function Installation() {
       </Card>
       <p style={{ fontSize: "2rem" }}>Compatibil with Next.Js/React</p>
       <h1>Yakad X</h1>
-      <Card style={{ fontSize: "20px", maxWidth: "50rem", padding: "15px" }}>
+      <Card style={{ fontSize: "20px", maxWidth: "40rem", padding: "15px" }}>
         <Row>
           〉 npm i @yakad/x <Spacer />
           <Button>copy</Button>
@@ -24,7 +24,7 @@ export default function Installation() {
       </Card>
       <p style={{ fontSize: "2rem" }}>Compatibil with Next.Js/React</p>
       <h1>Yakad symbols</h1>
-      <Card style={{ fontSize: "20px", maxWidth: "50rem", padding: "15px" }}>
+      <Card style={{ fontSize: "20px", maxWidth: "40rem", padding: "15px" }}>
         <Row>
           〉 npm i @yakad/symbols <Spacer />
           <Button>copy</Button>
@@ -32,7 +32,7 @@ export default function Installation() {
       </Card>
       <p style={{ fontSize: "2rem" }}>Compatibil with Next.Js/React</p>
       <h1>Yakad lib</h1>
-      <Card style={{ fontSize: "20px", maxWidth: "50rem", padding: "15px" }}>
+      <Card style={{ fontSize: "20px", maxWidth: "40rem", padding: "15px" }}>
         <Row>
           〉 npm i @yakad/lib <Spacer />
           <Button>copy</Button>

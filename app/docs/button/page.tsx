@@ -268,8 +268,8 @@ function ButtonLoading() {
       </Card>
       <h1>Loading Variant:</h1>
 
-      <Card style={{ maxWidth: "90rem", margin: "auto", padding: "50px" }}>
-        <Row style={{ justifyContent: "center" }}>
+      <Card style={{ maxWidth: "90rem", padding: "50px" }} align="center">
+        <Row align="center">
           <Button
             variant="outlined"
             icon="search"
