@@ -113,7 +113,7 @@ export default function DocsInputField() {
 
         <h1>disabled:</h1>
         <span style={{ fontSize: "20px" }}>
-          You can't write any text in this type of inputs.
+          You can&apos;t write any text in this type of inputs.
         </span>
 
         <Card>
