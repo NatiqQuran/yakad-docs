@@ -2,25 +2,26 @@ import {
   Button,
   Card,
   Container,
-  Form,
   GridContainer,
   GridItem,
   InputField,
   Row,
   Spacer,
   Stack,
+  Hr,
+  Chekbox,
 } from "@yakad/ui";
+import Symbol from "@yakad/symbols";
 
 export default function DocsInputField() {
   return (
-    <Container maxWidth="lg">
-      <Stack>
+    <>
+      <Container maxWidth="md">
         <h1 style={{ fontSize: "3rem" }}>Input Field</h1>
         <p style={{ fontSize: "2.5rem" }}>
           Input fields help you to request details from people in a specific
           way.
         </p>
-        <Row></Row>
         <h1 style={{ fontSize: "2.5rem" }}>variant:</h1>
         <span style={{ fontSize: "2rem" }}>
           Variant is one of the features of the input that changes the
@@ -113,7 +114,7 @@ export default function DocsInputField() {
 
         <h1>disabled:</h1>
         <span style={{ fontSize: "20px" }}>
-          You can't write any text in this type of inputs.
+          You can&apos;t write any text in this type of inputs.
         </span>
 
         <Card>
@@ -143,7 +144,60 @@ export default function DocsInputField() {
             </GridItem>
           </GridContainer>
         </Card>
-      </Stack>
-    </Container>
+      </Container>
+      <Container maxWidth="md">
+        <h1 style={{ fontSize: "3rem" }}>Exampels</h1>
+        <h1>Example 1 : Login form</h1>
+        <Card style={{ maxWidth: "45rem" }} align="center">
+          <Row align="center">
+            <Symbol icon="login" />
+            <h1>Log In</h1>
+          </Row>
+          <Hr />
+          <form style={{ alignContent: "center", margin: "auto" }}>
+            <Stack align="center">
+              <InputField placeholder="Username" type="Name" />
+              <InputField placeholder="Password" type="Password" />
+              <Chekbox label="Remember Me" />
+              <Button variant="filled">Submit</Button>
+            </Stack>
+          </form>
+          <Hr variant="shortLine" />
+          <Button variant="outlined">Register</Button>
+          <Button variant="text">cancel</Button>
+        </Card>
+
+        <h1>Example 2 : Register</h1>
+        <Card style={{ maxWidth: "45rem", alignItems: "center" }}>
+          <Row align="center">
+            <Symbol icon="account_circle" />
+            <h1>Register</h1>
+          </Row>
+          <Hr />
+          <form>
+            <Stack style={{ maxWidth: "30rem", margin: "auto" }}>
+              <InputField variant="filled" placeholder="Name" />
+              <InputField variant="filled" placeholder="Username" />
+              <InputField
+                variant="filled"
+                placeholder="password"
+                type="password"
+              />
+              <InputField
+                variant="filled"
+                placeholder="verify password"
+                type="password"
+              />
+              <br />
+              <Row style={{ width: "100%" }}>
+                <Spacer />
+                <Button>Cancel</Button>
+                <Button variant="filled">Submit</Button>
+              </Row>
+            </Stack>
+          </form>
+        </Card>
+      </Container>
+    </>
   );
 }
