@@ -154,8 +154,8 @@ export default function DocsInputField() {
             <h1>Log In</h1>
           </Row>
           <Hr />
-          <form style={{ alignContent: "center", margin: "auto" }}>
-            <Stack align="center">
+          <form>
+            <Stack style={{ maxWidth: "30rem", margin: "auto" }} align="center">
               <InputField placeholder="Username" type="Name" />
               <InputField placeholder="Password" type="Password" />
               <Chekbox label="Remember Me" />
@@ -189,8 +189,7 @@ export default function DocsInputField() {
                 type="password"
               />
               <br />
-              <Row style={{ width: "100%" }}>
-                <Spacer />
+              <Row align="end">
                 <Button>Cancel</Button>
                 <Button variant="filled">Submit</Button>
               </Row>
