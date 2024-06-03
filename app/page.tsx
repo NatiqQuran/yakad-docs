@@ -19,7 +19,7 @@ export default function Home() {
 
 function IntroHeader() {
   return (
-    <AppBar style={{ padding: "3rem" }}>
+    <AppBar>
       <SvgIcon size={5}>
         <LogoIcon />
       </SvgIcon>

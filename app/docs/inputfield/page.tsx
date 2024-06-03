@@ -23,7 +23,7 @@ export default function DocsInputField() {
           way.
         </p>
         <h1 style={{ fontSize: "2.5rem" }}>variant:</h1>
-        <span style={{ fontSize: "2rem" }}>
+        <span style={{ fontSize: "2rem", marginBottom: "2rem" }}>
           Variant is one of the features of the input that changes the
           appearance of the input.
         </span>
@@ -168,7 +168,7 @@ export default function DocsInputField() {
         </Card>
 
         <h1>Example 2 : Register</h1>
-        <Card style={{ maxWidth: "45rem", alignItems: "center" }}>
+        <Card align="center" style={{ maxWidth: "45rem" }}>
           <Row align="center">
             <Symbol icon="account_circle" />
             <h1>Register</h1>

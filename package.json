@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@yakad/symbols": "^1.0.4",
-    "@yakad/ui": "1.2.134-beta",
+    "@yakad/ui": "^1.2.138-beta",
     "@yakad/x": "1.0.56-beta",
     "next": "14.2.2",
     "react": "18.2.0",
