@@ -17,10 +17,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         { name: "AppBar", onclick: () => router.push("/docs/appbar") },
         { name: "Button", onclick: () => router.push("/docs/button") },
         { name: "Card", onclick: () => router.push("/docs/card") },
-        { name: "Codefield", onclick: () => router.push("/docs/codefield") },
-        { name: "Inputfield", onclick: () => router.push("/docs/inputfield") },
+        { name: "InputField", onclick: () => router.push("/docs/inputfield") },
+        { name: "CodeField", onclick: () => router.push("/docs/codefield") },
         { name: "Container", onclick: () => router.push("/docs/container") },
-        { name: "Footer" },
+
+        {
+          name: "clickAwayListiner",
+          onclick: () => router.push("/docs/clickawaylistiner"),
+        },
+        { name: "Footer", onclick: () => router.push("/docs/footer") },
       ],
     },
 
