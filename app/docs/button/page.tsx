@@ -12,6 +12,9 @@ import {
   Card,
   SvgIcon,
   Loading,
+  RadioGroup,
+  RadioButton,
+  Chekbox,
 } from "@yakad/ui";
 import Symbol from "@yakad/symbols";
 import Link from "next/link";
@@ -300,6 +303,24 @@ function ButtonLoading() {
         </Row>
         <Hr />
         <h2>All kinds of buttons with different sizes</h2>
+      </Card>
+      <Card>
+        <Row>
+          <RadioGroup name="jafar">
+            <RadioButton value="boxen" label="sss" />
+            <RadioButton value="Erfan" checked />
+            <RadioButton value="Martis" disabled />
+          </RadioGroup>
+        </Row>
+      </Card>
+      <Card>
+        <Row>
+          <Chekbox />
+          <Chekbox />
+          <Chekbox />
+          <Chekbox />
+          <Button icon="5k" />
+        </Row>
       </Card>
     </div>
   );
