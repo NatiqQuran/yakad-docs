@@ -1,4 +1,11 @@
-import { Card, Container, RadioButton, RadioGroup, Row } from "@yakad/ui";
+import {
+  Card,
+  Chekbox,
+  Container,
+  RadioButton,
+  RadioGroup,
+  Row,
+} from "@yakad/ui";
 
 export default function DocsRadio() {
   return (
@@ -52,14 +59,8 @@ export default function DocsRadio() {
       </p>
       <Card>
         <RadioGroup name="D" defaultValue="bir">
-          <RadioButton value="bir" />
-          <span style={{ fontSize: "20px" }}>onabled</span>
-          <RadioButton value="iki" />
-          <span style={{ fontSize: "20px" }}>onabled</span>
-          <RadioButton disabled />
-          <span style={{ fontSize: "20px" }}>disabled</span>
-          <RadioButton disabled />
-          <span style={{ fontSize: "20px" }}>disabled</span>
+          <RadioButton value="bir" label="onable" />
+          <RadioButton disabled label="disable" />
         </RadioGroup>
       </Card>
     </Container>

@@ -20,6 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         { name: "InputField", onclick: () => router.push("/docs/inputfield") },
         { name: "CodeField", onclick: () => router.push("/docs/codefield") },
         { name: "Container", onclick: () => router.push("/docs/container") },
+        { name: "Radio", onclick: () => router.push("/docs/Radio") },
 
         {
           name: "clickAwayListiner",

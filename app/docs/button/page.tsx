@@ -304,24 +304,6 @@ function ButtonLoading() {
         <Hr />
         <h2>All kinds of buttons with different sizes</h2>
       </Card>
-      <Card>
-        <Row>
-          <RadioGroup name="jafar">
-            <RadioButton value="boxen" label="sss" />
-            <RadioButton value="Erfan" checked />
-            <RadioButton value="Martis" disabled />
-          </RadioGroup>
-        </Row>
-      </Card>
-      <Card>
-        <Row>
-          <Chekbox />
-          <Chekbox />
-          <Chekbox />
-          <Chekbox />
-          <Button icon="5k" />
-        </Row>
-      </Card>
     </div>
   );
 }
