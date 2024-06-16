@@ -168,8 +168,8 @@ export default function DocsInputField() {
         </Card>
 
         <h1>Example 2 : Register</h1>
-        <Card align="center" style={{ maxWidth: "45rem" }}>
-          <Row align="center">
+        <Card style={{ maxWidth: "45rem" }}>
+          <Row align="end">
             <Symbol icon="account_circle" />
             <h1>Register</h1>
           </Row>

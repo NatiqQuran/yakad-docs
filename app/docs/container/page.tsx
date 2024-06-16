@@ -15,7 +15,7 @@ import {
 
 export default function DocsContainer() {
   return (
-    <div>
+    <Container>
       <Container maxWidth="lg">
         <h1 style={{ fontSize: "3rem" }}>Container</h1>
         <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
@@ -48,6 +48,6 @@ export default function DocsContainer() {
       <Container maxWidth="xs" style={{ backgroundColor: "gray" }}>
         <h1>Extera Small</h1>
       </Container>
-    </div>
+    </Container>
   );
 }
