@@ -44,7 +44,7 @@ export default function DocsContainer() {
       <Container maxWidth="sm" style={{ backgroundColor: "darkgray" }}>
         <h1>Small</h1>
       </Container>
-      <br /> <h1>Example 6 </h1>
+      <br /> <h1>Example 6 : </h1>
       <Container maxWidth="xs" style={{ backgroundColor: "darkgray" }}>
         <h1>Extera Small</h1>
       </Container>

@@ -42,14 +42,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         { name: "Xtable" },
       ],
     },
-    {
-      name: "Yakad Symbols",
-      childs: [
-        { name: "Users" },
-        { name: "Organizations" },
-        { name: "Permissions" },
-      ],
-    },
+    { name: "Yakad Symbol", onclick: () => router.push("/docs/symbol") },
     {
       name: "Yakad Lib",
       childs: [
