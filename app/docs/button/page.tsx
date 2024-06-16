@@ -27,7 +27,7 @@ export default function DocsButton() {
       <Main>
         <Container maxWidth="md">
           <h1>Size:</h1>
-          <Stack>
+          <Stack align="center">
             <Card
               style={{
                 maxWidth: "90rem",

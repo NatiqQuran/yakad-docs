@@ -1,10 +1,13 @@
 import {
+  Button,
   Card,
   Chekbox,
   Container,
+  Hr,
   RadioButton,
   RadioGroup,
   Row,
+  Spacer,
 } from "@yakad/ui";
 
 export default function DocsRadio() {
@@ -29,14 +32,11 @@ export default function DocsRadio() {
         is equal to any radio button value, that radio button will be checked.
       </p>
       <Card>
-        <span style={{ fontSize: "15px" }}>Default Value =&gt;one</span>
+        <h1 style={{ fontSize: "20px" }}>Default Value =&gt;one</h1>
         <RadioGroup name="B" defaultValue="one">
-          <RadioButton value="zero" />
-          <span style={{ fontSize: "15px" }}>Value =&gt;zero</span>
-          <RadioButton value="one" />
-          <span style={{ fontSize: "15px" }}>Value =&gt;one</span>
-          <RadioButton value="two" />
-          <span style={{ fontSize: "15px" }}>Value =&gt;two</span>
+          <RadioButton value="zero" label="value = Zero" />
+          <RadioButton value="one" label="value = One" />
+          <RadioButton value="two" label="value = two" />
         </RadioGroup>
       </Card>
       <h1>Label:</h1>
@@ -57,11 +57,48 @@ export default function DocsRadio() {
         This feature makes us unable to click on the radio button and it is not
         checked.
       </p>
-      <Card>
+      <Card style={{ marginBottom: "3rem" }}>
         <RadioGroup name="D" defaultValue="bir">
           <RadioButton value="bir" label="onable" />
           <RadioButton disabled label="disable" />
         </RadioGroup>
+      </Card>
+
+      <h1>Example 1:</h1>
+      <Card style={{ maxWidth: "60rem" }}>
+        <h1>Choose the color you want!</h1>
+        <Hr />
+        <RadioGroup name="Example" defaultValue="">
+          <RadioButton value="num1" label="Blue" />
+          <RadioButton value="num2" label="Red" />
+          <RadioButton value="num3" label="Yellow" />
+        </RadioGroup>
+        <Row align="end" style={{ marginTop: "20px" }}>
+          <Button variant="outlined">CLOSE</Button>
+          <Button variant="filled">ENTER</Button>
+        </Row>
+      </Card>
+
+      <h1>Example 2:</h1>
+
+      <Card style={{ maxWidth: "60rem" }}>
+        <h1>How do you think our site is?</h1>
+        <Hr />
+        <RadioGroup name="Example" defaultValue="">
+          <RadioButton value="n1" label="Excellent" />
+          <RadioButton value="n2" label="Good" />
+          <RadioButton value="n3" label="Not Bad" />
+          <RadioButton value="n4" label="Bad" />
+        </RadioGroup>
+        <Row align="center">
+          <Button variant="filled">Comment</Button>
+        </Row>
+        <Hr />
+        <Row align="center" style={{ marginTop: "2rem" }}>
+          <Button variant="outlined">Yes</Button>
+          <h1>Do you like these questions?</h1>
+          <Button variant="outlined">No</Button>
+        </Row>
       </Card>
     </Container>
   );
