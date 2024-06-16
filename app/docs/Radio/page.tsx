@@ -30,7 +30,7 @@ export default function DocsRadio() {
       </p>
       <Card>
         <span style={{ fontSize: "15px" }}>Default Value =&gt;one</span>
-        <RadioGroup name="B" defaultValue="ones">
+        <RadioGroup name="B" defaultValue="one">
           <RadioButton value="zero" />
           <span style={{ fontSize: "15px" }}>Value =&gt;zero</span>
           <RadioButton value="one" />

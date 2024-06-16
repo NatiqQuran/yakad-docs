@@ -71,7 +71,13 @@ export default function IntroFooter() {
               <SvgIcon size={5}>
                 <NatiqLogo />
               </SvgIcon>
-              <p style={{ fontSize: "20px", color: "#7d7d7d" }}>
+              <p
+                style={{
+                  fontSize: "20px",
+                  color: "#7d7d7d",
+                  textAlign: "justify",
+                }}
+              >
                 Natiq is a system with components, parts, features, and... ! we
                 recommend people who want to quickly and beautifully design
                 their site and create a very organized site to use our site.
