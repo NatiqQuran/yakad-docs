@@ -64,26 +64,25 @@ export default function IntroFooter() {
 
   return (
     <Footer style={{ flexDirection: "column" }}>
-      <Container maxWidth="lg" style={{ padding: "8rem 0 5rem " }}>
+      <Container maxWidth="xl" style={{ padding: "8rem 0 5rem " }}>
         <GridContainer>
-          <GridItem xl={6}>
-            <Stack>
-              <SvgIcon size={5}>
-                <NatiqLogo />
-              </SvgIcon>
-              <p
-                style={{
-                  fontSize: "20px",
-                  color: "#7d7d7d",
-                  textAlign: "justify",
-                }}
-              >
-                Natiq is a system with components, parts, features, and... ! we
-                recommend people who want to quickly and beautifully design
-                their site and create a very organized site to use our site.
-              </p>
-            </Stack>
+          <GridItem xl={5}>
+            <SvgIcon size={5}>
+              <NatiqLogo />
+            </SvgIcon>
+            <p
+              style={{
+                fontSize: "20px",
+                color: "#7d7d7d",
+                textAlign: "justify",
+              }}
+            >
+              Natiq is a system with components, parts, features, and... ! we
+              recommend people who want to quickly and beautifully design their
+              site and create a very organized site to use our site.
+            </p>
           </GridItem>
+          <GridItem xl={1}></GridItem>
           <GridItem xl={2}>
             <FooterList name="Links" list={links} />
           </GridItem>

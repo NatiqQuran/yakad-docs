@@ -32,7 +32,7 @@ export default function ExampleProjects() {
       <p style={{ fontSize: "20px" }}>
         Dignissimos impedit excepturi adipisci eaque.
       </p>
-      <GridContainer columnGap={3} rowGap={3}>
+      <GridContainer gap={3}>
         {examples.map((item, index) => (
           <GridItem xl={6} key={index}>
             <Card style={{ padding: 0 }}>

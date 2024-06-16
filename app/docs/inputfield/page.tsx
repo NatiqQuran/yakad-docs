@@ -169,7 +169,7 @@ export default function DocsInputField() {
 
         <h1>Example 2 : Register</h1>
         <Card style={{ maxWidth: "45rem" }}>
-          <Row align="end">
+          <Row align="center">
             <Symbol icon="account_circle" />
             <h1>Register</h1>
           </Row>

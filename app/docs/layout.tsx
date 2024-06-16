@@ -21,6 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         { name: "CodeField", onclick: () => router.push("/docs/codefield") },
         { name: "Container", onclick: () => router.push("/docs/container") },
         { name: "Radio", onclick: () => router.push("/docs/Radio") },
+        { name: "checkbox", onclick: () => router.push("/docs/checkbox") },
 
         {
           name: "clickAwayListiner",
