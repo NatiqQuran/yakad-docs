@@ -59,7 +59,7 @@ export default function DocsRadio() {
       </p>
       <Card style={{ marginBottom: "3rem" }}>
         <RadioGroup name="D" defaultValue="bir">
-          <RadioButton value="bir" label="onable" />
+          <RadioButton value="bir" label="inable" />
           <RadioButton disabled label="disable" />
         </RadioGroup>
       </Card>
