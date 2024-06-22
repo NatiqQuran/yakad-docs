@@ -1,73 +1,123 @@
 import {
-  AppBar,
-  Button,
   Container,
-  Footer,
+  GridContainer,
+  GridItem,
+  Button,
   Card,
-  Main,
-  Page,
   Row,
-  Spacer,
-  Stack,
   Hr,
-  SvgIcon,
+  Stack,
+  Spacer,
 } from "@yakad/ui";
 import Symbol from "@yakad/symbols";
 
 export default function DocsAppbar() {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="md">
       <h1 style={{ fontSize: "3rem" }}>Yakad Symbols</h1>
-      <h1>Button Symbols</h1>
-      <Card style={{ maxWidth: "60rem" }}>
-        <Row>
-          <Button icon="menu" />
-          <Spacer />
-          <Button icon="account_circle" />
-          <Spacer />
-          <Button icon="logout" />
-        </Row>
-      </Card>
-      <h1>Symbols Size</h1>
-      <Card style={{ maxWidth: "60rem" }}>
+      <h1>Symbol Types</h1>
+      <GridContainer>
+        <GridItem md={4} xl={2}>
+          <Card align="center">
+            <Symbol type="default" icon="settings" />
+            <h1>default</h1>
+          </Card>
+        </GridItem>
+        <GridItem md={4} xl={2}>
+          <Card align="center">
+            <Symbol type="twoTone" icon="settings" />
+            <h1>twoTone</h1>
+          </Card>
+        </GridItem>
+        <GridItem md={4} xl={2}>
+          <Card align="center">
+            <Symbol type="outlined" icon="settings" />
+            <h1>outlined</h1>
+          </Card>
+        </GridItem>
+        <GridItem md={4} xl={2}>
+          <Card align="center">
+            <Symbol type="round" icon="settings" />
+            <h1>round</h1>
+          </Card>
+        </GridItem>
+        <GridItem md={4} xl={2}>
+          <Card align="center">
+            <Symbol type="sharp" icon="settings" />
+            <h1>sharp</h1>
+          </Card>
+        </GridItem>
+      </GridContainer>
+      <h1>Symbols Sizes</h1>
+      <GridContainer>
+        <GridItem xl={4}>
+          <Card align="center">
+            <Symbol size={"small"} icon="groups" />
+            <h1>small</h1>
+          </Card>
+        </GridItem>
+        <GridItem xl={4}>
+          <Card align="center">
+            <Symbol size={"medium"} icon="groups" />
+            <h1>medium</h1>
+          </Card>
+        </GridItem>
+        <GridItem xl={4}>
+          <Card align="center">
+            <Symbol size={"large"} icon="groups" />
+            <h1>large</h1>
+          </Card>
+        </GridItem>
+      </GridContainer>
+      <h1>Symbol Buttons</h1>
+      <Card>
         <Row align="center">
-          <h2>Large</h2>
-          <Spacer />
-          <Symbol size={"large"} icon="home" />
-          <Spacer />
-        </Row>
-        <Row>
-          <h2>Medium</h2>
-          <Spacer />
-          <Symbol size={"medium"} icon="home" />
-          <Spacer />
-        </Row>
-        <Row>
-          <h2>Small</h2>
-          <Spacer />
-          <Symbol size={"small"} icon="home" />
-          <Spacer />
-        </Row>
-      </Card>
-      <h1>Symbols Type</h1>
-      <Card style={{ maxWidth: "60rem" }}>
-        <Row>
-          <Symbol type="default" icon="delete_outline" />
-          <Spacer />
-          <Symbol type="outlined" icon="delete_outline" />
-          <Spacer />
-          <Symbol type="round" icon="delete_outline" />
-        </Row>
-        <Row>
-          <Symbol icon="delete_outline" />
+          <Button variant="outlined" icon="shopping_bag" />
+          <Button variant="filledtonal" loadingVariant="dots">
+            Loading
+          </Button>
+          <Button
+            variant="filled"
+            loadingPosition="auto"
+            loadingVariant="scaleOut"
+            disabled
+          >
+            jhtfvtyfgy
+          </Button>
+          <Button icon="login" />
+          <Button icon="account_circle" />
+          <Button icon="menu" />
+          <Button
+            variant="outlined"
+            loadingPosition="auto"
+            loadingVariant="spinner"
+            disabled
+          />
         </Row>
       </Card>
-      <h1>Symbols</h1>
-      <Card style={{ maxWidth: "60rem" }}>
-        <Row>
-          <Symbol icon="delete" />
-        </Row>
-      </Card>
+      <GridContainer>
+        <GridItem>
+          <h1>Symbols Icon</h1>
+          <Card>
+            <Row>
+              <Symbol icon="home" />
+              <Symbol icon="public" />
+              <Symbol icon="delete" />
+              <Symbol icon="settings" />
+              <Symbol icon="star" />
+              <Symbol icon="account_balance" />
+              <Symbol icon="verified_user" />
+              <Symbol icon="logout" />
+            </Row>
+          </Card>
+        </GridItem>
+      </GridContainer>
+      <h1>
+        if you want to see all icons open this
+        <a href="https://fonts.google.com/icons" target="_blank">
+          Link
+        </a>
+      </h1>
     </Container>
   );
 }
