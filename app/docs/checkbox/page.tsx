@@ -34,11 +34,11 @@ export default function DocsCheckBox() {
         <Chekbox label="inabled" />
         <Chekbox disabled label="disabled" />
         <h1>Checked</h1>
-        <Chekbox checked label="cheched" />
+        <Chekbox checked label="checked" />
         <Chekbox label="not checked" />
         <Chekbox checked disabled label="dissabled checked" />
       </Card>
-      <h1>Example</h1>
+      <h1>Example:</h1>
       <Card style={{ maxWidth: "50rem" }}>
         <Row align="center">
           <Symbol icon="login" />
