@@ -94,7 +94,7 @@ export default function DocsCard() {
             }}
           >
             <Row>
-              <p style={{ fontSize: "20px", marginRight: "10rem" }}>
+              <p style={{ fontSize: "20px", marginRight: "7rem" }}>
                 Yes. It`s very good! I like it.
               </p>
               <Image

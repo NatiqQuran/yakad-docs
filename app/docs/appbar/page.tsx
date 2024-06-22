@@ -46,6 +46,13 @@ export default function DocsAppbar() {
           Login
         </Button>
       </AppBar>
+
+      <h1 style={{ marginTop: "3rem" }}>
+        As you can see, you can add buttons, menus, texts and other things on
+        the Appbar.In addition, with Appbar, you can make attractive headers
+        that are not only beautiful and simple, but also one of the best choices
+        for your header.
+      </h1>
     </Container>
   );
 }
