@@ -15,10 +15,10 @@ export function Getstart() {
         <h1 style={{ fontSize: "8rem", color: "#3064f4" }}>Yakad</h1>
         <p style={{ fontSize: "2.7rem", textAlign: "justify" }}>
           <b>Yakad</b> provides you with practical services so that you can
-          design your website more quickly and easily.We make everything easier
+          design your website more quickly and easily. We make everything easier
           for you to make your site the best without any problems and with the
-          least amount of time.Only with Yakad.We have provided you with a list
-          of free components for you to use if necessary.
+          least amount of time. Only with Yakad. We have provided you with a
+          list of free components for you to use if necessary.
         </p>
         <Link href="./docs">
           <Button variant="filled" size="large">

@@ -53,6 +53,7 @@ export default function DocsAppbar() {
       </Footer>
       <h1>Example 3:</h1>
       <IntroFooter />
+      <IntroFooter />
     </Container>
   );
 }
