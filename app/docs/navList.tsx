@@ -21,8 +21,7 @@ export default function NavList() {
         { name: "CodeField", onclick: () => router.push("/docs/codefield") },
         { name: "Container", onclick: () => router.push("/docs/container") },
         { name: "Radio", onclick: () => router.push("/docs/Radio") },
-        { name: "checkbox", onclick: () => router.push("/docs/checkbox") },
-        { name: "gride", onclick: () => router.push("/docs/gride") },
+        { name: "Checkbox", onclick: () => router.push("/docs/checkbox") },
 
         {
           name: "clickAwayListiner",
