@@ -18,12 +18,47 @@ export default function Docsgride() {
   return (
     <Container maxWidth="md">
       <h1 style={{ fontSize: "2.5rem" }}>Grad</h1>
-      <p style={{ fontSize: "2rem" }}>
+      <p style={{ fontSize: "1.5rem" }}>
         With grid, you can divide the page from 1 to 12 parts, easily edit your
         site page.
       </p>
 
-      <p>Grid Container Compunents:</p>
+      <p style={{ fontSize: "1.5rem" }}>
+        Properties that are accepted as attributes:(Grid Item)
+      </p>
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Property</Th>
+            <Th>Value</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          <Tr>
+            <Td>xs</Td>
+            <Td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12</Td>
+          </Tr>
+          <Tr>
+            <Td>sm</Td>
+            <Td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12</Td>
+          </Tr>
+          <Tr>
+            <Td>md</Td>
+            <Td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12</Td>
+          </Tr>
+          <Tr>
+            <Td>lg</Td>
+            <Td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12</Td>
+          </Tr>
+          <Tr>
+            <Td>xl</Td>
+            <Td>1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12</Td>
+          </Tr>
+        </Tbody>
+      </Table>
+      <p style={{ fontSize: "1.5rem" }}>
+        Properties that are accepted as attributes:(Grid Container)
+      </p>
       <Table>
         <Thead>
           <Tr>
@@ -42,7 +77,9 @@ export default function Docsgride() {
           </Tr>
         </Tbody>
       </Table>
+
       <h1 style={{ fontSize: "1.5rem", padding: "2rem" }}>Example:</h1>
+
       <GridContainer>
         <GridItem md={12} lg={6} xl={4}>
           <Card></Card>
