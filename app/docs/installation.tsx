@@ -10,32 +10,32 @@ export default function Installation() {
       <h1>Yakad UI</h1>{" "}
       <Card style={{ fontSize: "20px", maxWidth: "40rem", padding: "15px" }}>
         <Row>
-          〉 npm i @yakad/ui <Spacer />
-          <Button>copy</Button>
+          npm i @yakad/ui <Spacer />
+          <Button icon="content_copy" />
         </Row>
       </Card>
       <p style={{ fontSize: "2rem" }}>Compatibil with Next.Js/React</p>
       <h1>Yakad X</h1>
       <Card style={{ fontSize: "20px", maxWidth: "40rem", padding: "15px" }}>
         <Row>
-          〉 npm i @yakad/x <Spacer />
-          <Button>copy</Button>
+          npm i @yakad/x <Spacer />
+          <Button icon="content_copy" />
         </Row>
       </Card>
       <p style={{ fontSize: "2rem" }}>Compatibil with Next.Js/React</p>
       <h1>Yakad symbols</h1>
       <Card style={{ fontSize: "20px", maxWidth: "40rem", padding: "15px" }}>
         <Row>
-          〉 npm i @yakad/symbols <Spacer />
-          <Button>copy</Button>
+          npm i @yakad/Symbols <Spacer />
+          <Button icon="content_copy" />
         </Row>
       </Card>
       <p style={{ fontSize: "2rem" }}>Compatibil with Next.Js/React</p>
       <h1>Yakad lib</h1>
       <Card style={{ fontSize: "20px", maxWidth: "40rem", padding: "15px" }}>
         <Row>
-          〉 npm i @yakad/lib <Spacer />
-          <Button>copy</Button>
+          npm i @yakad/lib <Spacer />
+          <Button icon="content_copy" />
         </Row>
       </Card>
       <p style={{ fontSize: "2rem" }}>Compatibil with Next.Js</p>
