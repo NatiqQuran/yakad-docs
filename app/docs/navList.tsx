@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { XnavigationList } from "@yakad/x";
+import { XmenuList } from "@yakad/x";
 
 export default function NavList() {
   const router = useRouter();
@@ -22,7 +22,7 @@ export default function NavList() {
         { name: "Container", onclick: () => router.push("/docs/container") },
         { name: "Radio", onclick: () => router.push("/docs/Radio") },
         { name: "Checkbox", onclick: () => router.push("/docs/checkbox") },
-
+        { name: "grid", onclick: () => router.push("/docs/grid") },
         {
           name: "clickAwayListiner",
           onclick: () => router.push("/docs/clickawaylistiner"),
@@ -45,13 +45,8 @@ export default function NavList() {
     { name: "Yakad Symbol", onclick: () => router.push("/docs/symbol") },
     {
       name: "Yakad Lib",
-      childs: [
-        { name: "Users" },
-        { name: "Organizations" },
-        { name: "Permissions" },
-      ],
     },
   ];
 
-  return <XnavigationList menuItems={menuItems} />;
+  return <XmenuList menuItems={menuItems} />;
 }
