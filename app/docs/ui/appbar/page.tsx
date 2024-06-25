@@ -54,24 +54,38 @@ export default function Page() {
       </Table>
 
       <h3>PositionSticky</h3>
-
-      <h1>Examples 1</h1>
-      <AppBar>
-        <h1>Appbar</h1>
+      <p>
+        This feature makes positionSticky stick to the ceiling of your screen
+        when it is true and stay there no matter how low you go. But if it is
+        false, it will stay in its original place and will not accompany you
+        when you go down.PositionSticky is in the appbar below True. Try the
+        example below.
+      </p>
+      <h3>Example:</h3>
+      <AppBar positionSticky>
+        <h1>AppBar</h1>
+        <Spacer />
+        positionSticky is True
       </AppBar>
 
-      <h1>Examples 2</h1>
+      <h2>Examples</h2>
+      <h3>Examples 1</h3>
+      <AppBar>
+        <h3>Appbar</h3>
+      </AppBar>
+
+      <h3>Examples 2</h3>
       <AppBar>
         <Button icon="menu" />
-        <h1>AppBar</h1>
+        <h3>AppBar</h3>
       </AppBar>
 
-      <h1>Examples 3</h1>
+      <h3>Examples 3</h3>
       <AppBar>
         <SvgIcon size={4}>
           <LogoIcon />
         </SvgIcon>
-        <h1>AppBar</h1>
+        <h3>AppBar</h3>
         <Button>Github</Button>
         <Button>About</Button>
         <Spacer />
