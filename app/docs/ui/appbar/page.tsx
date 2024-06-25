@@ -1,5 +1,21 @@
-import { AppBar, Button, Container, Spacer, Hr, SvgIcon } from "@yakad/ui";
+import {
+  AppBar,
+  Button,
+  Container,
+  Spacer,
+  Hr,
+  SvgIcon,
+  Card,
+  Row,
+  Table,
+  Tr,
+  Thead,
+  Th,
+  Tbody,
+  Td,
+} from "@yakad/ui";
 import LogoIcon from "@/app/logoicon";
+import Symbol from "@yakad/symbols";
 
 export default function Page() {
   return (
@@ -7,7 +23,38 @@ export default function Page() {
       <h1>AppBar</h1>
       <Hr />
       <p>Discription</p>
-      <code>import {"AppBar"} from "@yakad/ui"</code>
+      <Card style={{ maxWidth: "50rem" }}>
+        <Row>
+          <p>For import</p>
+          <code>import AppBar from "@yakad/ui"</code>
+          <Spacer />
+          <Button icon="content_copy"></Button>
+        </Row>
+        <Row>
+          <p>For use</p>
+          <code>{"<AppBar>AppBar</AppBar>"}</code>
+        </Row>
+      </Card>
+
+      <h2>Properties</h2>
+      <p>Properties that are accepted as attributes:</p>
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Property</Th>
+            <Th>Value</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          <Tr>
+            <Td>positionSticky</Td>
+            <Td>True | False</Td>
+          </Tr>
+        </Tbody>
+      </Table>
+
+      <h3>PositionSticky</h3>
+
       <h1>Examples 1</h1>
       <AppBar>
         <h1>Appbar</h1>
