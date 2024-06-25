@@ -1,16 +1,14 @@
 import {
   Button,
   Card,
-  Chekbox,
   Container,
   Hr,
   RadioButton,
   RadioGroup,
   Row,
-  Spacer,
 } from "@yakad/ui";
 
-export default function DocsRadio() {
+export default function Page() {
   return (
     <Container maxWidth="md">
       <h1>Radio Group and Radio Button</h1>

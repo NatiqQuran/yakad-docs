@@ -14,15 +14,19 @@ export default function NavList() {
     {
       name: "Yakad UI",
       childs: [
-        { name: "AppBar", onclick: () => router.push("/docs/appbar") },
-        { name: "Button", onclick: () => router.push("/docs/button") },
-        { name: "Card", onclick: () => router.push("/docs/card") },
-        { name: "InputField", onclick: () => router.push("/docs/inputfield") },
-        { name: "CodeField", onclick: () => router.push("/docs/codefield") },
-        { name: "Container", onclick: () => router.push("/docs/container") },
-        { name: "Radio", onclick: () => router.push("/docs/Radio") },
-        { name: "Checkbox", onclick: () => router.push("/docs/checkbox") },
-        { name: "grid", onclick: () => router.push("/docs/grid") },
+        { name: "AppBar", onclick: () => router.push("/docs/ui/appbar") },
+        { name: "Button", onclick: () => router.push("/docs/ui/button") },
+        { name: "Card", onclick: () => router.push("/docs/ui/card") },
+        {
+          name: "InputField",
+          onclick: () => router.push("/docs/ui/inputfield"),
+        },
+        { name: "CodeField", onclick: () => router.push("/docs/ui/codefield") },
+        { name: "Container", onclick: () => router.push("/docs/ui/container") },
+        { name: "Radio", onclick: () => router.push("/docs/ui/Radio") },
+        { name: "Checkbox", onclick: () => router.push("/docs/ui/checkbox") },
+        { name: "grid", onclick: () => router.push("/docs/ui/grid") },
+        { name: "hr", onclick: () => router.push("/docs/ui/hr") },
         {
           name: "clickAwayListiner",
           onclick: () => router.push("/docs/clickawaylistiner"),

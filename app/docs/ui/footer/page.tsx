@@ -1,19 +1,7 @@
-import {
-  Button,
-  Container,
-  Footer,
-  Card,
-  Row,
-  Spacer,
-  Hr,
-  GridContainer,
-  GridItem,
-} from "@yakad/ui";
-import Symbol from "@yakad/symbols";
-import Link from "next/link";
+import { Container, Footer, Hr, GridContainer, GridItem } from "@yakad/ui";
 import IntroFooter from "@/app/footer";
 
-export default function DocsAppbar() {
+export default function Page() {
   return (
     <Container maxWidth="md">
       <h1 style={{ fontSize: "3rem" }}>Footer</h1>

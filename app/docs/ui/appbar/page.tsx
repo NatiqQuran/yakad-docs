@@ -1,27 +1,13 @@
-import {
-  AppBar,
-  Button,
-  Container,
-  Footer,
-  Card,
-  Main,
-  Page,
-  Row,
-  Spacer,
-  Stack,
-  Hr,
-  SvgIcon,
-} from "@yakad/ui";
-import Symbol from "@yakad/symbols";
-import Link from "next/link";
+import { AppBar, Button, Container, Spacer, Hr, SvgIcon } from "@yakad/ui";
 import LogoIcon from "@/app/logoicon";
 
-export default function DocsAppbar() {
+export default function Page() {
   return (
     <Container maxWidth="md">
-      <h1 style={{ fontSize: "3rem" }}>AppBar</h1>
-      <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+      <h1>AppBar</h1>
       <Hr />
+      <p>Discription</p>
+      <code>import {"AppBar"} from "@yakad/ui"</code>
       <h1>Examples 1</h1>
       <AppBar>
         <h1>Appbar</h1>

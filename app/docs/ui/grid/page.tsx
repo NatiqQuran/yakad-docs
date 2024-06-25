@@ -1,5 +1,4 @@
 import {
-  Button,
   Card,
   Container,
   GridContainer,
@@ -12,9 +11,8 @@ import {
   Thead,
   Tr,
 } from "@yakad/ui";
-import Symbol from "@yakad/symbols";
 
-export default function Docsgride() {
+export default function Page() {
   return (
     <Container maxWidth="md">
       <h1 style={{ fontSize: "2.5rem" }}>Grid</h1>
@@ -125,6 +123,15 @@ export default function Docsgride() {
       </GridContainer>
 
       <h1 style={{ fontSize: "1.5rem", padding: "2rem" }}>Example 2:</h1>
+
+      <GridContainer>
+        <GridItem md={12} lg={6} xl={6}>
+          <Card></Card>
+        </GridItem>
+        <GridItem md={12} lg={6} xl={6}>
+          <Card></Card>
+        </GridItem>
+      </GridContainer>
     </Container>
   );
 }

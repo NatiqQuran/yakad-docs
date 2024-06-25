@@ -1,20 +1,11 @@
 import {
-  AppBar,
   Button,
   Container,
-  Footer,
   Main,
-  Page,
   Row,
-  Spacer,
   Stack,
   Hr,
   Card,
-  SvgIcon,
-  Loading,
-  RadioGroup,
-  RadioButton,
-  Chekbox,
   Table,
   Tr,
   Th,
@@ -22,10 +13,8 @@ import {
   Thead,
   Tbody,
 } from "@yakad/ui";
-import Symbol from "@yakad/symbols";
-import Link from "next/link";
 
-export default function DocsButton() {
+export default function Page() {
   return (
     <Main>
       <Container maxWidth="md">

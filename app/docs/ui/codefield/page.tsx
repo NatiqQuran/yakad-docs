@@ -1,20 +1,6 @@
-import {
-  AppBar,
-  Button,
-  Container,
-  Footer,
-  Card,
-  Main,
-  Page,
-  Row,
-  Spacer,
-  Stack,
-  Hr,
-  SvgIcon,
-  CodeField,
-} from "@yakad/ui";
+import { Button, Container, Card, Row, Stack, Hr, CodeField } from "@yakad/ui";
 
-export default function DocsCodefield() {
+export default function Page() {
   return (
     <Container maxWidth="md">
       <h1 style={{ fontSize: "3rem" }}>CodeField</h1>

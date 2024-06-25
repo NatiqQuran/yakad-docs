@@ -8,10 +8,9 @@ import {
   InputField,
   Row,
 } from "@yakad/ui";
-import { CheckboxProps } from "@yakad/ui/checkbox/checkbox";
 import React from "react";
 
-export default function DocsCheckBox() {
+export default function Page() {
   const disabledConfirmButton = () => {};
 
   return (
