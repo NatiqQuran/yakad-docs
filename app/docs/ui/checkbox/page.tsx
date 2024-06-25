@@ -8,14 +8,13 @@ import {
   InputField,
   Row,
 } from "@yakad/ui";
-import { CheckboxProps } from "@yakad/ui/checkbox/checkbox";
 import React from "react";
 
-export default function DocsCheckBox() {
+export default function Page() {
   const disabledConfirmButton = () => {};
 
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="md">
       <h1 style={{ fontSize: "25px" }}>What is a checkbox?</h1>
       <h2 style={{ fontSize: "20px" }}>
         A check box is a small box that a tick appears on when you click on it.

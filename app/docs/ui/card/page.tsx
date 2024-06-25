@@ -3,7 +3,7 @@ import Image from "next/image";
 import imagepctm1 from "./jpg/pctm1.jpg";
 import imagepctm2 from "./jpg/pctm2.jpg";
 
-export default function DocsCard() {
+export default function Page() {
   return (
     <Container maxWidth="md">
       <h1>Yakad Card</h1>

@@ -2,7 +2,7 @@
 
 import { Container, Card, ClickAwayListener } from "@yakad/ui";
 
-export default function DocsCodefield() {
+export default function Page() {
   return (
     <Container maxWidth="md">
       <h1>Click Away Listiner</h1>

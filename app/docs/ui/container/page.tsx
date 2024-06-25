@@ -1,19 +1,6 @@
-import {
-  AppBar,
-  Button,
-  Container,
-  Footer,
-  Card,
-  Main,
-  Page,
-  Row,
-  Spacer,
-  Stack,
-  Hr,
-  SvgIcon,
-} from "@yakad/ui";
+import { Container } from "@yakad/ui";
 
-export default function DocsContainer() {
+export default function Page() {
   return (
     <Container>
       <Container maxWidth="lg">
