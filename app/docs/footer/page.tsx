@@ -15,7 +15,7 @@ import IntroFooter from "@/app/footer";
 
 export default function DocsAppbar() {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="md">
       <h1 style={{ fontSize: "3rem" }}>Footer</h1>
       <h1>
         The footer is used to write closing remarks or support and sponsors

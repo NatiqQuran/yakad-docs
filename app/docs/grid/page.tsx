@@ -17,7 +17,7 @@ import Symbol from "@yakad/symbols";
 export default function Docsgride() {
   return (
     <Container maxWidth="md">
-      <h1 style={{ fontSize: "2.5rem" }}>Grad</h1>
+      <h1 style={{ fontSize: "2.5rem" }}>Grid</h1>
       <p style={{ fontSize: "1.5rem" }}>
         With grid, you can divide the page from 1 to 12 parts, easily edit your
         site page.
@@ -78,7 +78,18 @@ export default function Docsgride() {
         </Tbody>
       </Table>
 
-      <h1 style={{ fontSize: "1.5rem", padding: "2rem" }}>Example:</h1>
+      <h1 style={{ fontSize: "1.5rem", padding: "2rem" }}>Example 1:</h1>
+
+      <GridContainer>
+        <GridItem md={10} lg={6} xl={6}>
+          <Card></Card>
+        </GridItem>
+        <GridItem md={10} lg={6} xl={6}>
+          <Card></Card>
+        </GridItem>
+      </GridContainer>
+
+      <Hr />
 
       <GridContainer>
         <GridItem md={12} lg={6} xl={4}>
@@ -112,6 +123,8 @@ export default function Docsgride() {
           <Card></Card>
         </GridItem>
       </GridContainer>
+
+      <h1 style={{ fontSize: "1.5rem", padding: "2rem" }}>Example 2:</h1>
     </Container>
   );
 }

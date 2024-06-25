@@ -18,7 +18,7 @@ import LogoIcon from "@/app/logoicon";
 
 export default function DocsAppbar() {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="md">
       <h1 style={{ fontSize: "3rem" }}>AppBar</h1>
       <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
       <Hr />

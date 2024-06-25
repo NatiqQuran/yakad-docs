@@ -15,7 +15,7 @@ export default function DocsCheckBox() {
   const disabledConfirmButton = () => {};
 
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="md">
       <h1 style={{ fontSize: "25px" }}>What is a checkbox?</h1>
       <h2 style={{ fontSize: "20px" }}>
         A check box is a small box that a tick appears on when you click on it.
