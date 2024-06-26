@@ -1,9 +1,32 @@
-import { Button, Container, Card, Row, Stack, Hr, CodeField } from "@yakad/ui";
+import {
+  Button,
+  Container,
+  Card,
+  Row,
+  Stack,
+  Hr,
+  CodeField,
+  Spacer,
+} from "@yakad/ui";
 
 export default function Page() {
   return (
     <Container maxWidth="md">
-      <h1 style={{ fontSize: "3rem" }}>CodeField</h1>
+      <h1>CodeField</h1>
+      <Hr />
+      <p>Discription</p>
+      <Card>
+        <Row>
+          <span>
+            <code>{'import { CodeField } from "@yakad/ui"'}</code>
+            <br />
+            <br />
+            <code>{"<CodeField>CodeField</CodeField>"}</code>
+          </span>
+          <Spacer />
+          <Button icon="content_copy"></Button>
+        </Row>
+      </Card>
 
       <h1>Example 1 :</h1>
       <Card

@@ -23,18 +23,18 @@ export default function Page() {
       <h1>AppBar</h1>
       <Hr />
       <p>Discription</p>
-      <Card style={{ maxWidth: "50rem" }}>
+      <Card>
         <Row>
-          <p>For import</p>
-          <code>import AppBar from "@yakad/ui"</code>
+          <code>{'import { AppBar } from "@yakad/ui"'}</code>
           <Spacer />
           <Button icon="content_copy"></Button>
         </Row>
-        <Row>
-          <p>For use</p>
-          <code>{"<AppBar>AppBar</AppBar>"}</code>
-        </Row>
+        <code>{"<AppBar>AppBar</AppBar>"}</code>
       </Card>
+      <h3>simble example</h3>
+      <AppBar>
+        <h1>Appbar</h1>
+      </AppBar>
 
       <h2>Properties</h2>
       <p>Properties that are accepted as attributes:</p>
@@ -54,19 +54,25 @@ export default function Page() {
       </Table>
 
       <h3>PositionSticky</h3>
-
-      <h1>Examples 1</h1>
-      <AppBar>
-        <h1>Appbar</h1>
+      <p>
+        This feature makes positionSticky stick to the ceiling of your screen
+        when it is true and stay there no matter how low you go. But if it is
+        false, it will stay in its original place and will not accompany you
+        when you go down.PositionSticky is in the appbar below True. Try the
+        example below.
+      </p>
+      <AppBar positionSticky>
+        <h1>AppBar</h1>
       </AppBar>
 
-      <h1>Examples 2</h1>
+      <h2>Examples</h2>
+      <h3>Examples 1</h3>
       <AppBar>
         <Button icon="menu" />
         <h1>AppBar</h1>
       </AppBar>
 
-      <h1>Examples 3</h1>
+      <h3>Examples 2</h3>
       <AppBar>
         <SvgIcon size={4}>
           <LogoIcon />
@@ -80,12 +86,15 @@ export default function Page() {
         </Button>
       </AppBar>
 
-      <h1 style={{ marginTop: "3rem" }}>
+      <p>
         As you can see, you can add buttons, menus, texts and other things on
         the Appbar.In addition, with Appbar, you can make attractive headers
         that are not only beautiful and simple, but also one of the best choices
         for your header.
-      </h1>
+      </p>
+      <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
+        <h3>Source code in github</h3>
+      </a>
     </Container>
   );
 }
