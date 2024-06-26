@@ -9,6 +9,13 @@ import {
   Stack,
   Hr,
   Chekbox,
+  Spacer,
+  Table,
+  Thead,
+  Tr,
+  Th,
+  Tbody,
+  Td,
 } from "@yakad/ui";
 import Symbol from "@yakad/symbols";
 
@@ -16,68 +23,86 @@ export default function Page() {
   return (
     <>
       <Container maxWidth="md">
-        <h1 style={{ fontSize: "2rem" }}>Input Field</h1>
-        <p style={{ fontSize: "1.5rem" }}>
+        <h1>Input Field</h1>
+        <Hr />
+        <p>Discription</p>
+        <Card>
+          <Row>
+            <span>
+              <code>{'import { Card } from "@yakad/ui"'}</code>
+              <br />
+              <br />
+              <code>{"<Card>Card</Card>"}</code>
+            </span>
+            <Spacer />
+            <Button icon="content_copy"></Button>
+          </Row>
+        </Card>
+
+        <h3>Simple InputField</h3>
+        <Card style={{ maxWidth: "60rem" }}>
+          <InputField style={{ width: "30rem" }} />
+        </Card>
+
+        <h2>Properties</h2>
+        <p>Properties that are accepted as attributes:</p>
+        <Table>
+          <Thead>
+            <Tr>
+              <Th>Property</Th>
+              <Th>Value</Th>
+            </Tr>
+          </Thead>
+          <Tbody>
+            <Tr>
+              <Td>variant</Td>
+              <Td>outlined | filled</Td>
+            </Tr>
+          </Tbody>
+        </Table>
+
+        <h3>variant</h3>
+        <p>
           Input fields help you to request details from people in a specific
-          way.
-        </p>
-        <h1 style={{ fontSize: "2rem" }}>variant:</h1>
-        <span style={{ fontSize: "1.5rem", marginBottom: "2rem" }}>
-          Variant is one of the features of the input that changes the
+          way. Variant is one of the features of the input that changes the
           appearance of the input.
-        </span>
-        <Card style={{ maxWidth: "80rem", alignItems: "center" }}>
-          <GridContainer>
-            <GridItem xl={12} lg={12}>
-              <p style={{ fontSize: "1.5rem" }}>
-                And there are two types of variants for the input field :
-              </p>
-            </GridItem>
-            <GridItem xl={6} lg={12}>
-              <span style={{ fontSize: "20px" }}>1.</span>
-              <InputField
-                variant="outlined"
-                type="Email"
-                placeholder="outlined"
-              />
-            </GridItem>
-            <GridItem xl={6} lg={12}>
-              <span style={{ fontSize: "20px" }}>2.</span>
-              <InputField
-                variant="filled"
-                type="password"
-                placeholder="filled"
-              />
-            </GridItem>
-          </GridContainer>
+        </p>
+        <p>And there are two types of variants for the input field :</p>
+
+        <Card>
+          <Row>
+            <p>1.</p>
+            <InputField
+              variant="outlined"
+              type="Email"
+              placeholder="outlined"
+            />
+            <p>2.</p>
+            <InputField variant="filled" type="password" placeholder="filled" />
+          </Row>
         </Card>
         <Row>
-          <span style={{ fontSize: "20px" }}>1.</span>
-
-          <p style={{ fontSize: "1.5rem" }}>
-            The first version of the period has a line and is empty inside.
+          <p>
+            1. The first version of the period has a line and is empty inside.
           </p>
         </Row>
         <Row>
-          <span style={{ fontSize: "20px" }}>2.</span>
-          <p style={{ fontSize: "1.5rem" }}>
-            The second variant has an underline and is filled inside.
-          </p>
+          <p>2. The second variant has an underline and is filled inside.</p>
         </Row>
 
-        <h1 style={{ fontSize: "2rem" }}>placeholder :</h1>
+        <h3>placeholder</h3>
 
-        <p style={{ fontSize: "1.5rem" }}>
+        <p>
           Placeholder is a feature that can be used to place anything you want
           to be written on the inputs as an alternative.Most people write the
           input type in a placeholder. But placeholder has no rules about what
           you should write or not write. It is up to you.
         </p>
+        <h4>Some examples of inputs</h4>
         <Card>
-          <h1 style={{ fontSize: "1.5rem" }}>Some examples of inputs</h1>
           <GridContainer>
             <GridItem xl={6} lg={12}>
-              <span style={{ fontSize: "20px" }}>3.</span>
+              <p>3.</p>
               <InputField
                 variant="outlined"
                 type="email"
@@ -85,7 +110,7 @@ export default function Page() {
               />
             </GridItem>
             <GridItem xl={6} lg={12}>
-              <span style={{ fontSize: "20px" }}>4.</span>
+              <p>4.</p>
               <InputField
                 variant="outlined"
                 type="password"
@@ -93,7 +118,7 @@ export default function Page() {
               />
             </GridItem>
             <GridItem xl={6} lg={12}>
-              <span style={{ fontSize: "20px" }}>5.</span>
+              <p>5.</p>
               <InputField
                 variant="filled"
                 type="email"
@@ -101,7 +126,7 @@ export default function Page() {
               />
             </GridItem>
             <GridItem xl={6} lg={12}>
-              <span style={{ fontSize: "20px" }}>6.</span>
+              <p>6.</p>
               <InputField
                 variant="filled"
                 type="password"
@@ -111,10 +136,8 @@ export default function Page() {
           </GridContainer>
         </Card>
 
-        <h1>disabled:</h1>
-        <span style={{ fontSize: "20px" }}>
-          You can&apos;t write any text in this type of inputs.
-        </span>
+        <h3>disabled:</h3>
+        <p>You can&apos;t write any text in this type of inputs.</p>
 
         <Card>
           <GridContainer>
@@ -145,12 +168,12 @@ export default function Page() {
         </Card>
       </Container>
       <Container maxWidth="md">
-        <h1 style={{ fontSize: "2rem" }}>Examples</h1>
-        <h1 style={{ fontSize: "2rem" }}>Example 1 : Login form</h1>
+        <h2>Examples</h2>
+        <h3>Example 1 : Login form</h3>
         <Card style={{ maxWidth: "45rem" }} align="center">
           <Row align="center">
             <Symbol icon="login" />
-            <h1 style={{ fontSize: "2rem" }}>Log In</h1>
+            <h3>Log In</h3>
           </Row>
           <Hr />
           <form>
@@ -166,11 +189,11 @@ export default function Page() {
           <Button variant="text">cancel</Button>
         </Card>
 
-        <h1 style={{ fontSize: "2rem" }}>Example 2 : Register</h1>
+        <h3>Example 2 : Register</h3>
         <Card style={{ maxWidth: "45rem" }}>
           <Row align="center">
             <Symbol icon="account_circle" />
-            <h1 style={{ fontSize: "2rem" }}>Register</h1>
+            <h3>Register</h3>
           </Row>
           <Hr />
           <form>
@@ -195,6 +218,9 @@ export default function Page() {
             </Stack>
           </form>
         </Card>
+        <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
+          <h3>Source code in github</h3>
+        </a>
       </Container>
     </>
   );
