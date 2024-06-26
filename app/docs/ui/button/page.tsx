@@ -12,17 +12,36 @@ import {
   Td,
   Thead,
   Tbody,
+  Spacer,
 } from "@yakad/ui";
 
 export default function Page() {
   return (
-    <Main>
+    <>
       <Container maxWidth="md">
         <h1>Yakad Buttons</h1>
 
-        <p style={{ fontSize: "18px" }}>
-          Properties that are accepted as attributes:
-        </p>
+        <Hr />
+
+        <p>Discription</p>
+        <Card>
+          <Row>
+            <span>
+              <code>{'import { Button } from "@yakad/ui"'}</code>
+              <br />
+              <br />
+              <code>{"<Button>Button</Button>"}</code>
+            </span>
+            <Spacer />
+            <Button icon="content_copy"></Button>
+          </Row>
+        </Card>
+        <h3>Simple Button</h3>
+        <Card align="center">
+          <Button>Button</Button>
+        </Card>
+        <h2>Properties</h2>
+        <p>Properties that are accepted as attributes:</p>
         <Table>
           <Thead>
             <Tr>
@@ -44,11 +63,12 @@ export default function Page() {
             </Tr>
           </Tbody>
         </Table>
-        <h1>Size:</h1>
+        <h3>Size:</h3>
+        <p>With this property, different sizes can be given to our buttons.</p>
         <Card
+          align="center"
           style={{
-            maxWidth: "90rem",
-            margin: "auto",
+            maxWidth: "60rem",
           }}
         >
           <Row
@@ -66,11 +86,13 @@ export default function Page() {
               LARGE
             </Button>
           </Row>
-          <Hr />
-          <h2>All kinds of buttons with different sizes</h2>
         </Card>
-        <h1>Variant:</h1>
-        <Card style={{ maxWidth: "90rem", margin: "auto", padding: "50px" }}>
+        <h3>Variant:</h3>
+        <p>
+          Here you can see different models and colors of buttons, which can be
+          called with the variant property.
+        </p>
+        <Card align="center" style={{ maxWidth: "60rem", padding: "50px" }}>
           <Row
             style={{
               justifyContent: "center",
@@ -93,14 +115,41 @@ export default function Page() {
             <Button variant="text">TEXT</Button>
             <Button variant="tonal">TONAL</Button>
           </Row>
-          <Hr />
-          <h2>A variety of buttons with different shapes to use</h2>
         </Card>
 
-        <h1>FAB size:</h1>
+        <h3>Borderstyle:</h3>
+        <p>
+          With this feature, you can easily and beautifully change the style of
+          the button borders.
+        </p>
+
+        <Card align="center" style={{ maxWidth: "60rem", padding: "50px" }}>
+          <Row
+            style={{
+              justifyContent: "center",
+            }}
+          >
+            <Button variant="filledtonal" borderStyle="none">
+              NONE
+            </Button>
+            <Button variant="filledtonal" borderStyle="rounded">
+              ROUNDED
+            </Button>
+            <Button variant="filledtonal" borderStyle="semi">
+              SEMI
+            </Button>
+            <Button variant="filledtonal" borderStyle="squircle">
+              squircle
+            </Button>
+          </Row>
+        </Card>
+
+        <h3>FAB size:</h3>
+        <p>Different sizes of buttons with variant fab</p>
         <Card
+          align="center"
           style={{
-            maxWidth: "90rem",
+            maxWidth: "60rem",
             margin: "auto",
           }}
         >
@@ -130,36 +179,14 @@ export default function Page() {
               <Button variant="fab" size="large" icon="add"></Button>
             </Row>
           </Stack>
-          <Hr />
-          <h2>All kinds of FAB buttons with different sizes</h2>
         </Card>
 
-        <h1>Borderstyle:</h1>
-
-        <Card style={{ maxWidth: "90rem", margin: "auto", padding: "50px" }}>
-          <Row
-            style={{
-              justifyContent: "center",
-            }}
-          >
-            <Button variant="filledtonal" borderStyle="none">
-              NONE
-            </Button>
-            <Button variant="filledtonal" borderStyle="rounded">
-              ROUNDED
-            </Button>
-            <Button variant="filledtonal" borderStyle="semi">
-              SEMI
-            </Button>
-            <Button variant="filledtonal" borderStyle="squircle">
-              squircle
-            </Button>
-          </Row>
-          <Hr />
-          <h2>A variety of buttons with different shapes to use </h2>
-        </Card>
-        <h1>icon:</h1>
-        <Card style={{ maxWidth: "90rem", margin: "auto", padding: "50px" }}>
+        <h3>icon:</h3>
+        <p>
+          With this property, you can easily add different icons on your
+          buttons.
+        </p>
+        <Card align="center" style={{ maxWidth: "60rem", padding: "50px" }}>
           <Row
             style={{
               justifyContent: "center",
@@ -173,20 +200,19 @@ export default function Page() {
             </Button>
             <Button variant="outlined" icon="search"></Button>
           </Row>
-          <Hr />
-          <h2>All kinds of buttons with different sizes</h2>
         </Card>
-        <ButtonLoading />
       </Container>
-    </Main>
+      <ButtonLoading />
+    </>
   );
 }
 
 function ButtonLoading() {
   return (
-    <Stack align="start">
-      <h1>Loading:</h1>
-      <Card style={{ maxWidth: "90rem", margin: "auto", padding: "50px" }}>
+    <Container maxWidth="md">
+      <h3>Loading:</h3>
+      <p>With this option, you can put a loading sign on the buttons</p>
+      <Card align="center" style={{ maxWidth: "60rem" }}>
         <Row style={{ justifyContent: "center" }}>
           <Button
             variant="outlined"
@@ -273,12 +299,13 @@ function ButtonLoading() {
             disabled
           ></Button>
         </Row>
-        <Hr />
-        <h2>All kinds of buttons with different sizes</h2>
       </Card>
-      <h1>Loading Variant:</h1>
-
-      <Card style={{ maxWidth: "90rem", padding: "50px" }} align="center">
+      <h3>Loading Variant:</h3>
+      <p>
+        And this is also different loading models that you can use whichever you
+        like.
+      </p>
+      <Card style={{ maxWidth: "60rem" }} align="center">
         <Row align="center">
           <Button
             variant="outlined"
@@ -308,10 +335,12 @@ function ButtonLoading() {
             Loading
           </Button>
         </Row>
-        <Hr />
-        <h2>All kinds of buttons with different sizes</h2>
       </Card>
-    </Stack>
+
+      <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
+        <h3>Source code in github</h3>
+      </a>
+    </Container>
   );
 }
 

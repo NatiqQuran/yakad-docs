@@ -1,120 +1,241 @@
-import { Card, Container, Row, Stack } from "@yakad/ui";
+import {
+  Button,
+  Card,
+  Container,
+  GridContainer,
+  GridItem,
+  Hr,
+  Row,
+  Spacer,
+  Stack,
+  Table,
+  Tbody,
+  Td,
+  Th,
+  Thead,
+  Tr,
+} from "@yakad/ui";
 import Image from "next/image";
 import imagepctm1 from "./jpg/pctm1.jpg";
 import imagepctm2 from "./jpg/pctm2.jpg";
+import Symbol from "@yakad/symbols";
 
 export default function Page() {
   return (
     <Container maxWidth="md">
       <h1>Yakad Card</h1>
-      <p style={{ fontSize: "20px", marginBottom: "0" }}>
-        yakad cards are here to edit your site professionally!
+      <Hr />
+      <p>Discription</p>
+      <Card>
+        <Row>
+          <span>
+            <code>{'import { Card } from "@yakad/ui"'}</code>
+            <br />
+            <br />
+            <code>{"<Card>Card</Card>"}</code>
+          </span>
+          <Spacer />
+          <Button icon="content_copy"></Button>
+        </Row>
+      </Card>
+      <h3>Simple Card</h3>
+      <Card style={{ maxWidth: "60rem" }}>
+        <span style={{ fontSize: "2rem" }}>Card</span>
+      </Card>
+
+      <h2>Properties</h2>
+      <p>Properties that are accepted as attributes:</p>
+
+      <h3>align</h3>
+      <p>
+        With this property, you can easily move all the things you put in the
+        card, that is, you can fold it in the middle and simply fold it left or
+        right.
       </p>
-      <p style={{ fontSize: "20px", marginBottom: "3rem" }}>
+      <Card align="start" style={{ maxWidth: "60rem", marginBottom: "1rem" }}>
+        Start
+      </Card>
+      <Card align="center" style={{ maxWidth: "60rem", marginBottom: "1rem" }}>
+        Center
+      </Card>
+      <Card align="end" style={{ maxWidth: "60rem", marginBottom: "1rem" }}>
+        End
+      </Card>
+
+      <h2>Examples</h2>
+
+      <p>yakad cards are here to edit your site professionally!</p>
+      <h3>Example 1</h3>
+
+      <p>
         Working with these cards is very easy and you can easily organize your
-        site with it cards. You can see an example of the cards below:
+        site with it cards. An example of a card using a grid:
       </p>
-      <Row>
-        <Card>
-          <p style={{ fontSize: "20px", textAlign: "center" }}>Card</p>
-        </Card>
-        <Card>
-          <p style={{ fontSize: "20px", textAlign: "center" }}>Card</p>
-        </Card>
-        <Card>
-          <p style={{ fontSize: "20px", textAlign: "center" }}>Card</p>
-        </Card>
-      </Row>
-      <Stack>
-        <p style={{ fontSize: "20px", margin: "30px 0 30px 0" }}>
-          You can put anything you want inside the cards, such as: text, photo,
-          video and...
-        </p>
-        <Card style={{ padding: "2rem", width: "50rem" }}>
-          <Row>
-            <Image
-              src={imagepctm1}
-              alt="pic"
-              width="45"
-              height="45"
-              style={{ borderRadius: "50%" }}
-            />
-            <p style={{ fontSize: "20px", textAlign: "center" }}>
+      <GridContainer>
+        <GridItem xs={12} md={6} xl={4}>
+          <Card align="center">
+            <p>Card</p>
+          </Card>
+        </GridItem>
+        <GridItem xs={12} md={6} xl={4}>
+          <Card align="center">
+            <p>Card</p>
+          </Card>
+        </GridItem>
+        <GridItem xs={12} md={6} xl={4}>
+          <Card align="center">
+            <p>Card</p>
+          </Card>
+        </GridItem>
+      </GridContainer>
+
+      <h3>Example 2</h3>
+
+      <p>
+        You can put anything you want inside the cards, such as: text, photo,
+        video and...
+      </p>
+      <Container maxWidth="sm">
+        <Row style={{ marginBottom: "1.5rem" }}>
+          <Image
+            src={imagepctm1}
+            alt="pic"
+            width="45"
+            height="45"
+            style={{ borderRadius: "50%" }}
+          />
+          <Card
+            style={{
+              padding: "2rem",
+              marginBottom: "1rem",
+              maxWidth: "30rem",
+              margin: "0",
+            }}
+          >
+            <p style={{ fontSize: "1.8rem", margin: 0 }}>
               Hey! My name is Martis. What is your name?
             </p>
-          </Row>
-        </Card>
-
-        <Row style={{ display: "flex", justifyContent: "end" }}>
+          </Card>
+        </Row>
+        <Row align="end" style={{ marginBottom: "1.5rem" }}>
           <Card
-            style={{
-              padding: "2rem",
-              width: "50rem",
-              display: "flex",
-              justifyContent: "end",
-            }}
+            style={{ marginBottom: "1rem", maxWidth: "30rem", margin: "0" }}
           >
             <Row>
-              <p style={{ fontSize: "20px", marginRight: "10rem" }}>
+              <p style={{ fontSize: "1.8rem", margin: "0" }}>
                 Hi! My name is Leycci.
               </p>
-              <Image
-                src={imagepctm2}
-                alt="pic"
-                width="45"
-                height="45"
-                style={{ borderRadius: "50%" }}
-              />
             </Row>
           </Card>
+          <Image
+            src={imagepctm2}
+            alt="pic"
+            width="45"
+            height="45"
+            style={{ borderRadius: "50%" }}
+          />
         </Row>
-
-        <Card style={{ padding: "2rem", width: "50rem" }}>
-          <Row>
-            <Image
-              src={imagepctm1}
-              alt="pic"
-              width="45"
-              height="45"
-              style={{ borderRadius: "50%" }}
-            />
-            <p style={{ fontSize: "20px", textAlign: "center" }}>
+        <Row style={{ marginBottom: "1.5rem" }}>
+          <Image
+            src={imagepctm1}
+            alt="pic"
+            width="45"
+            height="45"
+            style={{ borderRadius: "50%" }}
+          />
+          <Card style={{ maxWidth: "30rem", margin: "0" }}>
+            <p style={{ fontSize: "1.8rem", margin: "0" }}>
               Leycci have you ever used Yakad Cards?
             </p>
-          </Row>
-        </Card>
-
-        <Row style={{ display: "flex", justifyContent: "end" }}>
-          <Card
-            style={{
-              padding: "2rem",
-              width: "50rem",
-              display: "flex",
-              justifyContent: "end",
-            }}
-          >
-            <Row>
-              <p style={{ fontSize: "20px", marginRight: "7rem" }}>
-                Yes. It`s very good! I like it.
-              </p>
-              <Image
-                src={imagepctm2}
-                alt="pic"
-                width="45"
-                height="45"
-                style={{ borderRadius: "50%" }}
-              />
-            </Row>
           </Card>
         </Row>
+        <Row align="end">
+          <Card
+            style={{ marginBottom: "1rem", maxWidth: "30rem", margin: "0" }}
+          >
+            <p style={{ fontSize: "1.8rem", margin: "0", marginLeft: "2rem" }}>
+              Yes. It`s very good! I like it.
+            </p>
+          </Card>
+          <Image
+            src={imagepctm2}
+            alt="pic"
+            width="45"
+            height="45"
+            style={{ borderRadius: "50%" }}
+          />
+        </Row>
 
-        <p style={{ fontSize: "20px", marginTop: "5rem" }}>
-          You can even put a very large text inside using Yakad Card.
-        </p>
-        <Card>
-          <p style={{ fontSize: "150px", textAlign: "center" }}>text</p>
-        </Card>
-      </Stack>
+        <h3>Example 3</h3>
+
+        <p>You can even put a very large text inside using Yakad Card.</p>
+        <GridContainer>
+          <GridItem xs={6} sm={4} md={3} xl={2}>
+            <Card align="center">
+              <Symbol icon="widgets" />
+            </Card>
+          </GridItem>
+          <GridItem xs={6} sm={4} md={3} xl={2}>
+            <Card align="center">
+              <Symbol icon="waving_hand" />
+            </Card>
+          </GridItem>
+          <GridItem xs={6} sm={4} md={3} xl={2}>
+            <Card align="center">
+              <Symbol icon="verified" />
+            </Card>
+          </GridItem>
+          <GridItem xs={6} sm={4} md={3} xl={2}>
+            <Card align="center">
+              <Symbol icon="zoom_out" />
+            </Card>
+          </GridItem>
+          <GridItem xs={6} sm={4} md={3} xl={2}>
+            <Card align="center">
+              <Symbol icon="add_home" />
+            </Card>
+          </GridItem>
+          <GridItem xs={6} sm={4} md={3} xl={2}>
+            <Card align="center">
+              <Symbol icon="airlines" />
+            </Card>
+          </GridItem>
+          <GridItem xs={6} sm={4} md={3} xl={2}>
+            <Card align="center">
+              <Symbol icon="assessment" />
+            </Card>
+          </GridItem>
+          <GridItem xs={6} sm={4} md={3} xl={2}>
+            <Card align="center">
+              <Symbol icon="vaccines" />
+            </Card>
+          </GridItem>
+          <GridItem xs={6} sm={4} md={3} xl={2}>
+            <Card align="center">
+              <Symbol icon="web_stories" />
+            </Card>
+          </GridItem>
+          <GridItem xs={6} sm={4} md={3} xl={2}>
+            <Card align="center">
+              <Symbol icon="face" />
+            </Card>
+          </GridItem>
+          <GridItem xs={6} sm={4} md={3} xl={2}>
+            <Card align="center">
+              <Symbol icon="fact_check" />
+            </Card>
+          </GridItem>
+          <GridItem xs={6} sm={4} md={3} xl={2}>
+            <Card align="center">
+              <Symbol icon="kayaking" />
+            </Card>
+          </GridItem>
+        </GridContainer>
+      </Container>
+
+      <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
+        <h3>Source code in github</h3>
+      </a>
     </Container>
   );
 }

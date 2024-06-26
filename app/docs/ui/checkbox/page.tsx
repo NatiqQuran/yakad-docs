@@ -60,6 +60,11 @@ export default function Page() {
           </Button>
         </Row>
       </Card>
+
+      <h3>Source code in github:</h3>
+      <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
+        https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar
+      </a>
     </Container>
   );
 }
