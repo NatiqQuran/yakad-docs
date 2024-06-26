@@ -38,11 +38,11 @@ export default function Page() {
         <Tbody>
           <Tr>
             <Td>variant</Td>
-            <Td>"dotted" | "strips"</Td>
+            <Td>dotted | strips</Td>
           </Tr>
           <Tr>
             <Td>separator</Td>
-            <Td>"shadowinside" | "shadowoutside"</Td>
+            <Td>shadowinside | shadowoutside</Td>
           </Tr>
           <Tr>
             <Td>backgroundimage</Td>
