@@ -38,12 +38,15 @@ export default function NavList() {
     {
       name: "Yakad X",
       childs: [
-        { name: "XbackButton" },
-        { name: "Xbackground" },
-        { name: "XforwardButton" },
-        { name: "Xgetstart" },
-        { name: "Xpanel" },
-        { name: "Xtable" },
+        {
+          name: "Xbackground",
+          onclick: () => router.push("/docs/X/Xbackground"),
+        },
+        { name: "XgetStart", onclick: () => router.push("/docs/X/XgetStart") },
+        { name: "XloginBox", onclick: () => router.push("/docs/X/XloginBox") },
+        { name: "Xmenu", onclick: () => router.push("/docs/X/Xmenu") },
+        { name: "Xpanel", onclick: () => router.push("/docs/X/Xpanel") },
+        { name: "Xtable", onclick: () => router.push("/docs/X/Xtable") },
       ],
     },
     { name: "Yakad Symbol", onclick: () => router.push("/docs/symbol") },
