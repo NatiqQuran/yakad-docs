@@ -45,6 +45,20 @@ export default function Page() {
 
       <h2>Properties</h2>
       <p>Properties that are accepted as attributes:</p>
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Property</Th>
+            <Th>Value</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          <Tr>
+            <Td>align</Td>
+            <Td>start | center | end</Td>
+          </Tr>
+        </Tbody>
+      </Table>
 
       <h3>align</h3>
       <p>
