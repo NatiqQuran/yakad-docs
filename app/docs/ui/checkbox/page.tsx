@@ -7,6 +7,13 @@ import {
   Hr,
   InputField,
   Row,
+  Spacer,
+  Table,
+  Tbody,
+  Td,
+  Th,
+  Thead,
+  Tr,
 } from "@yakad/ui";
 import React from "react";
 
@@ -15,38 +22,105 @@ export default function Page() {
 
   return (
     <Container maxWidth="md">
-      <h1 style={{ fontSize: "25px" }}>What is a checkbox?</h1>
-      <h2 style={{ fontSize: "20px" }}>
-        A check box is a small box that a tick appears on when you click on it.
-        Check boxes are used to confirm something.
-      </h2>
+      <h1>Checkbox</h1>
+      <Hr />
+      <p>Discription</p>
+      <Card>
+        <Row>
+          <span>
+            <code>{'import { Checkbox } from "@yakad/ui"'}</code>
+            <br />
+            <br />
+            <code>{"<Checkbox />"}</code>
+          </span>
+          <Spacer />
+          <Button icon="content_copy"></Button>
+        </Row>
+      </Card>
+      <h2>Properties</h2>
+      <p>Properties that are accepted as attributes:</p>
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Property</Th>
+            <Th>Value</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          <Tr>
+            <Td>label</Td>
+            <Td>string</Td>
+          </Tr>
+          <Tr>
+            <Td>checked</Td>
+            <Td>True | False</Td>
+          </Tr>
+          <Tr>
+            <Td>disabled</Td>
+            <Td>True | False</Td>
+          </Tr>
+        </Tbody>
+      </Table>
+      <h3>label</h3>
+      <p>
+        The characteristic of the label is that it shows the value we write next
+        to the Checkbox and creates a space between the Checkbox and the label
+        value.
+      </p>
+      <Card>
+        <Chekbox label="Test" />
+      </Card>
+
+      <h3>checked</h3>
+      <p>With this feature, you can put your checkbox in tick mode.</p>
+      <Card>
+        <Chekbox checked label="checked" />
+        <Chekbox label="not checked" />
+        <Chekbox label="checked" checked />
+        <Chekbox label="not checked" />
+      </Card>
+      <h3>disabled</h3>
+      <p>
+        This feature makes us unable to click on the Checkbox and it is not
+        checked.
+      </p>
+      <Card>
+        <Chekbox label="inabled" />
+        <Chekbox label="disabled" disabled />
+      </Card>
+      <h2>Examples</h2>
+      <h3>Example 1</h3>
       <Card style={{ maxWidth: "70rem" }}>
-        <h1>Tick ​​whichever one you like.</h1>
+        <h3>Tick ​​whichever one you like.</h3>
         <Chekbox label="Do you accept the rules of the site?" />
         <Chekbox label="Do you want to be notified of the site?" />
         <Chekbox label="Do you want us to play music for you?" />
         <Chekbox label="Do you want the page to Refresh?" />
       </Card>
-      <h1>A variety of features:</h1>
+      <h3>Examle 2</h3>
       <Card style={{ maxWidth: "50rem" }}>
-        <h1>Disabled</h1>
+        <h3>A variety of features:</h3>
+        <Hr />
+
+        <h3>Disabled</h3>
         <Chekbox label="inabled" />
         <Chekbox disabled label="disabled" />
-        <h1>Checked</h1>
+        <Hr />
+        <h3>Checked</h3>
         <Chekbox checked label="checked" />
         <Chekbox label="not checked" />
         <Chekbox checked disabled label="dissabled checked" />
       </Card>
-      <h1>Example:</h1>
+      <h3>Example 3</h3>
       <Card style={{ maxWidth: "50rem" }}>
         <Row align="center">
           <Symbol icon="login" />
-          <h1>Sign Up</h1>
+          <h3>Sign Up</h3>
         </Row>
         <Hr />
-        <h1>Enter your Username:</h1>
+        <h3>Enter your Username:</h3>
         <InputField placeholder="Username" type="name" />
-        <h1>Enter your Password:</h1>
+        <h3>Enter your Password:</h3>
         <InputField placeholder="Password" type="password" />
         <Chekbox label="Remember My Password" />
         <Hr />
@@ -61,9 +135,8 @@ export default function Page() {
         </Row>
       </Card>
 
-      <h3>Source code in github:</h3>
       <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
-        https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar
+        <h3>Source code in github</h3>
       </a>
     </Container>
   );
