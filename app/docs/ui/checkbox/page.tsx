@@ -34,7 +34,7 @@ export default function Page() {
             <code>{"<Checkbox />"}</code>
           </span>
           <Spacer />
-          <Button icon="content_copy"></Button>
+          <Button icon={<Symbol icon="file_copy" />}></Button>
         </Row>
       </Card>
       <h2>Properties</h2>

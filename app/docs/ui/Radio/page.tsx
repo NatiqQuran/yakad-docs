@@ -1,3 +1,4 @@
+import Symbol from "@yakad/symbols";
 import {
   Button,
   Card,
@@ -30,7 +31,7 @@ export default function Page() {
             <code>{"<RadioGroup><RadioButton /></RadioGroup>"}</code>
           </span>
           <Spacer />
-          <Button icon="content_copy"></Button>
+          <Button icon={<Symbol icon="file_copy" />}></Button>
         </Row>
       </Card>
       <p>

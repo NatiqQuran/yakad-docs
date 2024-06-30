@@ -35,7 +35,7 @@ export default function Page() {
             <code>{"<Card>Card</Card>"}</code>
           </span>
           <Spacer />
-          <Button icon="content_copy"></Button>
+          <Button icon={<Symbol icon="content_copy" />}></Button>
         </Row>
       </Card>
       <h3>Simple Card</h3>
