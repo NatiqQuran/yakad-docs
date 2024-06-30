@@ -1,39 +1,183 @@
-import { Container } from "@yakad/ui";
+import {
+  Button,
+  Card,
+  Container,
+  Hr,
+  Row,
+  Spacer,
+  Table,
+  Tbody,
+  Td,
+  Th,
+  Thead,
+  Tr,
+} from "@yakad/ui";
+import Link from "next/link";
 
 export default function Page() {
   return (
     <Container>
-      <Container maxWidth="lg">
-        <h1 style={{ fontSize: "3rem" }}>Container</h1>
-        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+      <Container maxWidth="md">
+        <h1>Container</h1>
+        <Hr />
+        <p>Discription</p>
+        <Card>
+          <Row>
+            <span>
+              <code>{'import { Container } from "@yakad/ui"'}</code>
+              <br />
+              <br />
+              <code>{"<Container>Container</Container>"}</code>
+            </span>
+            <Spacer />
+            <Button icon="content_copy"></Button>
+          </Row>
+        </Card>
+        <h2>Properties</h2>
+        <p>Properties that are accepted as attributes:</p>
+        <Table>
+          <Thead>
+            <Tr>
+              <Th>Property</Th>
+              <Th>Value</Th>
+            </Tr>
+          </Thead>
+          <Tbody>
+            <Tr>
+              <Td>align</Td>
+              <Td>start | center | end</Td>
+            </Tr>
+            <Tr>
+              <Td>maxWidth</Td>
+              <Td>"xs" | "sm" | "md" | "lg" | "xl"</Td>
+            </Tr>
+          </Tbody>
+        </Table>
+        <h3>align</h3>
+        <p>
+          With this property, you can easily move all the things you put in the
+          Container, that is, you can fold it in the middle and simply fold it
+          left or right.
+        </p>
+        <Container align="start">
+          <Card>Start</Card>
+        </Container>
+        <Container align="center">
+          <Card>center</Card>
+        </Container>
+        <Container align="end">
+          <Card>end</Card>
+        </Container>
       </Container>
-      <h1>Example 1 :</h1>
-      <Container style={{ backgroundColor: "gray" }}>
-        <h1>Normal Container</h1>
-      </Container>
-      <br />
-      <h1>Example 2 :</h1>
+      <h3>maxWidth</h3>
+      <p>
+        If you want to increase or decrease the size of your container so that
+        there is no problem in its responsiveness, I suggest you this option.
+        <br />
+        (The difference in these sizes can be seen only on pages with dimensions
+        greater than 760 px.)
+      </p>
       <Container maxWidth="xl" style={{ backgroundColor: "gray" }}>
-        <h1>Extera Large Container</h1>
+        <h3>Extera Large Container</h3>
       </Container>
       <br />
-      <h1>Example 3 : </h1>
       <Container maxWidth="lg" style={{ backgroundColor: "gray" }}>
-        <h1>Large Container</h1>
+        <h3>Large Container</h3>
       </Container>
       <br />
-      <h1>Example 4 : </h1>
       <Container maxWidth="md" style={{ backgroundColor: "gray" }}>
-        <h1>medium</h1>
+        <h3>medium</h3>
       </Container>
       <br />
-      <h1>Example 5 : </h1>
       <Container maxWidth="sm" style={{ backgroundColor: "gray" }}>
-        <h1>Small</h1>
+        <h3>Small</h3>
       </Container>
-      <br /> <h1>Example 6 : </h1>
+      <br />
       <Container maxWidth="xs" style={{ backgroundColor: "gray" }}>
-        <h1>Extera Small</h1>
+        <h3>Extera Small</h3>
+      </Container>
+      <Container maxWidth="lg">
+        <h2>Examples</h2>
+        <h3>Example 1</h3>
+
+        <Container maxWidth="sm">
+          <Row>
+            <Card align="start">Start</Card>
+            <Card align="center">Center</Card>
+            <Card align="end">End</Card>
+          </Row>
+        </Container>
+
+        <h3>Example 2</h3>
+
+        <Container maxWidth="md">
+          <h1 style={{ fontSize: "3rem" }}>Owerview</h1>
+          <p style={{ fontSize: "20px" }}>
+            We bulit <b>Yakad</b> to meet the UI/UX needs of the{" "}
+            <Link target="_blank" href="https://natiq.net">
+              Natiq
+            </Link>{" "}
+            project. By with the MIT licens, we also provided the open source
+            community.
+          </p>
+          <Hr />
+        </Container>
+
+        <h3>Example 3</h3>
+        <Container maxWidth="lg" id="learnmore">
+          <Row>
+            <Card>
+              <h1>Yakad UI</h1>
+              <p style={{ fontSize: "12px" }}>
+                It is about our components such as buttons, appbar, card and...
+              </p>
+              <Link href="#">
+                <Button size="small" variant="outlined">
+                  click to continue!
+                </Button>
+              </Link>
+            </Card>
+
+            <Card>
+              <h1>Yakad X</h1>
+              <p style={{ fontSize: "12px" }}>
+                It is about ready made structures such as X Panel and...
+              </p>
+              <Link href="#">
+                <Button size="small" variant="outlined">
+                  click to continue!
+                </Button>
+              </Link>
+            </Card>
+
+            <Card>
+              <h1>Yakad symbols</h1>
+              <p style={{ fontSize: "12px" }}>
+                You can find the desired logo here and use it more easily.
+              </p>
+              <Link href="#">
+                <Button size="small" variant="outlined">
+                  click to continue!
+                </Button>
+              </Link>
+            </Card>
+
+            <Card>
+              <h1>Yakad lib</h1>
+              <p style={{ fontSize: "12px" }}>
+                There are ready made functions that are mostly used by YacadX
+              </p>
+              <Link href="#">
+                <Button size="small" variant="outlined">
+                  click to continue!
+                </Button>
+              </Link>
+            </Card>
+          </Row>
+        </Container>
+        <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
+          <h3>Source code in github</h3>
+        </a>
       </Container>
     </Container>
   );

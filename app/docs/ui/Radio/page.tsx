@@ -6,39 +6,86 @@ import {
   RadioButton,
   RadioGroup,
   Row,
+  Spacer,
+  Table,
+  Tbody,
+  Td,
+  Th,
+  Thead,
+  Tr,
 } from "@yakad/ui";
 
 export default function Page() {
   return (
     <Container maxWidth="md">
       <h1>Radio Group and Radio Button</h1>
-      <p style={{ fontSize: "20px" }}>
+      <Hr />
+      <p>Discription</p>
+      <Card>
+        <Row>
+          <span>
+            <code>{'import { Radio } from "@yakad/ui"'}</code>
+            <br />
+            <br />
+            <code>{"<RadioGroup><RadioButton /></RadioGroup>"}</code>
+          </span>
+          <Spacer />
+          <Button icon="content_copy"></Button>
+        </Row>
+      </Card>
+      <p>
         Radio group is a collection of radio buttons, here you will find
         different types of radio buttons and radio groups.
       </p>
       <Card>
         <RadioGroup name="A">
           <RadioButton />
-          <RadioButton />
-          <RadioButton />
         </RadioGroup>
       </Card>
-      <h1>Default Value and Value:</h1>
-      <p style={{ fontSize: "20px" }}>
+      <h2>Properties</h2>
+      <p>Properties that are accepted as attributes:</p>
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Property</Th>
+            <Th>Value</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          <Tr>
+            <Td>value</Td>
+            <Td>string</Td>
+          </Tr>
+          <Tr>
+            <Td>label</Td>
+            <Td>string</Td>
+          </Tr>
+          <Tr>
+            <Td>checked</Td>
+            <Td>True | False</Td>
+          </Tr>
+          <Tr>
+            <Td>disabled</Td>
+            <Td>True | False</Td>
+          </Tr>
+        </Tbody>
+      </Table>
+      <h3>Default Value and Value</h3>
+      <p>
         In this section, we give the default value to the radio group and the
         value to the radio button and set a value for each. If the default value
         is equal to any radio button value, that radio button will be checked.
       </p>
       <Card>
-        <h1 style={{ fontSize: "20px" }}>Default Value =&gt;one</h1>
+        <h3>Default Value =&gt;one</h3>
         <RadioGroup name="B" defaultValue="one">
           <RadioButton value="zero" label="value = Zero" />
           <RadioButton value="one" label="value = One" />
           <RadioButton value="two" label="value = two" />
         </RadioGroup>
       </Card>
-      <h1>Label:</h1>
-      <p style={{ fontSize: "20px" }}>
+      <h3>Label</h3>
+      <p>
         We write the label in the radio button. The characteristic of the label
         is that it shows the value we write next to the radio button and creates
         a space between the radio button and the label value.
@@ -50,21 +97,38 @@ export default function Page() {
           <RadioButton label="two" />
         </RadioGroup>
       </Card>
-      <h1>disabled:</h1>
-      <p style={{ fontSize: "20px" }}>
+
+      <h3>checked</h3>
+      <p>
+        Use this property in each of the radio buttons, that radio button will
+        be in checked mode.
+      </p>
+
+      <Card>
+        <RadioGroup name="D">
+          <RadioButton label="uncheckd" />
+          <RadioButton label="checked" checked />
+          <RadioButton label="unchecked" />
+        </RadioGroup>
+      </Card>
+
+      <h3>disabled</h3>
+      <p>
         This feature makes us unable to click on the radio button and it is not
         checked.
       </p>
       <Card style={{ marginBottom: "3rem" }}>
-        <RadioGroup name="D" defaultValue="bir">
+        <RadioGroup name="E" defaultValue="bir">
           <RadioButton value="bir" label="inable" />
           <RadioButton disabled label="disable" />
         </RadioGroup>
       </Card>
 
-      <h1>Example 1:</h1>
+      <h2>Examples</h2>
+
+      <h3>Example 1</h3>
       <Card style={{ maxWidth: "60rem" }}>
-        <h1>Choose the color you want!</h1>
+        <h3>Choose the color you want!</h3>
         <Hr />
         <RadioGroup name="Example" defaultValue="">
           <RadioButton value="num1" label="Blue" />
@@ -77,10 +141,10 @@ export default function Page() {
         </Row>
       </Card>
 
-      <h1>Example 2:</h1>
+      <h3>Example 2</h3>
 
       <Card style={{ maxWidth: "60rem" }}>
-        <h1>How do you think our site is?</h1>
+        <h3>How do you think our site is?</h3>
         <Hr />
         <RadioGroup name="Example" defaultValue="">
           <RadioButton value="n1" label="Excellent" />
@@ -94,10 +158,13 @@ export default function Page() {
         <Hr />
         <Row align="center" style={{ marginTop: "2rem" }}>
           <Button variant="outlined">Yes</Button>
-          <h1>Do you like these questions?</h1>
+          <h3>Do you like these questions?</h3>
           <Button variant="outlined">No</Button>
         </Row>
       </Card>
+      <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
+        <h3>Source code in github</h3>
+      </a>
     </Container>
   );
 }
