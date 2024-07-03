@@ -1,16 +1,4 @@
-import {
-  AppBar,
-  Button,
-  Card,
-  Container,
-  Footer,
-  Main,
-  Page,
-  Row,
-  Spacer,
-  Stack,
-  Hr,
-} from "@yakad/ui";
+import { Container, Hr } from "@yakad/ui";
 import ExampleProjects from "./example";
 import Installation from "./installation";
 import Link from "next/link";
@@ -31,7 +19,6 @@ export default function Docs() {
         <Hr />
       </Container>
       <Installation />
-      <ExampleProjects />
     </div>
   );
 }

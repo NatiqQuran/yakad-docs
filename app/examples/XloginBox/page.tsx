@@ -1,13 +1,27 @@
+import { Card, Row, Button, Stack, InputField, Chekbox, Hr } from "@yakad/ui";
 import { XloginBox } from "@yakad/x";
+import Symbol from "@yakad/symbols";
 
 export default function Page() {
   return (
     <XloginBox>
-      <h1>Some data</h1>
-      <h1>Some data</h1>
-      <h1>Some data</h1>
-      <h1>Some data</h1>
-      <h1>Some data</h1>
+      <Row align="center">
+        <h3>You can put login Form here</h3>
+      </Row>
+      <Hr />
+      <form>
+        <Stack style={{ maxWidth: "30rem", margin: "auto" }} align="center">
+          <InputField placeholder="Username" type="Name" />
+          <InputField placeholder="Password" type="Password" />
+          <Button variant="filled">Submit</Button>
+          <Chekbox label="Remember Me" />
+        </Stack>
+      </form>
+      <Hr variant="shortLine" />
+      <Stack align="center">
+        <Button variant="outlined">Register</Button>
+        <Button variant="text">cancel</Button>
+      </Stack>
     </XloginBox>
   );
 }

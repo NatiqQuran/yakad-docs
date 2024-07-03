@@ -1,9 +1,47 @@
-import { AppBar, Button, Container } from "@yakad/ui";
-2;
+import {
+  Card,
+  Container,
+  Hr,
+  Table,
+  Thead,
+  Tbody,
+  Tr,
+  Th,
+  Td,
+  CodeBox,
+} from "@yakad/ui";
+import Link from "next/link";
+
 export default function Page() {
   return (
     <Container maxWidth="md">
       <h1>Xpanel</h1>
+      <Hr />
+      <p>A simple fast intro Xpanel</p>
+      <CodeBox>{'import { Xpanel } from "@yakad/x";'}</CodeBox>
+      <br />
+      <br />
+      <CodeBox>{"<Xpanel>Contenet</Xpanel>"}</CodeBox>
+      <h2>Properties</h2>
+      <p>Properties that are accepted as attributes:</p>
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Property</Th>
+            <Th>Value</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          <Tr>
+            <Td>variant</Td>
+            <Td>_</Td>
+          </Tr>
+        </Tbody>
+      </Table>
+      <h2>Example</h2>
+      <Link href="/examples/Xpanel" target="_blank">
+        Exampl Link
+      </Link>
     </Container>
   );
 }
