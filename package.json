@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@yakad/symbols": "1.0.4",
+    "@yakad/symbols": "1.0.7",
     "@yakad/ui": "1.2.171-beta",
     "@yakad/x": "1.0.91-beta",
     "next": "14.2.2",
