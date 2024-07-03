@@ -124,12 +124,9 @@ export default function Page() {
         <InputField placeholder="Password" type="password" />
         <Chekbox label="Remember My Password" />
         <Hr />
-        <Chekbox
-          label="You must accept the rules to Confirm!"
-          id="checkBoxTik"
-        />
+        <Chekbox label="You must accept the rules to Confirm!" />
         <Row align="center" style={{ marginTop: "2rem" }}>
-          <Button variant="elevated" disabled id="disabledConfirmBtn">
+          <Button variant="elevated" disabled>
             Confirm
           </Button>
         </Row>

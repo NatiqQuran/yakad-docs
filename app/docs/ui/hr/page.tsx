@@ -108,10 +108,10 @@ export default function Page() {
         <h3>Error 404</h3>
         <Hr />
         <p>
-          The website hosting server will typically generate a "404 Not Found"
-          web page when a user attempts to follow a broken or dead link; hence
-          the 404 error is one of the most recognizable errors encountered on
-          the World Wide Web.
+          The website hosting server will typically generate a &quot;404 Not
+          Found&quot; web page when a user attempts to follow a broken or dead
+          link; hence the 404 error is one of the most recognizable errors
+          encountered on the World Wide Web.
         </p>
         <h3>please check your network or try again later!</h3>
         <Row align="center" style={{ marginTop: "5rem" }}>
