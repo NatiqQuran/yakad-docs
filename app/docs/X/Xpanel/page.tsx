@@ -18,10 +18,13 @@ export default function Page() {
       <h1>Xpanel</h1>
       <Hr />
       <p>A simple fast intro Xpanel</p>
-      <CodeBox>{'import { Xpanel } from "@yakad/x";'}</CodeBox>
-      <br />
-      <br />
-      <CodeBox>{"<Xpanel>Contenet</Xpanel>"}</CodeBox>
+      <CodeBox>
+        <code>{'import { Xpanel } from "@yakad/x";'}</code>
+        <br />
+        <br />
+        <code>{"<Xpanel>Contenet</Xpanel>"}</code>
+      </CodeBox>
+
       <h2>Properties</h2>
       <p>Properties that are accepted as attributes:</p>
       <Table>

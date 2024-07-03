@@ -12,7 +12,6 @@ import {
   GridItem,
   CodeBox,
 } from "@yakad/ui";
-
 import { Xbackground } from "@yakad/x";
 import backgroundImage from "./sky.webp";
 
@@ -22,10 +21,12 @@ export default function Page() {
       <h1>Xbackground</h1>
       <Hr />
       <p>A simple fast intro Xbackground</p>
-      <CodeBox>{'import { Xbackground } from "@yakad/x";'}</CodeBox>
-      <br />
-      <br />
-      <CodeBox>{"<Xbackground>Contenet</Xbackground>"}</CodeBox>
+      <CodeBox>
+        <code>{'import { Xbackground } from "@yakad/x";'}</code>
+        <br />
+        <br />
+        <code>{"<Xbackground>Contenet</Xbackground>"}</code>
+      </CodeBox>
       <h2>Properties</h2>
       <p>Properties that are accepted as attributes:</p>
       <Table>

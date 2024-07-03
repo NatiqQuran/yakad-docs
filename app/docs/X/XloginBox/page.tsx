@@ -17,10 +17,12 @@ export default function Page() {
       <h1>XloginBox</h1>
       <Hr />
       <p>A simple fast intro XloginBox</p>
-      <CodeBox>{'import { XloginBox } from "@yakad/x";'}</CodeBox>
-      <br />
-      <br />
-      <CodeBox>{"<XloginBox>Contenet</XloginBox>"}</CodeBox>
+      <CodeBox>
+        <code>{'import { XloginBox } from "@yakad/x";'}</code>
+        <br />
+        <br />
+        <code>{"<XloginBox>Contenet</XloginBox>"}</code>
+      </CodeBox>
       <h2>Properties</h2>
       <p>Properties that are accepted as attributes:</p>
       <Table>

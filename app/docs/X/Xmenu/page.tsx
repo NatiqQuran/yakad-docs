@@ -70,10 +70,12 @@ export default function Page() {
       <h1>XmenuList</h1>
       <Hr />
       <p>A simple fast XmenuList</p>
-      <CodeBox>{'import { XmenuList } from "@yakad/x";'}</CodeBox>
-      <br />
-      <br />
-      <CodeBox>{"<XmenuList>Contenet</XmenuList>"}</CodeBox>
+      <CodeBox>
+        <code>{'import { XmenuList } from "@yakad/x";'}</code>
+        <br />
+        <br />
+        <code>{"<XmenuList>Contenet</XmenuList>"}</code>
+      </CodeBox>
       <h2>Properties</h2>
       <p>Properties that are accepted as attributes:</p>
       <Table>
