@@ -46,6 +46,7 @@ export default function NavList() {
         { name: "XloginBox", onclick: () => router.push("/docs/X/XloginBox") },
         { name: "XmenuList", onclick: () => router.push("/docs/X/Xmenu") },
         { name: "Xpanel", onclick: () => router.push("/docs/X/Xpanel") },
+        { name: "XdataMap", onclick: () => router.push("/docs/X/XdataMap") },
         { name: "Xtable", onclick: () => router.push("/docs/X/Xtable") },
       ],
     },

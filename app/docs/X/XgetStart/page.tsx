@@ -16,7 +16,6 @@ import {
   CodeBox,
 } from "@yakad/ui";
 import { XgetStart } from "@yakad/x";
-import { Children } from "react";
 
 export default function Page() {
   return (
