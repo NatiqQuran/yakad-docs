@@ -1,5 +1,4 @@
 import {
-  Card,
   Container,
   Hr,
   Table,
@@ -8,8 +7,7 @@ import {
   Tr,
   Th,
   Td,
-  GridContainer,
-  GridItem,
+  CodeBox,
 } from "@yakad/ui";
 import Link from "next/link";
 
@@ -18,13 +16,13 @@ export default function Page() {
     <Container maxWidth="md">
       <h1>XloginBox</h1>
       <Hr />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <Card>
+      <p>A simple fast intro XloginBox</p>
+      <CodeBox>
         <code>{'import { XloginBox } from "@yakad/x";'}</code>
         <br />
         <br />
         <code>{"<XloginBox>Contenet</XloginBox>"}</code>
-      </Card>
+      </CodeBox>
       <h2>Properties</h2>
       <p>Properties that are accepted as attributes:</p>
       <Table>
@@ -42,7 +40,9 @@ export default function Page() {
         </Tbody>
       </Table>
       <h2>Example</h2>
-      <Link href="/examples/XloginBox">Exampl Link</Link>
+      <Link href="/examples/XloginBox" target="_blank">
+        Exampl Link
+      </Link>
     </Container>
   );
 }

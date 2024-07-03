@@ -13,22 +13,22 @@ import {
   GridContainer,
   GridItem,
   AppBar,
+  CodeBox,
 } from "@yakad/ui";
 import { XgetStart } from "@yakad/x";
-import { Children } from "react";
 
 export default function Page() {
   return (
     <Container maxWidth="md">
       <h1>XgetStart</h1>
       <Hr />
-      <p>A simple fast intro box</p>
-      <Card>
+      <p>A simple fast intro XgetStart</p>
+      <CodeBox>
         <code>{'import { XgetStart } from "@yakad/x";'}</code>
         <br />
         <br />
         <code>{"<XgetStart>Contenet</XgetStart>"}</code>
-      </Card>
+      </CodeBox>
       <h2>Properties</h2>
       <p>Properties that are accepted as attributes:</p>
       <Table>
