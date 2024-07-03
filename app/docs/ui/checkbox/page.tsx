@@ -34,7 +34,7 @@ export default function Page() {
             <code>{"<Checkbox />"}</code>
           </span>
           <Spacer />
-          <Button icon="content_copy"></Button>
+          <Button icon={<Symbol icon="file_copy" />}></Button>
         </Row>
       </Card>
       <h2>Properties</h2>
@@ -124,12 +124,9 @@ export default function Page() {
         <InputField placeholder="Password" type="password" />
         <Chekbox label="Remember My Password" />
         <Hr />
-        <Chekbox
-          label="You must accept the rules to Confirm!"
-          id="checkBoxTik"
-        />
+        <Chekbox label="You must accept the rules to Confirm!" />
         <Row align="center" style={{ marginTop: "2rem" }}>
-          <Button variant="elevated" disabled id="disabledConfirmBtn">
+          <Button variant="elevated" disabled>
             Confirm
           </Button>
         </Row>

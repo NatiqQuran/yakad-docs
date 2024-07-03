@@ -27,7 +27,7 @@ export default function Page() {
         <Row>
           <code>{'import { AppBar } from "@yakad/ui"'}</code>
           <Spacer />
-          <Button icon="content_copy"></Button>
+          <Button icon={<Symbol icon="file_copy" />}></Button>
         </Row>
         <code>{"<AppBar>AppBar</AppBar>"}</code>
       </Card>
@@ -68,7 +68,7 @@ export default function Page() {
       <h2>Examples</h2>
       <h3>Examples 1</h3>
       <AppBar>
-        <Button icon="menu" />
+        <Button icon={<Symbol icon="menu" />}></Button>
         <h1>AppBar</h1>
       </AppBar>
 
@@ -81,7 +81,7 @@ export default function Page() {
         <Button>Github</Button>
         <Button>About</Button>
         <Spacer />
-        <Button variant="outlined" icon="login">
+        <Button variant="outlined" icon={<Symbol icon="login" />}>
           Login
         </Button>
       </AppBar>

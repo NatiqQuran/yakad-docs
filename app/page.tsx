@@ -1,7 +1,7 @@
 import { AppBar, Button, Main, Page as Pg, Spacer, SvgIcon } from "@yakad/ui";
 import Link from "next/link";
 import LogoIcon from "./logoicon";
-import { Getstart, Cards } from "./content";
+import { Getstart, Cards, Tables } from "./content";
 import IntroFooter from "./footer";
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
       <Main>
         <Getstart />
         <Cards />
+        <Tables />
         <IntroFooter />
       </Main>
     </Pg>

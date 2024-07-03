@@ -1,3 +1,4 @@
+import Symbol from "@yakad/symbols";
 import {
   Button,
   Card,
@@ -30,7 +31,7 @@ export default function Page() {
               <code>{"<Container>Container</Container>"}</code>
             </span>
             <Spacer />
-            <Button icon="content_copy"></Button>
+            <Button icon={<Symbol icon="file_copy" />}></Button>
           </Row>
         </Card>
         <h2>Properties</h2>
@@ -49,7 +50,7 @@ export default function Page() {
             </Tr>
             <Tr>
               <Td>maxWidth</Td>
-              <Td>"xs" | "sm" | "md" | "lg" | "xl"</Td>
+              <Td>{'"xs" | "sm" | "md" | "lg" | "xl"'}</Td>
             </Tr>
           </Tbody>
         </Table>
