@@ -1,4 +1,5 @@
 import { Button, Card, Container, Row, Spacer, Stack, Hr } from "@yakad/ui";
+import Symbol from "@yakad/symbols";
 
 export default function Installation() {
   return (
@@ -11,7 +12,7 @@ export default function Installation() {
       <Card style={{ fontSize: "20px", maxWidth: "40rem", padding: "15px" }}>
         <Row>
           npm i @yakad/ui <Spacer />
-          <Button icon="content_copy" />
+          <Button icon={<Symbol icon="content_copy" />} />
         </Row>
       </Card>
       <p style={{ fontSize: "2rem" }}>Compatibil with Next.Js/React</p>
@@ -19,7 +20,7 @@ export default function Installation() {
       <Card style={{ fontSize: "20px", maxWidth: "40rem", padding: "15px" }}>
         <Row>
           npm i @yakad/x <Spacer />
-          <Button icon="content_copy" />
+          <Button icon={<Symbol icon="content_copy" />} />
         </Row>
       </Card>
       <p style={{ fontSize: "2rem" }}>Compatibil with Next.Js/React</p>
@@ -27,7 +28,7 @@ export default function Installation() {
       <Card style={{ fontSize: "20px", maxWidth: "40rem", padding: "15px" }}>
         <Row>
           npm i @yakad/Symbols <Spacer />
-          <Button icon="content_copy" />
+          <Button icon={<Symbol icon="content_copy" />} />
         </Row>
       </Card>
       <p style={{ fontSize: "2rem" }}>Compatibil with Next.Js/React</p>
@@ -35,7 +36,7 @@ export default function Installation() {
       <Card style={{ fontSize: "20px", maxWidth: "40rem", padding: "15px" }}>
         <Row>
           npm i @yakad/lib <Spacer />
-          <Button icon="content_copy" />
+          <Button icon={<Symbol icon="content_copy" />} />
         </Row>
       </Card>
       <p style={{ fontSize: "2rem" }}>Compatibil with Next.Js</p>

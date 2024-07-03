@@ -50,7 +50,7 @@ export default function Page() {
             </Tr>
             <Tr>
               <Td>maxWidth</Td>
-              <Td>"xs" | "sm" | "md" | "lg" | "xl"</Td>
+              <Td>{'"xs" | "sm" | "md" | "lg" | "xl"'}</Td>
             </Tr>
           </Tbody>
         </Table>

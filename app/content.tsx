@@ -126,9 +126,9 @@ export function Tables() {
           beauty and continuity, and it is much easier to work with it, and you
           can do many things with this table.Among the tasks, you can easily
           place the list of pages you have created in the table so that you
-          don't forget how many pages you have and what their names are. And
-          secondly, if you follow the form that we have given in the table, your
-          work will be much easier and more beautiful.
+          don&apos;t forget how many pages you have and what their names are.
+          And secondly, if you follow the form that we have given in the table,
+          your work will be much easier and more beautiful.
         </p>
       </Row>
     </Container>

@@ -32,6 +32,12 @@ export default function NavList() {
           onclick: () => router.push("/docs/ui/clickawaylistiner"),
         },
         { name: "Footer", onclick: () => router.push("/docs/ui/footer") },
+        {
+          name: "row",
+          onclick: () => router.push("/docs/ui/row"),
+        },
+        { name: "Stack", onclick: () => router.push("/docs/ui/Stack") },
+        { name: "table", onclick: () => router.push("/docs/ui/table") },
       ],
     },
 
