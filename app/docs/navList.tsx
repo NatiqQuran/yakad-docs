@@ -29,9 +29,9 @@ export default function NavList() {
         { name: "hr", onclick: () => router.push("/docs/ui/hr") },
         {
           name: "clickAwayListiner",
-          onclick: () => router.push("/docs/clickawaylistiner"),
+          onclick: () => router.push("/docs/ui/clickawaylistiner"),
         },
-        { name: "Footer", onclick: () => router.push("/docs/footer") },
+        { name: "Footer", onclick: () => router.push("/docs/ui/footer") },
       ],
     },
 
