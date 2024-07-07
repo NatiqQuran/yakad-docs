@@ -11,8 +11,12 @@ import {
   Tbody,
   Td,
   CodeBox,
+  Button,
+  Row,
 } from "@yakad/ui";
 import { XmenuList } from "@yakad/x";
+import Symbol from "@yakad/symbols";
+import Link from "next/link";
 
 export default function Page() {
   const menuItems = [
@@ -74,7 +78,7 @@ export default function Page() {
         <code>{'import { XmenuList } from "@yakad/x";'}</code>
         <br />
         <br />
-        <code>{"<XmenuList>Contenet</XmenuList>"}</code>
+        <code>{"<XmenuList menuItems={menuItems} />"}</code>
       </CodeBox>
       <h2>Properties</h2>
       <p>Properties that are accepted as attributes:</p>
@@ -87,20 +91,47 @@ export default function Page() {
         </Thead>
         <Tbody>
           <Tr>
-            <Td></Td>
-            <Td>_</Td>
+            <Td>name</Td>
+            <Td>string</Td>
           </Tr>
           <Tr>
-            <Td></Td>
-            <Td>_</Td>
+            <Td>onclicks</Td>
+            <Td>function</Td>
+          </Tr>
+          <Tr>
+            <Td>childs</Td>
+            <Td>MenuItemChild</Td>
+          </Tr>
+          <Tr>
+            <Td>selected</Td>
+            <Td>boolean</Td>
           </Tr>
         </Tbody>
       </Table>
       <h2>Properties</h2>
-      <h3>date example</h3>
+      <h3>Data Example</h3>
       <Card style={{ maxWidth: "40rem" }}>
         <XmenuList menuItems={menuItems} />
       </Card>
+      <h2>Useaful Links</h2>
+      <Row>
+        <Link
+          href="https://github.com/NatiqQuran/yakad/tree/main/packages/x/XmenuList"
+          target="_blank"
+        >
+          <Button size="large" variant="link" icon={<Symbol icon="link" />}>
+            XmenuList Source code
+          </Button>
+        </Link>
+        <Link
+          href="https://github.com/NatiqQuran/yakad-docs/tree/main/app/docs/X/Xmenu"
+          target="_blank"
+        >
+          <Button size="large" variant="link" icon={<Symbol icon="link" />}>
+            This Page Source code
+          </Button>
+        </Link>
+      </Row>
     </Container>
   );
 }

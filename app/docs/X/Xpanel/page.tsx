@@ -9,8 +9,11 @@ import {
   Th,
   Td,
   CodeBox,
+  Row,
+  Button,
 } from "@yakad/ui";
 import Link from "next/link";
+import Symbol from "@yakad/symbols";
 
 export default function Page() {
   return (
@@ -36,8 +39,16 @@ export default function Page() {
         </Thead>
         <Tbody>
           <Tr>
-            <Td>variant</Td>
-            <Td>_</Td>
+            <Td>name</Td>
+            <Td>string</Td>
+          </Tr>
+          <Tr>
+            <Td>appbarChildren</Td>
+            <Td>JSX.Element</Td>
+          </Tr>
+          <Tr>
+            <Td>navigationChildren</Td>
+            <Td>JSX.Element</Td>
           </Tr>
         </Tbody>
       </Table>
@@ -45,6 +56,25 @@ export default function Page() {
       <Link href="/examples/Xpanel" target="_blank">
         Exampl Link
       </Link>
+      <h2>Useaful Links</h2>
+      <Row>
+        <Link
+          href="https://github.com/NatiqQuran/yakad/tree/main/packages/x/Xpanel"
+          target="_blank"
+        >
+          <Button size="large" variant="link" icon={<Symbol icon="link" />}>
+            Xpanel Source code
+          </Button>
+        </Link>
+        <Link
+          href="https://github.com/NatiqQuran/yakad-docs/tree/main/app/docs/X/Xpanel"
+          target="_blank"
+        >
+          <Button size="large" variant="link" icon={<Symbol icon="link" />}>
+            This Page Source code
+          </Button>
+        </Link>
+      </Row>
     </Container>
   );
 }
