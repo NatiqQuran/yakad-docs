@@ -1,37 +1,29 @@
 import LogoIcon from "@/app/logoicon";
-import {
-  Container,
-  Hr,
-  Tr,
-  Table,
-  Thead,
-  Th,
-  Tbody,
-  Td,
-  CodeBox,
-} from "@yakad/ui";
+import { Container, Hr, CodeBox, Row, Button } from "@yakad/ui";
 import { XdataMap } from "@yakad/x";
+import Link from "next/link";
+import Symbol from "@yakad/symbols";
 
 const dataFromServer: any[] = [
   {
     name: "Mercedes-Benz",
-    color: "black",
-    type: "G_Class",
+    color: "Green",
+    model: "G_class",
   },
   {
-    name: "Maclaren",
-    color: "red",
-    type: "turbo",
+    name: "Mclaren",
+    color: "Dark Gray",
+    model: "720s",
   },
   {
     name: "BMW",
-    color: "withe",
-    type: "I8",
+    color: "Withe",
+    model: "i8",
   },
   {
-    name: "Ford",
-    color: "withe",
-    type: "t85",
+    name: "Mustang",
+    color: "Dark Blue",
+    model: "gt500",
   },
 ];
 
@@ -45,13 +37,30 @@ export default function Page() {
         <code>{'import { XgetStart } from "@yakad/x";'}</code>
         <br />
         <br />
-        <code>{"<XgetStart>Contenet</XgetStart>"}</code>
+        <code>{"<XdataMap data={dataFromServer} />"}</code>
       </CodeBox>
       <h2>Properties</h2>
       <p>Properties that are accepted as attributes:</p>
-      <h2>Properties</h2>
-      <h3>variant</h3>
       <XdataMap data={dataFromServer} />
+      <h2>Useaful Links</h2>
+      <Row>
+        <Link
+          href="https://github.com/NatiqQuran/yakad/tree/main/packages/x/XdataMap"
+          target="_blank"
+        >
+          <Button size="large" variant="link" icon={<Symbol icon="link" />}>
+            XdataMap Source code
+          </Button>
+        </Link>
+        <Link
+          href="https://github.com/NatiqQuran/yakad-docs/tree/main/app/docs/X/XdataMap"
+          target="_blank"
+        >
+          <Button size="large" variant="link" icon={<Symbol icon="link" />}>
+            This Page Source code
+          </Button>
+        </Link>
+      </Row>
     </Container>
   );
 }

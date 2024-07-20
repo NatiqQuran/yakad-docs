@@ -1,5 +1,4 @@
 import {
-  Card,
   Container,
   Hr,
   Table,
@@ -11,9 +10,13 @@ import {
   GridContainer,
   GridItem,
   CodeBox,
+  Button,
+  Row,
 } from "@yakad/ui";
+import Link from "next/link";
 import { Xbackground } from "@yakad/x";
 import backgroundImage from "./sky.webp";
+import Symbol from "@yakad/symbols";
 
 export default function Page() {
   return (
@@ -118,6 +121,25 @@ export default function Page() {
           </Xbackground>
         </GridItem>
       </GridContainer>
+      <h2>Useaful Links</h2>
+      <Row>
+        <Link
+          href="https://github.com/NatiqQuran/yakad/tree/main/packages/x/Xbackground"
+          target="_blank"
+        >
+          <Button size="large" variant="link" icon={<Symbol icon="link" />}>
+            Xbackground Source code
+          </Button>
+        </Link>
+        <Link
+          href="https://github.com/NatiqQuran/yakad-docs/tree/main/app/docs/X/Xbackground"
+          target="_blank"
+        >
+          <Button size="large" variant="link" icon={<Symbol icon="link" />}>
+            This Page Source code
+          </Button>
+        </Link>
+      </Row>
     </Container>
   );
 }

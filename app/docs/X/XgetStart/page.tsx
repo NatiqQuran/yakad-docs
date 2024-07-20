@@ -1,7 +1,6 @@
 import LogoIcon from "@/app/logoicon";
 import {
   Button,
-  Card,
   Container,
   Hr,
   Tr,
@@ -10,12 +9,13 @@ import {
   Th,
   Tbody,
   Td,
-  GridContainer,
-  GridItem,
-  AppBar,
   CodeBox,
+  Card,
+  Row,
 } from "@yakad/ui";
 import { XgetStart } from "@yakad/x";
+import Link from "next/link";
+import Symbol from "@yakad/symbols";
 
 export default function Page() {
   return (
@@ -41,25 +41,42 @@ export default function Page() {
         <Tbody>
           <Tr>
             <Td>logo</Td>
-            <Td>_</Td>
+            <Td>Icon</Td>
           </Tr>
+
           <Tr>
             <Td>children</Td>
-            <Td>_</Td>
+            <Td>React.ReactNode</Td>
           </Tr>
         </Tbody>
       </Table>
-      <h2>Properties</h2>
-      <h3>variant</h3>
-      <GridContainer>
-        <GridItem sm={12} xl={6}>
-          <XgetStart logo={<LogoIcon />}>
-            <h1>XgetStart</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-            <Button variant="filledtonal">XgetStart</Button>
-          </XgetStart>
-        </GridItem>
-      </GridContainer>
+      <h2>Example</h2>
+      <Card>
+        <XgetStart logo={<LogoIcon />}>
+          <h1>XgetStart</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+          <Button variant="filledtonal">Get Start!</Button>
+        </XgetStart>
+      </Card>
+      <h2>Useaful Links</h2>
+      <Row>
+        <Link
+          href="https://github.com/NatiqQuran/yakad/tree/main/packages/x/XgetStart"
+          target="_blank"
+        >
+          <Button size="large" variant="link" icon={<Symbol icon="link" />}>
+            XgetStart Source code
+          </Button>
+        </Link>
+        <Link
+          href="https://github.com/NatiqQuran/yakad-docs/tree/main/app/docs/X/XgetStart"
+          target="_blank"
+        >
+          <Button size="large" variant="link" icon={<Symbol icon="link" />}>
+            This Page Source code
+          </Button>
+        </Link>
+      </Row>
     </Container>
   );
 }
