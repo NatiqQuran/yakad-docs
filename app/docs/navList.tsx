@@ -28,7 +28,7 @@ export default function NavList() {
         { name: "Grid", onclick: () => router.push("/docs/ui/grid") },
         { name: "Hr", onclick: () => router.push("/docs/ui/hr") },
         {
-          name: "clickAwayListiner",
+          name: "ClickAwayListiner",
           onclick: () => router.push("/docs/ui/clickawaylistiner"),
         },
         { name: "Footer", onclick: () => router.push("/docs/ui/footer") },
@@ -38,6 +38,7 @@ export default function NavList() {
         },
         { name: "Stack", onclick: () => router.push("/docs/ui/stack") },
         { name: "Table", onclick: () => router.push("/docs/ui/table") },
+        { name: "Theme", onclick: () => router.push("/docs/ui/theme") },
         { name: "SvgIcon", onclick: () => router.push("/docs/ui/svgIcon") },
       ],
     },
