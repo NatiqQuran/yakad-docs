@@ -2,7 +2,6 @@ import Symbol from "@yakad/symbols";
 import {
   Button,
   Container,
-  Main,
   Row,
   Stack,
   Hr,
@@ -34,12 +33,12 @@ export default function Page() {
               <code>{"<Button>Button</Button>"}</code>
             </span>
             <Spacer />
-            <Button icon={<Symbol icon="file_copy" />}></Button>
+            <Button icon={<Symbol icon="content_copy" />}></Button>
           </Row>
         </Card>
         <h3>Simple Button</h3>
         <Card align="center">
-          <Button>Button</Button>
+          <Button variant="outlined">Button</Button>
         </Card>
         <h2>Properties</h2>
         <p>Properties that are accepted as attributes:</p>

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Docs() {
   return (
-    <div>
+    <>
       <Container maxWidth="md">
         <h1 style={{ fontSize: "3rem" }}>Owerview</h1>
         <p style={{ fontSize: "20px" }}>
@@ -19,6 +19,6 @@ export default function Docs() {
         <Hr />
       </Container>
       <Installation />
-    </div>
+    </>
   );
 }

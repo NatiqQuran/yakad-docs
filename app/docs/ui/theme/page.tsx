@@ -17,7 +17,29 @@ import {
   Theme,
   Tr,
 } from "@yakad/ui";
-import Link from "next/link";
+
+interface themeModeProps {
+  name: "Light" | "Dark" | "System";
+  value: "light" | "dark" | "system";
+  symbol: string;
+}
+const themeModeList: themeModeProps[] = [
+  { name: "Light", value: "light", symbol: "light_mode" },
+  { name: "Dark", value: "dark", symbol: "dark_mode" },
+  { name: "System", value: "system", symbol: "contrast" },
+];
+
+interface themeColorProps {
+  name: "Green" | "Red" | "Blue" | "Yellow" | "Purple";
+  value: "green" | "red" | "blue" | "yellow" | "purple";
+}
+const themeColorList: themeColorProps[] = [
+  { name: "Green", value: "green" },
+  { name: "Red", value: "red" },
+  { name: "Blue", value: "blue" },
+  { name: "Yellow", value: "yellow" },
+  { name: "Purple", value: "purple" },
+];
 
 export default function Page() {
   return (
@@ -64,106 +86,37 @@ export default function Page() {
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
       <h2>Theme Mode</h2>
       <GridContainer>
-        <GridItem sm={12} xl={4}>
-          <Theme mode="light">
-            <Card align="center">
-              <Stack align="center">
-                <Symbol icon="light_mode"></Symbol>
-                <div>Light</div>
-              </Stack>
-            </Card>
-          </Theme>
-        </GridItem>
-        <GridItem sm={12} xl={4}>
-          <Theme mode="dark">
-            <Card align="center">
-              <Stack align="center">
-                <Symbol icon="dark_mode"></Symbol>
-                <div>Dark</div>
-              </Stack>
-            </Card>
-          </Theme>
-        </GridItem>
-        <GridItem sm={12} xl={4}>
-          <Theme mode="system">
-            <Card align="center">
-              <Stack align="center">
-                <Symbol icon="laptop"></Symbol>
-                <div>System</div>
-              </Stack>
-            </Card>
-          </Theme>
-        </GridItem>
+        {themeModeList.map((themeModeItem) => (
+          <GridItem sm={12} xl={4}>
+            <Theme mode={themeModeItem.value}>
+              <Card align="center">
+                <Stack align="center">
+                  <Symbol icon={themeModeItem.symbol}></Symbol>
+                  <div>{themeModeItem.name}</div>
+                </Stack>
+              </Card>
+            </Theme>
+          </GridItem>
+        ))}
       </GridContainer>
       <h2>Theme Color</h2>
       <GridContainer columns={10}>
-        <GridItem xs={12} md={5} xl={2}>
-          <Theme color="green">
-            <Card>
-              <Stack align="center">
-                <Symbol type="default" icon="color_lens" />
-                <div>Green</div>
-                <Button size="small" variant="filled">
-                  Button
-                </Button>
-              </Stack>
-            </Card>
-          </Theme>
-        </GridItem>
-        <GridItem xs={12} md={5} xl={2}>
-          <Theme color="red">
-            <Card>
-              <Stack align="center">
-                <Symbol type="default" icon="color_lens" />
-                <div>Red</div>
-                <Button size="small" variant="filled">
-                  Button
-                </Button>
-              </Stack>
-            </Card>
-          </Theme>
-        </GridItem>
-        <GridItem xs={12} md={5} xl={2}>
-          <Card>
-            <Theme color="yellow">
-              <span>
+        {themeColorList.map((themeColorItem) => (
+          <GridItem xs={12} md={5} xl={2}>
+            <Theme color={themeColorItem.value}>
+              <Card>
                 <Stack align="center">
-                  <Symbol type="default" icon="color_lens" />
-                  <div>Yellow</div>
+                  <Symbol icon="color_lens" />
+                  <div>{themeColorItem.name}</div>
                   <Button size="small" variant="filled">
                     Button
                   </Button>
+                  <Button variant="filledtonal">Button</Button>
                 </Stack>
-              </span>
+              </Card>
             </Theme>
-          </Card>
-        </GridItem>
-        <GridItem xs={12} md={5} xl={2}>
-          <Theme color="blue">
-            <Card>
-              <Stack align="center" color="Red">
-                <Symbol type="default" icon="color_lens" />
-                <div>Blue</div>
-                <Button size="small" variant="filled">
-                  Button
-                </Button>
-              </Stack>
-            </Card>
-          </Theme>
-        </GridItem>
-        <GridItem xs={12} md={5} xl={2}>
-          <Theme color="purple">
-            <Card>
-              <Stack align="center">
-                <Symbol type="default" icon="color_lens" />
-                <div>Purple</div>
-                <Button size="small" variant="filled">
-                  Button
-                </Button>
-              </Stack>
-            </Card>
-          </Theme>
-        </GridItem>
+          </GridItem>
+        ))}
       </GridContainer>
       <h2>Theme Zoom</h2>
       <h2>Coming Soon</h2>
