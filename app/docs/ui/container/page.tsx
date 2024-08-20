@@ -60,13 +60,13 @@ export default function Page() {
           Container, that is, you can fold it in the middle and simply fold it
           left or right.
         </p>
-        <Container align="start">
+        <Container align="start" style={{ padding: "1rem" }}>
           <Card>Start</Card>
         </Container>
-        <Container align="center">
+        <Container align="center" style={{ padding: "1rem" }}>
           <Card>center</Card>
         </Container>
-        <Container align="end">
+        <Container align="end" style={{ padding: "1rem" }}>
           <Card>end</Card>
         </Container>
       </Container>

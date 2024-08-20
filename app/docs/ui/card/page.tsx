@@ -7,7 +7,6 @@ import {
   Hr,
   Row,
   Spacer,
-  Stack,
   Table,
   Tbody,
   Td,
@@ -19,6 +18,25 @@ import Image from "next/image";
 import imagepctm1 from "./jpg/pctm1.jpg";
 import imagepctm2 from "./jpg/pctm2.jpg";
 import Symbol from "@yakad/symbols";
+
+interface iconCardsProps {
+  symbol: string;
+}
+
+const iconCardsList: iconCardsProps[] = [
+  { symbol: "widgets" },
+  { symbol: "waving_hand" },
+  { symbol: "verified" },
+  { symbol: "zoom_out" },
+  { symbol: "zoom_out" },
+  { symbol: "airlines" },
+  { symbol: "assessment" },
+  { symbol: "vaccines" },
+  { symbol: "web_stories" },
+  { symbol: "face" },
+  { symbol: "fact_check" },
+  { symbol: "kayaking" },
+];
 
 export default function Page() {
   return (
@@ -184,66 +202,13 @@ export default function Page() {
 
         <p>You can even put a very large text inside using Yakad Card.</p>
         <GridContainer>
-          <GridItem xs={6} sm={4} md={3} xl={2}>
-            <Card align="center">
-              <Symbol icon="widgets" />
-            </Card>
-          </GridItem>
-          <GridItem xs={6} sm={4} md={3} xl={2}>
-            <Card align="center">
-              <Symbol icon="waving_hand" />
-            </Card>
-          </GridItem>
-          <GridItem xs={6} sm={4} md={3} xl={2}>
-            <Card align="center">
-              <Symbol icon="verified" />
-            </Card>
-          </GridItem>
-          <GridItem xs={6} sm={4} md={3} xl={2}>
-            <Card align="center">
-              <Symbol icon="zoom_out" />
-            </Card>
-          </GridItem>
-          <GridItem xs={6} sm={4} md={3} xl={2}>
-            <Card align="center">
-              <Symbol icon="add_home" />
-            </Card>
-          </GridItem>
-          <GridItem xs={6} sm={4} md={3} xl={2}>
-            <Card align="center">
-              <Symbol icon="airlines" />
-            </Card>
-          </GridItem>
-          <GridItem xs={6} sm={4} md={3} xl={2}>
-            <Card align="center">
-              <Symbol icon="assessment" />
-            </Card>
-          </GridItem>
-          <GridItem xs={6} sm={4} md={3} xl={2}>
-            <Card align="center">
-              <Symbol icon="vaccines" />
-            </Card>
-          </GridItem>
-          <GridItem xs={6} sm={4} md={3} xl={2}>
-            <Card align="center">
-              <Symbol icon="web_stories" />
-            </Card>
-          </GridItem>
-          <GridItem xs={6} sm={4} md={3} xl={2}>
-            <Card align="center">
-              <Symbol icon="face" />
-            </Card>
-          </GridItem>
-          <GridItem xs={6} sm={4} md={3} xl={2}>
-            <Card align="center">
-              <Symbol icon="fact_check" />
-            </Card>
-          </GridItem>
-          <GridItem xs={6} sm={4} md={3} xl={2}>
-            <Card align="center">
-              <Symbol icon="kayaking" />
-            </Card>
-          </GridItem>
+          {iconCardsList.map((iconCardsList) => (
+            <GridItem xs={6} sm={4} md={3} xl={2}>
+              <Card align="center">
+                <Symbol icon={iconCardsList.symbol} />
+              </Card>
+            </GridItem>
+          ))}
         </GridContainer>
       </Container>
 

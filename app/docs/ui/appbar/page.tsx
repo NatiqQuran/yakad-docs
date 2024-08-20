@@ -27,7 +27,7 @@ export default function Page() {
         <Row>
           <code>{'import { AppBar } from "@yakad/ui"'}</code>
           <Spacer />
-          <Button icon={<Symbol icon="file_copy" />}></Button>
+          <Button icon={<Symbol icon="content_copy" />}></Button>
         </Row>
         <code>{"<AppBar>AppBar</AppBar>"}</code>
       </Card>
