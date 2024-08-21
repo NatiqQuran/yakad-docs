@@ -18,9 +18,10 @@ import Image from "next/image";
 import imagepctm1 from "./jpg/pctm1.jpg";
 import imagepctm2 from "./jpg/pctm2.jpg";
 import Symbol from "@yakad/symbols";
+import { iconsCode } from "@yakad/symbols/iconsCode";
 
 interface iconCardsProps {
-  symbol: string;
+  symbol: iconsCode;
 }
 
 const iconCardsList: iconCardsProps[] = [
@@ -202,8 +203,8 @@ export default function Page() {
 
         <p>You can even put a very large text inside using Yakad Card.</p>
         <GridContainer>
-          {iconCardsList.map((iconCardsList) => (
-            <GridItem xs={6} sm={4} md={3} xl={2}>
+          {iconCardsList.map((iconCardsList, index) => (
+            <GridItem key={index} xs={6} sm={4} md={3} xl={2}>
               <Card align="center">
                 <Symbol icon={iconCardsList.symbol} />
               </Card>

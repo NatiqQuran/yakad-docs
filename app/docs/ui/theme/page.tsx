@@ -1,4 +1,3 @@
-import Symbol from "@yakad/symbols";
 import {
   Button,
   Card,
@@ -17,11 +16,13 @@ import {
   Theme,
   Tr,
 } from "@yakad/ui";
+import Symbol from "@yakad/symbols";
+import { iconsCode } from "@yakad/symbols/iconsCode";
 
 interface themeModeProps {
   name: "Light" | "Dark" | "System";
   value: "light" | "dark" | "system";
-  symbol: string;
+  symbol: iconsCode;
 }
 const themeModeList: themeModeProps[] = [
   { name: "Light", value: "light", symbol: "light_mode" },
@@ -71,7 +72,7 @@ export default function Page() {
         <Tbody>
           <Tr>
             <Td>mode</Td>
-            <Td> "light" | "dark" | "system"</Td>
+            <Td>{'"light" | "dark" | "system"'}</Td>
           </Tr>
           <Tr>
             <Td>color</Td>
@@ -86,8 +87,8 @@ export default function Page() {
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
       <h2>Theme Mode</h2>
       <GridContainer>
-        {themeModeList.map((themeModeItem) => (
-          <GridItem sm={12} xl={4}>
+        {themeModeList.map((themeModeItem, index) => (
+          <GridItem key={index} sm={12} xl={4}>
             <Theme mode={themeModeItem.value}>
               <Card align="center">
                 <Stack align="center">
@@ -101,8 +102,8 @@ export default function Page() {
       </GridContainer>
       <h2>Theme Color</h2>
       <GridContainer columns={10}>
-        {themeColorList.map((themeColorItem) => (
-          <GridItem xs={12} md={5} xl={2}>
+        {themeColorList.map((themeColorItem, index) => (
+          <GridItem key={index} xs={12} md={5} xl={2}>
             <Theme color={themeColorItem.value}>
               <Card>
                 <Stack align="center">

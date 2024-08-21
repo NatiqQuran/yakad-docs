@@ -30,7 +30,7 @@ export default function Page() {
             <code>{"<Row>Row</Row>"}</code>
           </span>
           <Spacer />
-          <Button icon={<Symbol icon="file_copy" />}></Button>
+          <Button icon={<Symbol icon="content_copy" />}></Button>
         </Row>
       </Card>
 

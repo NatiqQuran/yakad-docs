@@ -29,7 +29,7 @@ export default function Page() {
 
   return (
     <Container maxWidth="md">
-      <h1>Checkbox</h1>
+      <h1>SvgIcon</h1>
       <Hr />
       <p>Discription</p>
       <Card>
@@ -41,7 +41,7 @@ export default function Page() {
             <code>{"<SvgIcon /><IconName /></SvgIcon>"}</code>
           </span>
           <Spacer />
-          <Button icon={<Symbol icon="file_copy" />}></Button>
+          <Button icon={<Symbol icon="content_copy" />}></Button>
         </Row>
       </Card>
       <h3>Yakad SvgIcon</h3>
