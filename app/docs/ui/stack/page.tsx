@@ -31,7 +31,7 @@ export default function Page() {
             <code>{"<Stack>Stack</Stack>"}</code>
           </span>
           <Spacer />
-          <Button icon={<Symbol icon="file_copy" />}></Button>
+          <Button icon={<Symbol icon="content_copy" />}></Button>
         </Row>
       </Card>
 
