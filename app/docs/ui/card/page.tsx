@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Button,
   Card,
@@ -14,16 +15,15 @@ import {
   Thead,
   Tr,
 } from "@yakad/ui";
-import Image from "next/image";
+import Symbol from "@yakad/symbols";
+import { IconCode } from "@yakad/symbols/types";
+
 import imagepctm1 from "./jpg/pctm1.jpg";
 import imagepctm2 from "./jpg/pctm2.jpg";
-import Symbol from "@yakad/symbols";
-import { iconsCode } from "@yakad/symbols/iconsCode";
 
 interface iconCardsProps {
-  symbol: iconsCode;
+  symbol: IconCode;
 }
-
 const iconCardsList: iconCardsProps[] = [
   { symbol: "widgets" },
   { symbol: "waving_hand" },

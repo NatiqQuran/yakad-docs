@@ -39,6 +39,7 @@ export default function NavList() {
         { name: "Stack", onclick: () => router.push("/docs/ui/stack") },
         { name: "Table", onclick: () => router.push("/docs/ui/table") },
         { name: "Theme", onclick: () => router.push("/docs/ui/theme") },
+        { name: "Loading", onclick: () => router.push("/docs/ui/loading") },
         { name: "SvgIcon", onclick: () => router.push("/docs/ui/svgIcon") },
       ],
     },

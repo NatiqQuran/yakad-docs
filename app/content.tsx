@@ -19,11 +19,6 @@ import LogoIcon from "./logoicon";
 export function Getstart() {
   return (
     <Xbackground variant="dotted">
-      {/* <h1 style={{ fontSize: "12rem", textAlign: "center" }}>
-        A <span style={{ color: "#3064f4" }}> fully featured </span> React{" "}
-        <br />
-        components library
-      </h1> */}
       <XgetStart style={{ fill: "#3064f4" }} logo={<LogoIcon />}>
         <h1 style={{ fontSize: "8rem", color: "#3064f4" }}>Yakad</h1>
         <p style={{ fontSize: "2.7rem", textAlign: "justify" }}>
@@ -52,7 +47,7 @@ export function Cards() {
         <GridItem xs={12} sm={6} xl={3}>
           <Card>
             <h1>Yakad UI</h1>
-            <p style={{ fontSize: "12px" }}>
+            <p>
               It is about our components such as buttons, appbar, card and...
             </p>
             <Link href="#">
@@ -65,9 +60,7 @@ export function Cards() {
         <GridItem xs={12} sm={6} xl={3}>
           <Card>
             <h1>Yakad X</h1>
-            <p style={{ fontSize: "12px" }}>
-              It is about ready made structures such as X Panel and...
-            </p>
+            <p>It is about ready made structures such as X Panel and...</p>
             <Link href="#">
               <Button size="small" variant="outlined">
                 click to continue!
@@ -78,9 +71,7 @@ export function Cards() {
         <GridItem xs={12} sm={6} xl={3}>
           <Card>
             <h1>Yakad symbols</h1>
-            <p style={{ fontSize: "12px" }}>
-              You can find the desired logo here and use it more easily.
-            </p>
+            <p>You can find the desired logo here and use it more easily.</p>
             <Link href="#">
               <Button size="small" variant="outlined">
                 click to continue!
@@ -91,9 +82,7 @@ export function Cards() {
         <GridItem xs={12} sm={6} xl={3}>
           <Card>
             <h1>Yakad lib</h1>
-            <p style={{ fontSize: "12px" }}>
-              There are ready made functions that are mostly used by YacadX
-            </p>
+            <p>There are ready made functions that are mostly used by YacadX</p>
             <Link href="#">
               <Button size="small" variant="outlined">
                 click to continue!

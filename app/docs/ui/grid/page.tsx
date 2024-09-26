@@ -1,4 +1,3 @@
-import Symbol from "@yakad/symbols";
 import {
   Button,
   Card,
@@ -15,6 +14,21 @@ import {
   Thead,
   Tr,
 } from "@yakad/ui";
+import Symbol from "@yakad/symbols";
+import { IconCode } from "@yakad/symbols/types";
+
+interface iconCardsProps {
+  symbol: IconCode;
+}
+
+const iconCardsList: iconCardsProps[] = [
+  { symbol: "sip" },
+  { symbol: "mic" },
+  { symbol: "self_improvement" },
+  { symbol: "newspaper" },
+  { symbol: "light_mode" },
+  { symbol: "dark_mode" },
+];
 
 export default function Page() {
   return (
@@ -307,42 +321,14 @@ export default function Page() {
         </GridItem>
       </GridContainer>
       <GridContainer>
-        <GridItem xs={6} md={3} xl={2}>
-          <Card align="center">
-            <Symbol icon="cable" />
-            <p>Relationship</p>
-          </Card>
-        </GridItem>
-        <GridItem xs={6} md={3} xl={2}>
-          <Card align="center">
-            <Symbol icon="mic" />
-            <p>Voise</p>
-          </Card>
-        </GridItem>
-        <GridItem xs={6} md={3} xl={2}>
-          <Card align="center">
-            <Symbol icon="local_atm" />
-            <p>tax</p>
-          </Card>
-        </GridItem>
-        <GridItem xs={6} md={3} xl={2}>
-          <Card align="center">
-            <Symbol icon="newspaper" />
-            <p>Newspaper</p>
-          </Card>
-        </GridItem>
-        <GridItem xs={6} md={3} xl={2}>
-          <Card align="center">
-            <Symbol icon="light_mode" />
-            <p>Light-Mode</p>
-          </Card>
-        </GridItem>
-        <GridItem xs={6} md={3} xl={2}>
-          <Card align="center">
-            <Symbol icon="dark_mode" />
-            <p>Dark-Mode</p>
-          </Card>
-        </GridItem>
+        {iconCardsList.map((iconCardsProps, index) => (
+          <GridItem key={index} xs={6} md={3} xl={2}>
+            <Card align="center">
+              <Symbol icon="cable" />
+              <p>Relationship</p>
+            </Card>
+          </GridItem>
+        ))}
       </GridContainer>
       <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
         <h3>Source code in github</h3>
