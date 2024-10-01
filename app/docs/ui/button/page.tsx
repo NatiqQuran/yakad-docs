@@ -20,10 +20,11 @@ export default function Page() {
     <>
       <Container maxWidth="md">
         <h1>Yakad Buttons</h1>
-
         <Hr />
-
-        <p>Discription</p>
+        <p>
+          Buttons allow users to take actions, and make choices, with a single
+          tap.
+        </p>
         <Card>
           <Row>
             <span>
@@ -36,10 +37,7 @@ export default function Page() {
             <Button icon={<Symbol icon="content_copy" />}></Button>
           </Row>
         </Card>
-        <h3>Simple Button</h3>
-        <Card align="center">
-          <Button variant="outlined">Button</Button>
-        </Card>
+
         <h2>Properties</h2>
         <p>Properties that are accepted as attributes:</p>
         <Table>
@@ -64,7 +62,7 @@ export default function Page() {
           </Tbody>
         </Table>
         <h3>Size:</h3>
-        <p>With this property, different sizes can be given to our buttons.</p>
+        <p>you can use different size button.</p>
         <Card
           align="center"
           style={{
@@ -352,6 +350,7 @@ function ButtonLoading() {
           </Button>
         </Row>
       </Card>
+      <h2>Links</h2>
 
       <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
         <h3>Source code in github</h3>
