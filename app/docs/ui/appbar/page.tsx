@@ -22,7 +22,13 @@ export default function Page() {
     <Container maxWidth="md">
       <h1>AppBar</h1>
       <Hr />
-      <p>Discription</p>
+      <p>
+        This feature makes positionSticky stick to the ceiling of your screen
+        when it is true and stay there no matter how low you go. But if it is
+        false, it will stay in its original place and will not accompany you
+        when you go down.PositionSticky is in the appbar below True. Try the
+        example below.
+      </p>
       <Card>
         <Row>
           <code>{'import { AppBar } from "@yakad/ui"'}</code>
@@ -31,11 +37,6 @@ export default function Page() {
         </Row>
         <code>{"<AppBar>AppBar</AppBar>"}</code>
       </Card>
-      <h3>simble example</h3>
-      <AppBar>
-        <h1>Appbar</h1>
-      </AppBar>
-
       <h2>Properties</h2>
       <p>Properties that are accepted as attributes:</p>
       <Table>
@@ -52,27 +53,20 @@ export default function Page() {
           </Tr>
         </Tbody>
       </Table>
-
       <h3>PositionSticky</h3>
       <p>
-        This feature makes positionSticky stick to the ceiling of your screen
-        when it is true and stay there no matter how low you go. But if it is
-        false, it will stay in its original place and will not accompany you
-        when you go down.PositionSticky is in the appbar below True. Try the
-        example below.
+        If you scroll the page, the <b>AppBar</b> remains fixed
       </p>
       <AppBar positionSticky>
         <h1>AppBar</h1>
       </AppBar>
-
       <h2>Examples</h2>
-      <h3>Examples 1</h3>
+      <h3>Example 1</h3>
       <AppBar>
         <Button icon={<Symbol icon="menu" />}></Button>
         <h1>AppBar</h1>
       </AppBar>
-
-      <h3>Examples 2</h3>
+      <h3>Example 2</h3>
       <AppBar>
         <SvgIcon size={4}>
           <LogoIcon />
@@ -85,14 +79,17 @@ export default function Page() {
           Login
         </Button>
       </AppBar>
-
       <p>
         As you can see, you can add buttons, menus, texts and other things on
         the Appbar.In addition, with Appbar, you can make attractive headers
         that are not only beautiful and simple, but also one of the best choices
         for your header.
       </p>
-      <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
+      <h2>Links</h2>
+      <a
+        href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar"
+        target="_blank"
+      >
         <h3>Source code in github</h3>
       </a>
     </Container>

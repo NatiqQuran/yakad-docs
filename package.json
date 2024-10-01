@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@yakad/symbols": "1.0.7",
-    "@yakad/ui": "1.2.190-beta",
-    "@yakad/x": "1.0.106-beta",
+    "@yakad/symbols": "1.0.15",
+    "@yakad/ui": "1.2.195-beta",
+    "@yakad/x": "1.0.112-beta",
     "next": "14.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
