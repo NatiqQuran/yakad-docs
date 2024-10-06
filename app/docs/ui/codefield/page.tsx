@@ -15,13 +15,16 @@ import {
   Tbody,
   Td,
 } from "@yakad/ui";
+import Example1 from "./example1";
+import Example2 from "./example2";
+import Example3 from "./example3";
 
 export default function Page() {
   return (
     <Container maxWidth="md">
       <h1>CodeField</h1>
       <Hr />
-      <p>Discription</p>
+      <p>input for your codes.</p>
       <Card>
         <Row>
           <span>
@@ -35,10 +38,6 @@ export default function Page() {
         </Row>
       </Card>
 
-      <h3>Simple CodeField</h3>
-      <Card style={{ maxWidth: "60rem" }}>
-        <CodeField length={6} />
-      </Card>
       <h2>Properties</h2>
       <p>Properties that are accepted as attributes:</p>
       <Table>
@@ -80,61 +79,15 @@ export default function Page() {
       </Card>
       <h2>Examples</h2>
       <h3>Example 1</h3>
-      <Card
-        style={{
-          maxWidth: "50rem",
-        }}
-      >
-        <Row align="center">
-          <h3>Verify Your Number</h3>
-        </Row>
-        <form>
-          <Stack align="center">
-            <p>Enter the 6 digit code we sent to your phone.</p>
-            <CodeField length={6} />
-            <Hr />
-            <Button variant="outlined">Resend Code</Button>
-          </Stack>
-        </form>
-      </Card>
+      <Example1 />
 
       <h3>Example 2</h3>
-      <Card
-        style={{
-          maxWidth: "50rem",
-        }}
-      >
-        <Row align="center">
-          <h3>Verification Code </h3>
-        </Row>
-        <form style={{ margin: "auto" }}>
-          <Stack align="center">
-            <CodeField length={4} />
-            <Button variant="outlined">Send Code by email</Button>
-            <Button variant="filled">Verify</Button>
-          </Stack>
-        </form>
-      </Card>
+      <Example2 />
+
       <h3>Example 3</h3>
-      <Card
-        style={{
-          maxWidth: "50rem",
-        }}
-      >
-        <Row align="center">
-          <h3>Verify</h3>
-        </Row>
-        <Hr variant="shortLine" />
-        <form>
-          <Stack align="center">
-            <p>Enter your verifaction code</p>
-            <CodeField length={10} />
-            <Button variant="filled">Submit</Button>
-            <br />
-            <Button variant="outlined">Cancel</Button>
-          </Stack>
-        </form>
-      </Card>
+      <Example3 />
+
+      <h2>Links</h2>
       <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
         <h3>Source code in github</h3>
       </a>
