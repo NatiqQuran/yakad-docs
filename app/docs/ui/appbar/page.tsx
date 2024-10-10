@@ -23,11 +23,9 @@ export default function Page() {
       <h1>AppBar</h1>
       <Hr />
       <p>
-        This feature makes positionSticky stick to the ceiling of your screen
-        when it is true and stay there no matter how low you go. But if it is
-        false, it will stay in its original place and will not accompany you
-        when you go down.PositionSticky is in the appbar below True. Try the
-        example below.
+        A responsive navigation header positioned on top side of your page that
+        includes support for branding, links, navigation, collapse menu and
+        more.
       </p>
       <Card>
         <Row>

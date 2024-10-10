@@ -75,7 +75,7 @@ export default function Page() {
           <Card>end</Card>
         </Container>
       </Container>
-      <Container maxWidth="lg">
+      <Container maxWidth="md">
         <h3>maxWidth</h3>
         <p>
           If you want to increase or decrease the size of your container so that
@@ -84,9 +84,11 @@ export default function Page() {
           (The difference in these sizes can be seen only on pages with
           dimensions greater than 760 px.)
         </p>
+      </Container>
+      <Container>
         <Container
           maxWidth="xl"
-          style={{ backgroundColor: "gray" }}
+          style={{ backgroundColor: "#585858" }}
           align="center"
         >
           <h3>Extera Large Container</h3>
@@ -94,7 +96,7 @@ export default function Page() {
         <br />
         <Container
           maxWidth="lg"
-          style={{ backgroundColor: "gray" }}
+          style={{ backgroundColor: "#585858" }}
           align="center"
         >
           <h3>Large Container</h3>
@@ -102,7 +104,7 @@ export default function Page() {
         <br />
         <Container
           maxWidth="md"
-          style={{ backgroundColor: "gray" }}
+          style={{ backgroundColor: "#585858" }}
           align="center"
         >
           <h3>medium</h3>
@@ -110,7 +112,7 @@ export default function Page() {
         <br />
         <Container
           maxWidth="sm"
-          style={{ backgroundColor: "gray" }}
+          style={{ backgroundColor: "#585858" }}
           align="center"
         >
           <h3>Small</h3>
@@ -118,48 +120,28 @@ export default function Page() {
         <br />
         <Container
           maxWidth="xs"
-          style={{ backgroundColor: "gray" }}
+          style={{ backgroundColor: "#585858" }}
           align="center"
         >
           <h3>Extera Small</h3>
         </Container>
       </Container>
       <Container maxWidth="lg">
-        <h2>Examples</h2>
-        <h3>Example 1</h3>
-
-        <Container maxWidth="sm">
-          <Row>
-            <Card align="start">Start</Card>
-            <Card align="center">Center</Card>
-            <Card align="end">End</Card>
-          </Row>
-        </Container>
-
-        <h3>Example 2</h3>
-        <Example1 />
         <Container maxWidth="md">
-          <h1 style={{ fontSize: "3rem" }}>Owerview</h1>
-          <p style={{ fontSize: "20px" }}>
-            We bulit <b>Yakad</b> to meet the UI/UX needs of the{" "}
-            <Link target="_blank" href="https://natiq.net">
-              Natiq
-            </Link>{" "}
-            project. By with the MIT licens, we also provided the open source
-            community.
-          </p>
-          <Hr />
+          <h2>Examples</h2>
+          <h3>Example 1</h3>
+          <Example1 />
         </Container>
 
-        <h3>Example 3</h3>
-
-        <h2>Links</h2>
-        <a
-          href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar"
-          target="_blank"
-        >
-          <h3>Source code in github</h3>
-        </a>
+        <Container maxWidth="md">
+          <h2>Links</h2>
+          <a
+            href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar"
+            target="_blank"
+          >
+            <h3>Source code in github</h3>
+          </a>
+        </Container>
       </Container>
     </Container>
   );
