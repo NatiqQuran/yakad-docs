@@ -84,7 +84,10 @@ export default function Page() {
       <Example3 />
 
       <h2>Links</h2>
-      <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
+      <a
+        href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar"
+        target="_blank"
+      >
         <h3>Source code in github</h3>
       </a>
     </Container>

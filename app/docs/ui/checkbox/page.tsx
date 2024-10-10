@@ -24,7 +24,7 @@ export default function Page() {
     <Container maxWidth="md">
       <h1>Checkbox</h1>
       <Hr />
-      <p>Discription</p>
+      <p>Checkboxes allow the user to select one or more items from a set.</p>
       <Card>
         <Row>
           <span>
@@ -131,8 +131,11 @@ export default function Page() {
           </Button>
         </Row>
       </Card>
-
-      <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
+      <h2>Links</h2>
+      <a
+        href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar"
+        target="_blank"
+      >
         <h3>Source code in github</h3>
       </a>
     </Container>

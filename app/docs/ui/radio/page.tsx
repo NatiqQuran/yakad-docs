@@ -21,7 +21,10 @@ export default function Page() {
     <Container maxWidth="md">
       <h1>Radio Group and Radio Button</h1>
       <Hr />
-      <p>Discription</p>
+      <p>
+        Radio Group allow users to select a single option from a list of
+        mutually exclusive options.
+      </p>
       <Card>
         <Row>
           <span>
@@ -34,15 +37,7 @@ export default function Page() {
           <Button icon={<Symbol icon="content_copy" />}></Button>
         </Row>
       </Card>
-      <p>
-        Radio group is a collection of radio buttons, here you will find
-        different types of radio buttons and radio groups.
-      </p>
-      <Card>
-        <RadioGroup name="A">
-          <RadioButton />
-        </RadioGroup>
-      </Card>
+
       <h2>Properties</h2>
       <p>Properties that are accepted as attributes:</p>
       <Table>
@@ -163,7 +158,11 @@ export default function Page() {
           <Button variant="outlined">No</Button>
         </Row>
       </Card>
-      <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
+      <h2>Links</h2>
+      <a
+        href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar"
+        target="_blank"
+      >
         <h3>Source code in github</h3>
       </a>
     </Container>

@@ -19,31 +19,28 @@ import {
 } from "@yakad/ui";
 import Symbol from "@yakad/symbols";
 
+import Example1 from "./example1";
+import Example2 from "./example2";
+
 export default function Page() {
   return (
     <>
       <Container maxWidth="md">
         <h1>Input Field</h1>
         <Hr />
-        <p>Discription</p>
+        <p>Fields let users to input the text.</p>
         <Card>
           <Row>
             <span>
-              <code>{'import { Card } from "@yakad/ui"'}</code>
+              <code>{'import { InputField } from "@yakad/ui"'}</code>
               <br />
               <br />
-              <code>{"<Card>Card</Card>"}</code>
+              <code>{" <InputField>InputField</InputField> "}</code>
             </span>
             <Spacer />
             <Button icon={<Symbol icon="content_copy" />}></Button>
           </Row>
         </Card>
-
-        <h3>Simple InputField</h3>
-        <Card style={{ maxWidth: "60rem" }}>
-          <InputField style={{ width: "30rem" }} />
-        </Card>
-
         <h2>Properties</h2>
         <p>Properties that are accepted as attributes:</p>
         <Table>
@@ -65,10 +62,9 @@ export default function Page() {
         <p>
           Input fields help you to request details from people in a specific
           way. Variant is one of the features of the input that changes the
-          appearance of the input.
+          appearance of the input. And there are two types of variants for the
+          input field :
         </p>
-        <p>And there are two types of variants for the input field :</p>
-
         <Card>
           <Row>
             <p>1.</p>
@@ -170,54 +166,11 @@ export default function Page() {
       <Container maxWidth="md">
         <h2>Examples</h2>
         <h3>Example 1 : Login form</h3>
-        <Card style={{ maxWidth: "45rem" }} align="center">
-          <Row align="center">
-            <Symbol icon="login" />
-            <h3>Log In</h3>
-          </Row>
-          <Hr />
-          <form>
-            <Stack style={{ maxWidth: "30rem", margin: "auto" }} align="center">
-              <InputField placeholder="Username" type="Name" />
-              <InputField placeholder="Password" type="Password" />
-              <Chekbox label="Remember Me" />
-              <Button variant="filled">Submit</Button>
-            </Stack>
-          </form>
-          <Hr variant="shortLine" />
-          <Button variant="outlined">Register</Button>
-          <Button variant="text">cancel</Button>
-        </Card>
+        <Example1 />
 
         <h3>Example 2 : Register</h3>
-        <Card style={{ maxWidth: "45rem" }}>
-          <Row align="center">
-            <Symbol icon="account_circle" />
-            <h3>Register</h3>
-          </Row>
-          <Hr />
-          <form>
-            <Stack style={{ maxWidth: "30rem", margin: "auto" }}>
-              <InputField variant="filled" placeholder="Name" />
-              <InputField variant="filled" placeholder="Username" />
-              <InputField
-                variant="filled"
-                placeholder="password"
-                type="password"
-              />
-              <InputField
-                variant="filled"
-                placeholder="verify password"
-                type="password"
-              />
-              <br />
-              <Row align="end">
-                <Button>Cancel</Button>
-                <Button variant="filled">Submit</Button>
-              </Row>
-            </Stack>
-          </form>
-        </Card>
+        <Example2 />
+        <h2>Links</h2>
         <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
           <h3>Source code in github</h3>
         </a>
