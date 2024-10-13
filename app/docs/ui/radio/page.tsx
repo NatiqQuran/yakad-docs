@@ -19,7 +19,7 @@ import {
 export default function Page() {
   return (
     <Container maxWidth="md">
-      <h1>Radio Group and Radio Button</h1>
+      <h1>Radio Group & Radio Button</h1>
       <Hr />
       <p>
         Radio Group allow users to select a single option from a list of
@@ -39,7 +39,8 @@ export default function Page() {
       </Card>
 
       <h2>Properties</h2>
-      <p>Properties that are accepted as attributes:</p>
+      <h3>Radio Group Props</h3>
+      <p>Radio Group Properties that are accepted as attributes:</p>
       <Table>
         <Thead>
           <Tr>
@@ -49,7 +50,28 @@ export default function Page() {
         </Thead>
         <Tbody>
           <Tr>
-            <Td>value</Td>
+            <Td>name</Td>
+            <Td>string</Td>
+          </Tr>
+          <Tr>
+            <Td>defaultValue</Td>
+            <Td>string</Td>
+          </Tr>
+        </Tbody>
+      </Table>
+      <h3>Radio Button Props</h3>
+      <p>Radio Button Properties that are accepted as attributes:</p>
+
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Property</Th>
+            <Th>Value</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          <Tr>
+            <Td>nameFromRadioGroup</Td>
             <Td>string</Td>
           </Tr>
           <Tr>
@@ -57,12 +79,28 @@ export default function Page() {
             <Td>string</Td>
           </Tr>
           <Tr>
+            <Td>value</Td>
+            <Td>string</Td>
+          </Tr>
+          <Tr>
+            <Td>defaultValue</Td>
+            <Td>string</Td>
+          </Tr>
+          <Tr>
             <Td>checked</Td>
-            <Td>True | False</Td>
+            <Td>boolean</Td>
           </Tr>
           <Tr>
             <Td>disabled</Td>
-            <Td>True | False</Td>
+            <Td>boolean</Td>
+          </Tr>
+          <Tr>
+            <Td>handleChecked</Td>
+            <Td>function</Td>
+          </Tr>
+          <Tr>
+            <Td>handleDefaultChecked</Td>
+            <Td>function</Td>
           </Tr>
         </Tbody>
       </Table>

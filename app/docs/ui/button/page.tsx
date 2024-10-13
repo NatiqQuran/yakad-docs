@@ -19,7 +19,7 @@ export default function Page() {
   return (
     <>
       <Container maxWidth="md">
-        <h1>Yakad Buttons</h1>
+        <h1>Buttons</h1>
         <Hr />
         <p>
           Buttons allow users to take actions, and make choices, with a single
