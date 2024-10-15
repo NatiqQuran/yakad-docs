@@ -91,13 +91,13 @@ export default function Page() {
       <h2>Examples</h2>
       <h3>Example 1</h3>
       <Card style={{ maxWidth: "70rem" }}>
-        <h3>Tick ​​whichever one you like.</h3>
+        <h3>Tick whichever one you like.</h3>
         <Chekbox label="Do you accept the rules of the site?" />
         <Chekbox label="Do you want to be notified of the site?" />
         <Chekbox label="Do you want us to play music for you?" />
         <Chekbox label="Do you want the page to Refresh?" />
       </Card>
-      <h3>Examle 2</h3>
+      <h3>Example 2</h3>
       <Card style={{ maxWidth: "50rem" }}>
         <h3>A variety of features:</h3>
         <Hr />

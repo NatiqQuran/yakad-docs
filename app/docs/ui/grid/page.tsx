@@ -35,7 +35,10 @@ export default function Page() {
     <Container maxWidth="md">
       <h1>Grid</h1>
       <Hr />
-      <p>Discription</p>
+      <p>
+        The layout Grid adapts to screen size and orientation, ensuring
+        consistency across layouts.
+      </p>
       <Card>
         <Row>
           <span>
@@ -330,7 +333,11 @@ export default function Page() {
           </GridItem>
         ))}
       </GridContainer>
-      <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
+      <h2>Links</h2>
+      <a
+        href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar"
+        target="_blank"
+      >
         <h3>Source code in github</h3>
       </a>
     </Container>

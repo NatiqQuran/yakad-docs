@@ -22,7 +22,7 @@ export default function Page() {
     <Container maxWidth="md">
       <h1>Hr</h1>
       <Hr />
-      <p>Discription</p>
+      <p>With this feature you can display Hr types under anything</p>
       <Card>
         <Row>
           <span>
@@ -37,7 +37,7 @@ export default function Page() {
       </Card>
 
       <h2>Properties</h2>
-      <p>Properties that are accepted as attributes:(Grid Item)</p>
+      <p>Properties that are accepted as attributes:</p>
       <Table>
         <Thead>
           <Tr>
@@ -149,8 +149,11 @@ export default function Page() {
           </a>
         </Stack>
       </Card>
-
-      <a href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar">
+      <h2>Links</h2>
+      <a
+        href="https://github.com/NatiqQuran/yakad/tree/main/packages/ui/appBar"
+        target="_blank"
+      >
         <h3>Source code in github</h3>
       </a>
     </Container>
