@@ -1,4 +1,4 @@
-import Symbol from "@yakad/symbols";
+import React from "react";
 import {
     Button,
     Card,
@@ -13,14 +13,13 @@ import {
     Thead,
     Tr,
 } from "@yakad/ui";
-import React from "react";
+import Symbol from "@yakad/symbols";
+
 import Example1 from "../card/example1";
 
 export default function Page() {
-    const disabledConfirmButton = () => {};
-
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h1>Table</h1>
             <Hr />
             <p>

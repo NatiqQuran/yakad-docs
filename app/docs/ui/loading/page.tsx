@@ -21,7 +21,7 @@ import React from "react";
 
 export default function Page() {
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h1>Loading</h1>
             <Hr />
             <p>This is a Loading from Yakad you can use to easy</p>

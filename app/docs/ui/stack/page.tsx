@@ -13,12 +13,11 @@ import {
     Td,
     Stack,
 } from "@yakad/ui";
-
 import Symbol from "@yakad/symbols";
 
 export default function Page() {
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h1>Stack</h1>
             <Hr />
             <p>

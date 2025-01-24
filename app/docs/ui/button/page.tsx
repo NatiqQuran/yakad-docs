@@ -18,7 +18,7 @@ import {
 export default function Page() {
     return (
         <>
-            <Container maxWidth="md">
+            <Container size="md">
                 <h1>Buttons</h1>
                 <Hr />
                 <p>
@@ -133,16 +133,16 @@ export default function Page() {
                             justifyContent: "center",
                         }}
                     >
-                        <Button variant="filledtonal" borderStyle="none">
+                        <Button variant="filledtonal" borderstyle="none">
                             NONE
                         </Button>
-                        <Button variant="filledtonal" borderStyle="rounded">
+                        <Button variant="filledtonal" borderstyle="rounded">
                             ROUNDED
                         </Button>
-                        <Button variant="filledtonal" borderStyle="semi">
+                        <Button variant="filledtonal" borderstyle="semi">
                             SEMI
                         </Button>
-                        <Button variant="filledtonal" borderStyle="squircle">
+                        <Button variant="filledtonal" borderstyle="squircle">
                             squircle
                         </Button>
                     </Row>
@@ -218,7 +218,7 @@ export default function Page() {
                             Search
                         </Button>
                         <Button
-                            iconPosition="end"
+                            iconposition="end"
                             variant="outlined"
                             icon={<Symbol icon="search" />}
                         >
@@ -238,7 +238,7 @@ export default function Page() {
 
 function ButtonLoading() {
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h3>Loading:</h3>
             <p>With this option, you can put a loading sign on the buttons</p>
             <Card align="center" style={{ maxWidth: "60rem" }}>
@@ -246,8 +246,8 @@ function ButtonLoading() {
                     <Button
                         variant="outlined"
                         icon={<Symbol icon="search" />}
-                        loadingPosition="auto"
-                        loadingVariant="dots"
+                        loadingposition="auto"
+                        loadingvariant="dots"
                         disabled
                     >
                         Loading
@@ -255,9 +255,9 @@ function ButtonLoading() {
                     <Button
                         variant="outlined"
                         icon={<Symbol icon="search" />}
-                        loadingPosition="auto"
-                        loadingVariant="dots"
-                        iconPosition="end"
+                        loadingposition="auto"
+                        loadingvariant="dots"
+                        iconposition="end"
                         disabled
                     >
                         Loading
@@ -265,9 +265,9 @@ function ButtonLoading() {
                     <Button
                         variant="outlined"
                         icon={<Symbol icon="search" />}
-                        loadingPosition="auto"
-                        loadingVariant="dots"
-                        iconPosition="end"
+                        loadingposition="auto"
+                        loadingvariant="dots"
+                        iconposition="end"
                         disabled
                     ></Button>
                 </Row>
@@ -275,8 +275,8 @@ function ButtonLoading() {
                     <Button
                         variant="outlined"
                         icon={<Symbol icon="search" />}
-                        loadingPosition="auto"
-                        loadingVariant="scaleOut"
+                        loadingposition="auto"
+                        loadingvariant="scaleOut"
                         disabled
                     >
                         Loading
@@ -284,9 +284,9 @@ function ButtonLoading() {
                     <Button
                         variant="outlined"
                         icon={<Symbol icon="search" />}
-                        loadingPosition="auto"
-                        loadingVariant="scaleOut"
-                        iconPosition="end"
+                        loadingposition="auto"
+                        loadingvariant="scaleOut"
+                        iconposition="end"
                         disabled
                     >
                         Loading
@@ -294,8 +294,8 @@ function ButtonLoading() {
                     <Button
                         variant="outlined"
                         icon={<Symbol icon="search" />}
-                        loadingPosition="auto"
-                        loadingVariant="scaleOut"
+                        loadingposition="auto"
+                        loadingvariant="scaleOut"
                         disabled
                     ></Button>
                 </Row>
@@ -304,8 +304,8 @@ function ButtonLoading() {
                     <Button
                         variant="outlined"
                         icon={<Symbol icon="search" />}
-                        loadingPosition="auto"
-                        loadingVariant="spinner"
+                        loadingposition="auto"
+                        loadingvariant="spinner"
                         disabled
                     >
                         Loading
@@ -313,9 +313,9 @@ function ButtonLoading() {
                     <Button
                         variant="outlined"
                         icon={<Symbol icon="search" />}
-                        loadingPosition="auto"
-                        loadingVariant="spinner"
-                        iconPosition="end"
+                        loadingposition="auto"
+                        loadingvariant="spinner"
+                        iconposition="end"
                         disabled
                     >
                         Loading
@@ -323,8 +323,8 @@ function ButtonLoading() {
                     <Button
                         variant="outlined"
                         icon={<Symbol icon="search" />}
-                        loadingPosition="auto"
-                        loadingVariant="spinner"
+                        loadingposition="auto"
+                        loadingvariant="spinner"
                         disabled
                     ></Button>
                 </Row>
@@ -339,8 +339,8 @@ function ButtonLoading() {
                     <Button
                         variant="outlined"
                         icon={<Symbol icon="search" />}
-                        loadingVariant="dots"
-                        loadingPosition="center"
+                        loadingvariant="dots"
+                        loadingposition="center"
                         disabled
                     >
                         Loading
@@ -348,8 +348,8 @@ function ButtonLoading() {
                     <Button
                         variant="outlined"
                         icon={<Symbol icon="search" />}
-                        loadingVariant="scaleOut"
-                        loadingPosition="center"
+                        loadingvariant="scaleOut"
+                        loadingposition="center"
                         disabled
                     >
                         Loading
@@ -357,8 +357,8 @@ function ButtonLoading() {
                     <Button
                         variant="outlined"
                         icon={<Symbol icon="search" />}
-                        loadingVariant="spinner"
-                        loadingPosition="center"
+                        loadingvariant="spinner"
+                        loadingposition="center"
                         disabled
                     >
                         Loading
@@ -382,8 +382,4 @@ function ButtonLoading() {
             </a>
         </Container>
     );
-}
-
-function ButtonIcon() {
-    return <div></div>;
 }

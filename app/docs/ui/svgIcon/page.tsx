@@ -1,15 +1,12 @@
-import Natiq from "@/app/NatiqLogo";
-import { Getstart } from "@/app/content";
-import LogoIcon from "@/app/logoicon";
+import React from "react";
+import Link from "next/link";
 import Symbol from "@yakad/symbols";
 import {
     AppBar,
     Button,
     Card,
-    Chekbox,
     Container,
     Hr,
-    InputField,
     Row,
     Spacer,
     Stack,
@@ -21,14 +18,13 @@ import {
     Thead,
     Tr,
 } from "@yakad/ui";
-import Link from "next/link";
-import React from "react";
+
+import Natiq from "@/app/NatiqLogo";
+import LogoIcon from "@/app/logoicon";
 
 export default function Page() {
-    const disabledConfirmButton = () => {};
-
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h1>SvgIcon</h1>
             <Hr />
             <p>To place the SvgIcon different sizes on the site, import it</p>

@@ -19,7 +19,7 @@ import Symbol from "@yakad/symbols";
 
 export default function Page() {
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h1>AppBar</h1>
             <Hr />
             <p>
@@ -55,7 +55,7 @@ export default function Page() {
             <p>
                 If you scroll the page, the <b>AppBar</b> remains fixed
             </p>
-            <AppBar positionSticky>
+            <AppBar sticky>
                 <h1>AppBar</h1>
             </AppBar>
             <h2>Examples</h2>

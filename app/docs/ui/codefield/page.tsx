@@ -4,7 +4,6 @@ import {
     Container,
     Card,
     Row,
-    Stack,
     Hr,
     CodeField,
     Spacer,
@@ -21,7 +20,7 @@ import Example3 from "./example3";
 
 export default function Page() {
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h1>CodeField</h1>
             <Hr />
             <p>input for your codes.</p>

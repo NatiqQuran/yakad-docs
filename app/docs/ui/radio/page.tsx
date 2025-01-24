@@ -18,7 +18,7 @@ import {
 
 export default function Page() {
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h1>Radio Group & Radio Button</h1>
             <Hr />
             <p>

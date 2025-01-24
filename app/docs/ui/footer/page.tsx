@@ -15,12 +15,13 @@ import {
     Tbody,
     Td,
 } from "@yakad/ui";
-import IntroFooter from "@/app/footer";
 import Symbol from "@yakad/symbols";
+
+import IntroFooter from "@/app/footer";
 
 export default function Page() {
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h1>Footer</h1>
             <Hr />
             <p>Suitable box for footer.</p>

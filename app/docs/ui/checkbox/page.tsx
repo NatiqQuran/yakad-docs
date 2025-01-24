@@ -1,3 +1,4 @@
+import React from "react";
 import Symbol from "@yakad/symbols";
 import {
     Button,
@@ -15,13 +16,10 @@ import {
     Thead,
     Tr,
 } from "@yakad/ui";
-import React from "react";
 
 export default function Page() {
-    const disabledConfirmButton = () => {};
-
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h1>Checkbox</h1>
             <Hr />
             <p>
