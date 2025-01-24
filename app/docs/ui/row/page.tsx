@@ -12,12 +12,11 @@ import {
     Tbody,
     Td,
 } from "@yakad/ui";
-
 import Symbol from "@yakad/symbols";
 
 export default function Page() {
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h1>Row</h1>
             <Hr />
             <p>To put aside an object or several rows.</p>

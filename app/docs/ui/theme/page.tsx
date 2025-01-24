@@ -16,8 +16,7 @@ import {
     Theme,
     Tr,
 } from "@yakad/ui";
-import Symbol from "@yakad/symbols";
-import { IconCode } from "@yakad/symbols";
+import Symbol, { IconCode } from "@yakad/symbols";
 
 interface themeModeProps {
     name: "Light" | "Dark" | "System";
@@ -44,7 +43,7 @@ const themeColorList: themeColorProps[] = [
 
 export default function Page() {
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h1>Theme</h1>
             <Hr />
             <p>Used to force a part of the tree to light or dark mode.</p>

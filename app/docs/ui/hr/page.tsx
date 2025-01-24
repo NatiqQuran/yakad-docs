@@ -19,7 +19,7 @@ import {
 
 export default function Page() {
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h1>Hr</h1>
             <Hr />
             <p>With this feature you can display Hr types under anything</p>
@@ -67,13 +67,13 @@ export default function Page() {
             </p>
             <Card>
                 <h4>Normal Hr:</h4>
-                <Hr marginTopBottom={3} />
+                <Hr margintopbottom={3} />
                 <h4>Dashed Hr:</h4>
-                <Hr marginTopBottom={3} variant="dashed" />
+                <Hr margintopbottom={3} variant="dashed" />
                 <h4>Dotted Hr:</h4>
-                <Hr marginTopBottom={3} variant="dotted" />
+                <Hr margintopbottom={3} variant="dotted" />
                 <h4>ShortLine Hr:</h4>
-                <Hr marginTopBottom={3} variant="shortLine" />
+                <Hr margintopbottom={3} variant="shortLine" />
             </Card>
 
             <h3>height</h3>
@@ -96,9 +96,9 @@ export default function Page() {
                 <p>No margin</p>
                 <Hr />
                 <p>margin = 5</p>
-                <Hr marginTopBottom={5} />
+                <Hr margintopbottom={5} />
                 <p>margin = 10</p>
-                <Hr marginTopBottom={10} />
+                <Hr margintopbottom={10} />
             </Card>
 
             <h2>Examples</h2>
@@ -128,7 +128,7 @@ export default function Page() {
                     <h3>Contact us</h3>
                     <Symbol icon="support_agent" />
                 </Row>
-                <Hr variant="dashed" height={0.3} marginTopBottom={1} />
+                <Hr variant="dashed" height={0.3} margintopbottom={1} />
                 <h4>What is your problem?</h4>
                 <p>My problem is ...</p>
                 <Button>Check...</Button>

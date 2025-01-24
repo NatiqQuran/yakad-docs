@@ -20,7 +20,7 @@ import Example3 from "./example3";
 
 export default function Page() {
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h1>Card</h1>
             <Hr />
             <p>Cards contain content and actions about a subject.</p>

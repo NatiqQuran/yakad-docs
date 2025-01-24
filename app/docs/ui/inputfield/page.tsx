@@ -23,7 +23,7 @@ import Example2 from "./example2";
 export default function Page() {
     return (
         <>
-            <Container maxWidth="md">
+            <Container size="md">
                 <h1>Input Field</h1>
                 <Hr />
                 <p>Fields let users to input the text.</p>
@@ -177,7 +177,7 @@ export default function Page() {
                     </GridContainer>
                 </Card>
             </Container>
-            <Container maxWidth="md">
+            <Container size="md">
                 <h2>Examples</h2>
                 <h3>Example 1 : Login form</h3>
                 <Example1 />

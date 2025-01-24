@@ -16,7 +16,8 @@ import {
     Tr,
 } from "@yakad/ui";
 import Symbol from "@yakad/symbols";
-import { IconCode } from "@yakad/symbols/types";
+
+import { IconCode } from "@yakad/symbols";
 
 interface iconCardsProps {
     symbol: IconCode;
@@ -33,7 +34,7 @@ const iconCardsList: iconCardsProps[] = [
 
 export default function Page() {
     return (
-        <Container maxWidth="md">
+        <Container size="md">
             <h1>Grid</h1>
             <Hr />
             <p>

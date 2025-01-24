@@ -13,19 +13,19 @@ import {
     Thead,
     Tr,
 } from "@yakad/ui";
-import Link from "next/link";
 
 import Example1 from "./example1";
 
 export default function Page() {
     return (
         <Container>
-            <Container maxWidth="md">
+            <Container size="md">
                 <h1>Container</h1>
                 <Hr />
                 <p>
-                    The container centers your content horizontally. It's the
-                    most basic layout element.
+                    {
+                        "The container centers your content horizontally. It's the most basic layout element."
+                    }
                 </p>
                 <Card>
                     <Row>
@@ -77,7 +77,7 @@ export default function Page() {
                     <Card>end</Card>
                 </Container>
             </Container>
-            <Container maxWidth="md">
+            <Container size="md">
                 <h3>maxWidth</h3>
                 <p>
                     If you want to increase or decrease the size of your
@@ -90,7 +90,7 @@ export default function Page() {
             </Container>
             <Container>
                 <Container
-                    maxWidth="xl"
+                    size="xl"
                     style={{ backgroundColor: "#585858" }}
                     align="center"
                 >
@@ -98,7 +98,7 @@ export default function Page() {
                 </Container>
                 <br />
                 <Container
-                    maxWidth="lg"
+                    size="lg"
                     style={{ backgroundColor: "#585858" }}
                     align="center"
                 >
@@ -106,7 +106,7 @@ export default function Page() {
                 </Container>
                 <br />
                 <Container
-                    maxWidth="md"
+                    size="md"
                     style={{ backgroundColor: "#585858" }}
                     align="center"
                 >
@@ -114,7 +114,7 @@ export default function Page() {
                 </Container>
                 <br />
                 <Container
-                    maxWidth="sm"
+                    size="sm"
                     style={{ backgroundColor: "#585858" }}
                     align="center"
                 >
@@ -122,21 +122,21 @@ export default function Page() {
                 </Container>
                 <br />
                 <Container
-                    maxWidth="xs"
+                    size="xs"
                     style={{ backgroundColor: "#585858" }}
                     align="center"
                 >
                     <h3>Extera Small</h3>
                 </Container>
             </Container>
-            <Container maxWidth="lg">
-                <Container maxWidth="md">
+            <Container size="lg">
+                <Container size="md">
                     <h2>Examples</h2>
                     <h3>Example 1</h3>
                     <Example1 />
                 </Container>
 
-                <Container maxWidth="md">
+                <Container size="md">
                     <h2>Links</h2>
                     <a
                         target="_blank"
