@@ -1,7 +1,9 @@
 {
     "name": "yakad-docs",
     "version": "0.1.0",
-    "private": true,
+    "private": false,
+    "author": "Natiq",
+    "description": "Yakad Docs",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
@@ -9,8 +11,8 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@yakad/ui": "1.3.13",
         "@yakad/symbols": "1.0.17",
-        "@yakad/ui": "1.3.3",
         "@yakad/x": "1.1.0",
         "next": "14.2.2",
         "react": "18.2.0",
