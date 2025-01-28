@@ -1,4 +1,3 @@
-import "./globals.css";
 import type { Metadata } from "next";
 import { Theme } from "@yakad/ui";
 

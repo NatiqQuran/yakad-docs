@@ -57,15 +57,13 @@ export default function Page() {
             </p>
             <Card>
                 <Row>
-                    <Row>
-                        <p>Start</p>
-                    </Row>
-                    <Row align="center">
-                        <p>Center</p>
-                    </Row>
-                    <Row align="end">
-                        <p>End</p>
-                    </Row>
+                    <p>Start</p>
+                </Row>
+                <Row align="center">
+                    <p>Center</p>
+                </Row>
+                <Row align="end">
+                    <p>End</p>
                 </Row>
             </Card>
             <h2>Example</h2>

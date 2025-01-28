@@ -43,7 +43,7 @@ export function Getstart() {
 
 export function Cards() {
     return (
-        <Container size="lg" id="learnmore">
+        <Container size="lg" id="learnmore" style={{ marginTop: "4rem" }}>
             <GridContainer>
                 <GridItem xs={12} sm={6} xl={3}>
                     <Card>
@@ -108,7 +108,10 @@ export function Cards() {
 
 export function Tables() {
     return (
-        <Container size="md">
+        <Container
+            size="md"
+            style={{ marginTop: "4rem", marginBottom: "4rem" }}
+        >
             <h2>Table</h2>
             <GridContainer columns={12}>
                 <GridItem sm={12} xl={7}>

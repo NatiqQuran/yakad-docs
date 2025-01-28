@@ -1,14 +1,14 @@
 "use client";
 
-import { Container, Card, ClickAwayListener } from "@yakad/ui";
+import { Container, Card, ClickOutsideListener } from "@yakad/ui";
 
 export default function Page() {
     return (
         <Container size="md">
-            <h1>Click Away Listiner</h1>
+            <h1>Click Outside Listener</h1>
             <h1>Example :</h1>
-            <ClickAwayListener
-                onclickaway={() => alert("You click of the out side card")}
+            <ClickOutsideListener
+                onclickoutside={() => alert("You click of the out side card")}
                 style={{ width: "100%" }}
             >
                 <Card>
@@ -16,7 +16,7 @@ export default function Page() {
                         if you click on the card nothing happens
                     </h1>
                 </Card>
-            </ClickAwayListener>
+            </ClickOutsideListener>
         </Container>
     );
 }

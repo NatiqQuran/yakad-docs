@@ -67,13 +67,13 @@ export default function Page() {
             </p>
             <Card>
                 <h4>Normal Hr:</h4>
-                <Hr margintopbottom={3} />
+                <Hr marginx={3} />
                 <h4>Dashed Hr:</h4>
-                <Hr margintopbottom={3} variant="dashed" />
+                <Hr marginx={3} variant="dashed" />
                 <h4>Dotted Hr:</h4>
-                <Hr margintopbottom={3} variant="dotted" />
+                <Hr marginx={3} variant="dotted" />
                 <h4>ShortLine Hr:</h4>
-                <Hr margintopbottom={3} variant="shortLine" />
+                <Hr marginx={3} variant="shortLine" />
             </Card>
 
             <h3>height</h3>
@@ -86,7 +86,7 @@ export default function Page() {
                 <Hr height={2} />
             </Card>
 
-            <h3>marginTopBottom</h3>
+            <h3>marginx</h3>
             <p>
                 With this property, we increase and decrease the top and bottom
                 margins.
@@ -96,9 +96,9 @@ export default function Page() {
                 <p>No margin</p>
                 <Hr />
                 <p>margin = 5</p>
-                <Hr margintopbottom={5} />
+                <Hr marginx={5} />
                 <p>margin = 10</p>
-                <Hr margintopbottom={10} />
+                <Hr marginx={10} />
             </Card>
 
             <h2>Examples</h2>
@@ -128,16 +128,16 @@ export default function Page() {
                     <h3>Contact us</h3>
                     <Symbol icon="support_agent" />
                 </Row>
-                <Hr variant="dashed" height={0.3} margintopbottom={1} />
+                <Hr variant="dashed" height={0.3} marginx={1} />
                 <h4>What is your problem?</h4>
                 <p>My problem is ...</p>
                 <Button>Check...</Button>
                 <h4>Rate to our Website!</h4>
-                <RadioGroup name="rateRadio" defaultValue="check">
-                    <RadioButton label="Very Good!" />
-                    <RadioButton label="Good" value="check" />
-                    <RadioButton label="Not Bad" />
-                    <RadioButton label="Bad" />
+                <RadioGroup name="rateRadio" defaultvalue="check">
+                    <RadioButton label="Very Good!" value="1" />
+                    <RadioButton label="Good" value="2" />
+                    <RadioButton label="Not Bad" value="3" />
+                    <RadioButton label="Bad" value="4" />
                 </RadioGroup>
                 <Hr variant="dotted" height={0.5} />
                 <Row align="center">

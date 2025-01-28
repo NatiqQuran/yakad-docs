@@ -115,7 +115,7 @@ export default function Page() {
             </p>
             <Card>
                 <h3>Default Value =&gt;one</h3>
-                <RadioGroup name="B" defaultValue="one">
+                <RadioGroup name="B" defaultvalue="one">
                     <RadioButton value="zero" label="value = Zero" />
                     <RadioButton value="one" label="value = One" />
                     <RadioButton value="two" label="value = two" />
@@ -130,23 +130,9 @@ export default function Page() {
             </p>
             <Card>
                 <RadioGroup name="C">
-                    <RadioButton label="zero" />
-                    <RadioButton label="one" />
-                    <RadioButton label="two" />
-                </RadioGroup>
-            </Card>
-
-            <h3>checked</h3>
-            <p>
-                Use this property in each of the radio buttons, that radio
-                button will be in checked mode.
-            </p>
-
-            <Card>
-                <RadioGroup name="D">
-                    <RadioButton label="uncheckd" />
-                    <RadioButton label="checked" checked />
-                    <RadioButton label="unchecked" />
+                    <RadioButton label="zero" value="a" />
+                    <RadioButton label="one" value="b" />
+                    <RadioButton label="two" value="c" />
                 </RadioGroup>
             </Card>
 
@@ -156,9 +142,9 @@ export default function Page() {
                 is not checked.
             </p>
             <Card style={{ marginBottom: "3rem" }}>
-                <RadioGroup name="E" defaultValue="bir">
-                    <RadioButton value="bir" label="inable" />
-                    <RadioButton disabled label="disable" />
+                <RadioGroup name="E">
+                    <RadioButton value="bir" label="enable" />
+                    <RadioButton value="iki" label="disable" disabled />
                 </RadioGroup>
             </Card>
 
@@ -168,7 +154,7 @@ export default function Page() {
             <Card style={{ maxWidth: "60rem" }}>
                 <h3>Choose the color you want!</h3>
                 <Hr />
-                <RadioGroup name="Example" defaultValue="">
+                <RadioGroup name="Example">
                     <RadioButton value="num1" label="Blue" />
                     <RadioButton value="num2" label="Red" />
                     <RadioButton value="num3" label="Yellow" />
@@ -184,7 +170,7 @@ export default function Page() {
             <Card style={{ maxWidth: "60rem" }}>
                 <h3>How do you think our site is?</h3>
                 <Hr />
-                <RadioGroup name="Example" defaultValue="">
+                <RadioGroup name="Example">
                     <RadioButton value="n1" label="Excellent" />
                     <RadioButton value="n2" label="Good" />
                     <RadioButton value="n3" label="Not Bad" />
