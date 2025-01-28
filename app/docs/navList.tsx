@@ -37,14 +37,14 @@ export default function NavList() {
                 },
                 { name: "Radio", onclick: () => router.push("/docs/ui/radio") },
                 {
-                    name: "Checkbox",
-                    onclick: () => router.push("/docs/ui/checkbox"),
+                    name: "CheckBox",
+                    onclick: () => router.push("/docs/ui/checkBox"),
                 },
                 { name: "Grid", onclick: () => router.push("/docs/ui/grid") },
                 { name: "Hr", onclick: () => router.push("/docs/ui/hr") },
                 {
-                    name: "ClickAwayListiner",
-                    onclick: () => router.push("/docs/ui/clickawaylistiner"),
+                    name: "ClickOusideListiner",
+                    onclick: () => router.push("/docs/ui/clickoutsidelistiner"),
                 },
                 {
                     name: "Footer",

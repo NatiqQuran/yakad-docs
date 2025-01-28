@@ -3,7 +3,7 @@ import Symbol from "@yakad/symbols";
 import {
     Button,
     Card,
-    Chekbox,
+    ChekBox,
     Container,
     Hr,
     InputField,
@@ -69,16 +69,16 @@ export default function Page() {
                 Checkbox and the label value.
             </p>
             <Card>
-                <Chekbox label="Test" />
+                <ChekBox label="Test" />
             </Card>
 
             <h3>checked</h3>
             <p>With this feature, you can put your checkbox in tick mode.</p>
             <Card>
-                <Chekbox checked label="checked" />
-                <Chekbox label="not checked" />
-                <Chekbox label="checked" checked />
-                <Chekbox label="not checked" />
+                <ChekBox checked label="checked" />
+                <ChekBox label="not checked" />
+                <ChekBox label="checked" checked />
+                <ChekBox label="not checked" />
             </Card>
             <h3>disabled</h3>
             <p>
@@ -86,17 +86,17 @@ export default function Page() {
                 not checked.
             </p>
             <Card>
-                <Chekbox label="inabled" />
-                <Chekbox label="disabled" disabled />
+                <ChekBox label="inabled" />
+                <ChekBox label="disabled" disabled />
             </Card>
             <h2>Examples</h2>
             <h3>Example 1</h3>
             <Card style={{ maxWidth: "70rem" }}>
                 <h3>Tick whichever one you like.</h3>
-                <Chekbox label="Do you accept the rules of the site?" />
-                <Chekbox label="Do you want to be notified of the site?" />
-                <Chekbox label="Do you want us to play music for you?" />
-                <Chekbox label="Do you want the page to Refresh?" />
+                <ChekBox label="Do you accept the rules of the site?" />
+                <ChekBox label="Do you want to be notified of the site?" />
+                <ChekBox label="Do you want us to play music for you?" />
+                <ChekBox label="Do you want the page to Refresh?" />
             </Card>
             <h3>Example 2</h3>
             <Card style={{ maxWidth: "50rem" }}>
@@ -104,13 +104,13 @@ export default function Page() {
                 <Hr />
 
                 <h3>Disabled</h3>
-                <Chekbox label="inabled" />
-                <Chekbox disabled label="disabled" />
+                <ChekBox label="inabled" />
+                <ChekBox disabled label="disabled" />
                 <Hr />
                 <h3>Checked</h3>
-                <Chekbox checked label="checked" />
-                <Chekbox label="not checked" />
-                <Chekbox checked disabled label="dissabled checked" />
+                <ChekBox checked label="checked" />
+                <ChekBox label="not checked" />
+                <ChekBox checked disabled label="dissabled checked" />
             </Card>
             <h3>Example 3</h3>
             <Card style={{ maxWidth: "50rem" }}>
@@ -123,9 +123,9 @@ export default function Page() {
                 <InputField placeholder="Username" type="name" />
                 <h3>Enter your Password:</h3>
                 <InputField placeholder="Password" type="password" />
-                <Chekbox label="Remember My Password" />
+                <ChekBox label="Remember My Password" />
                 <Hr />
-                <Chekbox label="You must accept the rules to Confirm!" />
+                <ChekBox label="You must accept the rules to Confirm!" />
                 <Row align="center" style={{ marginTop: "2rem" }}>
                     <Button variant="elevated" disabled>
                         Confirm
