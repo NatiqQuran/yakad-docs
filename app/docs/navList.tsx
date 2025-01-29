@@ -107,5 +107,5 @@ export default function NavList() {
         },
     ];
 
-    return <XmenuList menuitems={menuItems} />;
+    return <XmenuList items={menuItems} />;
 }

@@ -90,7 +90,7 @@ export default function Page() {
                 <code>{'import { XmenuList } from "@yakad/x";'}</code>
                 <br />
                 <br />
-                <code>{"<XmenuList menuItems={menuItems} />"}</code>
+                <code>{"<XmenuList items={menuItems} />"}</code>
             </CodeBox>
             <h2>Properties</h2>
             <p>Properties that are accepted as attributes:</p>
@@ -123,7 +123,7 @@ export default function Page() {
             <h2>Properties</h2>
             <h3>Data Example</h3>
             <Card style={{ maxWidth: "40rem" }}>
-                <XmenuList menuitems={menuItems} />
+                <XmenuList items={menuItems} />
             </Card>
             <h2>Useaful Links</h2>
             <Row>

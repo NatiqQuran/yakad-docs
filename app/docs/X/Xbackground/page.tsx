@@ -102,7 +102,7 @@ export default function Page() {
             </GridContainer>
             <h3>backgroundImage</h3>
             <Xbackground
-                image={backgroundImage}
+                imageSrc={backgroundImage.src}
                 style={{ minHeight: "20rem", color: "#000" }}
             >
                 <Container>image in background</Container>
@@ -111,7 +111,7 @@ export default function Page() {
             <GridContainer>
                 <GridItem sm={12} xl={6}>
                     <Xbackground
-                        image={backgroundImage}
+                        imageSrc={backgroundImage.src}
                         fixed={true}
                         style={{ minHeight: "20rem", color: "#000" }}
                     >
@@ -120,7 +120,7 @@ export default function Page() {
                 </GridItem>
                 <GridItem sm={12} xl={6}>
                     <Xbackground
-                        image={backgroundImage}
+                        imageSrc={backgroundImage.src}
                         fixed={false}
                         style={{ minHeight: "20rem", color: "#000" }}
                     >
