@@ -1,4 +1,4 @@
-import { Card, Row, Button, InputField, ChekBox, Stack, Hr } from "@yakad/ui";
+import { Card, Row, Button, InputField, CheckBox, Stack, Hr } from "@yakad/ui";
 import Symbol from "@yakad/symbols";
 
 export default function Example1() {
@@ -16,7 +16,7 @@ export default function Example1() {
                 >
                     <InputField placeholder="Username" type="Name" />
                     <InputField placeholder="Password" type="Password" />
-                    <ChekBox label="Remember Me" />
+                    <CheckBox label="Remember Me" />
                     <Button variant="filled">Submit</Button>
                 </Stack>
             </form>

@@ -1,4 +1,4 @@
-import { Row, Button, Stack, InputField, Chekbox, Hr } from "@yakad/ui";
+import { Row, Button, Stack, InputField, CheckBox, Hr } from "@yakad/ui";
 import { XloginBox } from "@yakad/x";
 
 export default function Page() {
@@ -16,7 +16,7 @@ export default function Page() {
                     <InputField placeholder="Username" type="Name" />
                     <InputField placeholder="Password" type="Password" />
                     <Button variant="filled">Submit</Button>
-                    <Chekbox label="Remember Me" />
+                    <CheckBox label="Remember Me" />
                 </Stack>
             </form>
             <Hr variant="shortLine" />
